@@ -1,0 +1,93 @@
+<jacob>
+ <properties>
+  <property name="sceneScale" value="1.0"/>
+  <property name="vvectorScale" value="0.0"/>
+  <property name="evectorScale" value="80.35714285714286"/>
+  <property name="mvectorScale" value="500.0"/>
+  <property name="eforceScale" value="1000.0"/>
+  <property name="integratorType" value="test"/>
+  <property name="electricConst" value="2.8571428571428568"/>
+  <property name="magneticConst" value="0.013214285714285715"/>
+  <property name="integrationStep" value="0.8035714285714286"/>
+  <property name="dipolSuscept" value="1.0E-4"/>
+  <property name="transforcePeriod" value="10"/>
+  <property name="transforceConst" value="0.05"/>
+  <property name="circforcePeriod" value="10"/>
+  <property name="circforceConst" value="0.05"/>
+  <property name="rotatforcePeriod" value="10"/>
+  <property name="rotatforceConst" value="0.05"/>
+  <property name="repelerforceConst" value="0.01"/>
+  <property name="centralforceConst" value="0.01"/>
+  <property name="pulseforcePeriod" value="10"/>
+  <property name="pulseforceConst" value="0"/>
+  <property name="gausspulseforcePeriod" value="10"/>
+  <property name="gausspulseforceConst" value="0"/>
+  <property name="oscchargePeriod" value="500.0"/>
+  <property name="oscchargeConst" value="0.09"/>
+  <property name="randomForce" value="0.0"/>
+  <property name="translationConst" value="9.5"/>
+  <property name="rotationConst" value="0.5"/>
+  <property name="zeroX" value="276.0"/>
+  <property name="zeroY" value="442.0"/>
+ </properties>
+ <scene>
+  <view>
+   <components>
+    <element name="E1" closed="true">
+     <shape>
+      <ring x="250.0" y="230.0" r1="210.95023109728987" r2="200.9975124224178"/>
+     </shape>
+     <modifiers>
+      <circforce ex="0.278" ey="-0.0010"/>
+     </modifiers>
+     <components>
+      <particle x="416.8859485973943" y="100.96868534829275" charge="1.0"/>
+      <particle x="352.95595807597795" y="45.88028161911211" charge="1.0"/>
+      <particle x="271.7061567104105" y="20.169490395550156" charge="1.0"/>
+      <particle x="454.0324381049893" y="176.4204871155614" charge="1.0"/>
+      <particle x="184.24463279971326" y="29.559904998137995" charge="1.0"/>
+      <particle x="458.7647437916578" y="260.28665959797286" charge="1.0"/>
+      <particle x="41.96554482988731" y="264.9523312823962" charge="1.0"/>
+      <particle x="430.41676210548064" y="339.31510394897134" charge="1.0"/>
+      <particle x="74.3364554867058" y="346.80033873677723" charge="1.0"/>
+      <particle x="373.5127445418165" y="401.0105316515564" charge="1.0"/>
+      <particle x="134.7791511603695" y="406.7035822859147" charge="1.0"/>
+      <particle x="297.0682828329111" y="435.6321393925597" charge="1.0"/>
+      <particle x="213.1157775158963" y="437.7006358481917" charge="1.0"/>
+     </components>
+    </element>
+    <element name="E5" closed="false">
+     <shape>
+      <polygon points="91.25989566667536,141.93157482793228;96.3303469294998,133.31237973841047;165.28390764569724,173.87598984103968;160.21345638287147,182.49518493056047;160.21345638287147,182.49518493056047"/>
+     </shape>
+     <modifiers>
+      <rotator x="246.0" y="226.0"/>
+     </modifiers>
+     <components>
+      <element name="E6" closed="false">
+       <shape>
+        <polygon points="99.87909075619788,147.00202609076405;82.6407005771461,136.86112356510827;87.7111518399717,128.24192847558047;104.94954201902382,138.38283100123556"/>
+       </shape>
+       <modifiers>
+        <pargen charge="1.0"/>
+       </modifiers>
+       <components>
+        <particle x="87.63852530482268" y="128.53195939318616" charge="1.0"/>
+        <particle x="87.6390384229448" y="128.53010404736392" charge="1.0"/>
+        <particle x="82.66809737076458" y="136.82735912030813" charge="1.0"/>
+       </components>
+      </element>
+      <element name="E7" closed="false">
+       <shape>
+        <polygon points="151.59426129334054,177.4247336677298;168.83265147239717,187.56563619339266;173.9031027352202,178.94644110386255;156.6647125561738,168.80553857820715"/>
+       </shape>
+       <modifiers>
+        <parcon charge="1.0"/>
+       </modifiers>
+      </element>
+     </components>
+    </element>
+   </components>
+  </view>
+ </scene>
+</jacob>

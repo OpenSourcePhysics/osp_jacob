@@ -1,0 +1,169 @@
+<jacob>
+ <properties>
+  <property name="sceneScale" value="1.0"/>
+  <property name="vvectorScale" value="0.0"/>
+  <property name="evectorScale" value="16.07142857142857"/>
+  <property name="mvectorScale" value="0.0"/>
+  <property name="eforceScale" value="1000.0"/>
+  <property name="integratorType" value="standard"/>
+  <property name="electricConst" value="1.4285714285714284"/>
+  <property name="magneticConst" value="0.0"/>
+  <property name="integrationStep" value="2.142857142857143"/>
+  <property name="dipolSuscept" value="0.010803571428571428"/>
+  <property name="transforcePeriod" value="10"/>
+  <property name="transforceConst" value="0.05"/>
+  <property name="circforcePeriod" value="10"/>
+  <property name="circforceConst" value="0.05"/>
+  <property name="rotatforcePeriod" value="10"/>
+  <property name="rotatforceConst" value="0.05"/>
+  <property name="pulseforcePeriod" value="10"/>
+  <property name="pulseforceConst" value="0"/>
+  <property name="gausspulseforcePeriod" value="10"/>
+  <property name="gausspulseforceConst" value="0"/>
+  <property name="translationConst" value="1.5"/>
+  <property name="rotationConst" value="0.5"/>
+  <property name="zeroX" value="260.0"/>
+  <property name="zeroY" value="5.0"/>
+  <property name="fieldDetectorScale" value="1.0"/>
+  <property name="energyGaugeScale" value="1.0"/>
+  <property name="surfacepressureGaugeScale" value="1.0"/>
+  <property name="velocityGaugeScale" value="0.0"/>
+ </properties>
+ <scene>
+  <view>
+   <components>
+    <element name="Actine" bgcolor="#f0" oborder="false" closed="true">
+     <shape>
+      <polygon points="101.86796875491609,166.92853110436957;543.1320312450842,166.92853110436957;543.1320312450842,172.0714688956304;101.86796875491609,172.0714688956304"/>
+     </shape>
+     <components>
+      <element name="1" bgcolor="#f0" oborder="false" closed="false">
+       <shape>
+        <circle x="199.0928805487809" y="166.92855358241343" r="16.68249585224268"/>
+       </shape>
+       <modifiers>
+        <translator/>
+        <eforce ex="-4.5491366461135384E-4" ey="-0.0459286872319652"/>
+       </modifiers>
+       <components>
+        <particle x="210.79200310001144" y="161.61367650633" charge="-3.0"/>
+        <particle x="210.97319969657985" y="171.1122168515543" charge="3.0"/>
+       </components>
+      </element>
+      <element name="2" bgcolor="#f0" oborder="false" closed="true">
+       <shape>
+        <circle x="479.20070679066225" y="172.07134170354095" r="16.502235081608312"/>
+       </shape>
+       <modifiers>
+        <translator/>
+        <eforce ex="-2.267157279300136E-5" ey="-0.06392859795176467"/>
+       </modifiers>
+       <components>
+        <particle x="464.6752331632099" y="175.20639462570088" charge="1.0"/>
+        <particle x="477.66225069473666" y="185.5327967349031" charge="-1.0"/>
+       </components>
+      </element>
+      <element name="3" bgcolor="#f0" oborder="false" closed="true">
+       <shape>
+        <circle x="387.51382994467735" y="172.0713798992598" r="16.5854760226436"/>
+       </shape>
+       <modifiers>
+        <translator/>
+        <eforce ex="3.534758295126608E-4" ey="-0.0730708185468651"/>
+       </modifiers>
+       <components>
+        <particle x="375.4266494845258" y="176.83706422012992" charge="1.0"/>
+        <particle x="391.001405950117" y="168.53617100951845" charge="-1.0"/>
+       </components>
+      </element>
+      <element name="4" bgcolor="#f0" oborder="false" closed="true">
+       <shape>
+        <circle x="438.0960786223356" y="172.07137650737664" r="16.617340559267486"/>
+       </shape>
+       <modifiers>
+        <translator/>
+        <eforce ex="2.7371127087138803E-4" ey="-0.07151614107167888"/>
+       </modifiers>
+       <components>
+        <particle x="425.8401954606578" y="181.0330215227298" charge="1.0"/>
+        <particle x="444.4225166972137" y="185.37879374328392" charge="-1.0"/>
+       </components>
+      </element>
+      <element name="5" bgcolor="#f0" oborder="false" closed="true">
+       <shape>
+        <circle x="543.1319707039668" y="172.07141388953673" r="17.485988490286378"/>
+       </shape>
+       <modifiers>
+        <translator/>
+        <eforce ex="8.680683548814159E-4" ey="-0.06692868855715117"/>
+       </modifiers>
+       <components>
+        <particle x="558.1184904541506" y="170.19013640555778" charge="1.0"/>
+        <particle x="550.027030156288" y="186.97785730961252" charge="-1.0"/>
+       </components>
+      </element>
+     </components>
+    </element>
+    <element name="ATP" bgcolor="#ff0000" oborder="false" closed="true">
+     <shape>
+      <circle x="459.0" y="317.0" r="17.029386365926403"/>
+     </shape>
+     <components>
+      <particle x="442.31128079126285" y="320.3891962427585" charge="6.0"/>
+     </components>
+    </element>
+    <element name="Ca++" closed="true">
+     <shape>
+      <polygon points="73.0,13.0;616.0,13.0;616.0,15.0;73.0,15.0"/>
+     </shape>
+     <components>
+      <particle x="83.63459201806718" y="14.99605910117451" charge="1.0"/>
+      <particle x="141.5159250103333" y="14.995439169061848" charge="1.0"/>
+      <particle x="434.81408784483267" y="14.995542952339363" charge="1.0"/>
+      <particle x="183.16441070630665" y="14.995020504633908" charge="1.0"/>
+      <particle x="73.05092730081309" y="14.996169808576072" charge="1.0"/>
+      <particle x="603.7048878168353" y="14.993717010738386" charge="1.0"/>
+      <particle x="535.1974292858223" y="14.996794078641257" charge="1.0"/>
+      <particle x="278.7482258345531" y="14.99446884790744" charge="1.0"/>
+      <particle x="575.5381744423055" y="14.996953143587747" charge="1.0"/>
+      <particle x="229.54070343493012" y="14.994657150555726" charge="1.0"/>
+      <particle x="615.9570442593688" y="13.00206473827994" charge="1.0"/>
+      <particle x="381.9417331504115" y="14.994921765799095" charge="1.0"/>
+      <particle x="486.8941451493857" y="14.996235096179355" charge="1.0"/>
+      <particle x="329.7286893241404" y="14.994544148048886" charge="1.0"/>
+      <particle x="107.32502267801532" y="14.995805966769128" charge="1.0"/>
+     </components>
+    </element>
+    <element name="." bgcolor="#837f72" oborder="false" closed="true">
+     <shape>
+      <polygon points="192.0,184.0;472.0,184.0;472.0,434.0;192.0,434.0"/>
+     </shape>
+     <components>
+      <element name="." oborder="false" closed="true">
+       <shape>
+        <polygon points="332.0,424.0;342.0,414.0;282.0,354.0;272.0,364.0;272.0,364.0"/>
+       </shape>
+       <components>
+        <particle x="341.9708993488808" y="413.9924116249987" charge="-3.0"/>
+        <particle x="282.0275526815372" y="354.0442544142528" charge="-3.0"/>
+       </components>
+      </element>
+      <element name="Myosine" oborder="false" closed="true">
+       <shape>
+        <polygon points="275.43263667067663,335.8339749653592;287.1534015745066,374.07823819619347;401.8861912670033,338.9159434846959;415.1479404304964,313.9334294173623;390.1654263631807,300.6716802538623"/>
+       </shape>
+       <modifiers>
+        <rotator x="281.0" y="354.0"/>
+       </modifiers>
+       <components>
+        <particle x="401.91920336638805" y="338.8411527741435" charge="-1.0" fixed="true"/>
+        <particle x="415.1103816803494" y="313.95933054282125" charge="-1.0" fixed="true"/>
+        <particle x="390.1115909968787" y="300.6913221501794" charge="-4.0" fixed="true"/>
+       </components>
+      </element>
+     </components>
+    </element>
+   </components>
+  </view>
+ </scene>
+</jacob>

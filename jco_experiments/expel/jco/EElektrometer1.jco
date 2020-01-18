@@ -1,0 +1,83 @@
+<jacob>
+ <properties>
+  <property name="sceneScale" value="1.0"/>
+  <property name="vvectorScale" value="0.0"/>
+  <property name="evectorScale" value="37.5"/>
+  <property name="mvectorScale" value="0.0"/>
+  <property name="eforceScale" value="1000.0"/>
+  <property name="mfluxdensityScale" value="100.0"/>
+  <property name="integratorType" value="test"/>
+  <property name="electricConst" value="1.1428571428571428"/>
+  <property name="magneticConst" value="0.0"/>
+  <property name="integrationStep" value="1.0"/>
+  <property name="frictionConst" value="0.10000000000000002"/>
+  <property name="elasticityConst" value="0.0"/>
+  <property name="inertiaConst " value="0.8"/>
+  <property name="dipolSuscept" value="1.0E-4"/>
+  <property name="oscforcePeriod" value="10"/>
+  <property name="oscforceConst" value="0.0050"/>
+  <property name="transforcePeriod" value="10"/>
+  <property name="transforceConst" value="4.15"/>
+  <property name="circforcePeriod" value="10"/>
+  <property name="circforceConst" value="0.05"/>
+  <property name="circoscforcePeriod" value="10"/>
+  <property name="circoscforceConst" value="0.05"/>
+  <property name="rotatforcePeriod" value="10"/>
+  <property name="rotatforceConst" value="0.05"/>
+  <property name="repelerforceConst" value="0.01"/>
+  <property name="centralforceConst" value="0.01"/>
+  <property name="pulseforcePeriod" value="10"/>
+  <property name="pulseforceConst" value="0"/>
+  <property name="gausspulseforcePeriod" value="10"/>
+  <property name="gausspulseforceConst" value="0"/>
+  <property name="oscchargePeriod" value="791.7857142857142"/>
+  <property name="oscchargeConst" value="0.09"/>
+  <property name="randomForce" value="0.0"/>
+  <property name="translationConst" value="20.5"/>
+  <property name="rotationConst" value="0.08"/>
+  <property name="zeroX" value="260.0"/>
+  <property name="zeroY" value="5.0"/>
+  <property name="potentialDetectorScale" value="0.181"/>
+  <property name="voltageDetectorScale" value="0.181"/>
+  <property name="genericDetectorScale" value="1.0"/>
+  <property name="fieldDetectorStrengthScale" value="1.0"/>
+  <property name="energyGaugeScale" value="1.0"/>
+  <property name="surfacepressureGaugeScale" value="1.0"/>
+  <property name="velocityGaugeScale" value="0.0"/>
+  <property name="currentGaugeScale" value="0.24"/>
+  <property name="resistanceDetectorScale" value="1.0"/>
+  <property name="resistanceGaugeScale" value="1.0"/>
+  <property name="capacitanceGaugeScale" value="112.0"/>
+  <property name="genericGaugeScale" value="1.0"/>
+  <property name="indicatorResolution" value="12"/>
+ </properties>
+ <scene>
+  <view>
+   <components>
+    <element name="Valj" closed="false">
+     <shape>
+      <circle x="260.0" y="200.0" r="60.0"/>
+     </shape>
+    </element>
+    <element name="List1" closed="false">
+     <shape>
+      <polygon points="246.0,210.0;257.0,210.0;257.0,341.0;246.0,341.0"/>
+     </shape>
+     <modifiers>
+      <rotator x="251.0" y="209.0"/>
+      <eforce ex="0.0" ey="0.025"/>
+     </modifiers>
+    </element>
+    <element name="List2" closed="false">
+     <shape>
+      <polygon points="266.0,210.0;277.0,210.0;277.0,341.0;266.0,341.0"/>
+     </shape>
+     <modifiers>
+      <rotator x="271.0" y="209.0"/>
+      <eforce ex="0.0" ey="0.025"/>
+     </modifiers>
+    </element>
+   </components>
+  </view>
+ </scene>
+</jacob>

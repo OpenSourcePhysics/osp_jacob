@@ -1,0 +1,57 @@
+<jacob>
+ <properties>
+  <property name="sceneScale" value="1.0"/>
+  <property name="vvectorScale" value="25.0"/>
+  <property name="evectorScale" value="30.0"/>
+  <property name="mvectorScale" value="392.85714285714283"/>
+  <property name="eforceScale" value="1000.0"/>
+  <property name="integratorType" value="test"/>
+  <property name="electricConst" value="1"/>
+  <property name="integrationStep" value="1"/>
+  <property name="magneticConst" value="4.4642857142857147E-4"/>
+  <property name="zeroX" value="0.0"/>
+  <property name="zeroY" value="0.0"/>
+  <property name="fieldDetectorScale" value="1.0"/>
+  <property name="energyGaugeScale" value="1.0"/>
+ </properties>
+ <scene>
+  <view>
+   <components>
+    <element name="vodnik1" closed="false">
+     <shape>
+      <polygon points="19.0,111.0;619.0,111.0;619.0,121.0;19.0,121.0"/>
+     </shape>
+     <components>
+      <element name="gen1" closed="false">
+       <shape>
+        <polygon points="29.0,111.0;29.0,121.0;9.0,121.0;9.0,111.0"/>
+       </shape>
+      </element>
+      <element name="con1" closed="false">
+       <shape>
+        <polygon points="609.0,121.0;609.0,111.0;629.0,111.0;629.0,121.0"/>
+       </shape>
+      </element>
+     </components>
+    </element>
+    <element name="vodnik2" closed="false">
+     <shape>
+      <polygon points="22.0,206.0;622.0,206.0;622.0,216.0;22.0,216.0"/>
+     </shape>
+     <components>
+      <element name="con2" closed="false">
+       <shape>
+        <polygon points="32.0,216.0;32.0,206.0;12.0,206.0;12.0,216.0;12.0,216.0"/>
+       </shape>
+      </element>
+      <element name="gen2" closed="false">
+       <shape>
+        <polygon points="612.0,206.0;612.0,216.0;632.0,216.0;632.0,206.0"/>
+       </shape>
+      </element>
+     </components>
+    </element>
+   </components>
+  </view>
+ </scene>
+</jacob>

@@ -1,0 +1,92 @@
+<jacob>
+ <properties>
+  <property name="sceneScale" value="1.0"/>
+  <property name="vvectorScale" value="0.0"/>
+  <property name="evectorScale" value="21.428571428571427"/>
+  <property name="mvectorScale" value="0.0"/>
+  <property name="eforceScale" value="1000.0"/>
+  <property name="integratorType" value="test"/>
+  <property name="electricConst" value="3.3928571428571432"/>
+  <property name="magneticConst" value="0.0"/>
+  <property name="integrationStep" value="2.142857142857143"/>
+  <property name="dipolSuscept" value="1.0E-4"/>
+  <property name="transforcePeriod" value="10"/>
+  <property name="transforceConst" value="0.05"/>
+  <property name="circforcePeriod" value="10"/>
+  <property name="circforceConst" value="0.05"/>
+  <property name="rotatforcePeriod" value="10"/>
+  <property name="rotatforceConst" value="0.05"/>
+  <property name="pulseforcePeriod" value="10"/>
+  <property name="pulseforceConst" value="0"/>
+  <property name="gausspulseforcePeriod" value="10"/>
+  <property name="gausspulseforceConst" value="0"/>
+  <property name="translationConst" value="1.5"/>
+  <property name="rotationConst" value="0.5"/>
+  <property name="zeroX" value="162.0"/>
+  <property name="zeroY" value="252.0"/>
+  <property name="fieldDetectorScale" value="1.0"/>
+  <property name="energyGaugeScale" value="1.0"/>
+  <property name="surfacepressureGaugeScale" value="1.0"/>
+  <property name="velocityGaugeScale" value="0.0"/>
+ </properties>
+ <scene>
+  <view>
+   <components>
+    <element name="Soda-Can" closed="false">
+     <shape>
+      <polygon points="150.0,130.0;240.0,130.0;240.0,310.0;150.0,310.0;150.0,310.0"/>
+     </shape>
+     <components>
+      <particle x="190.0" y="140.0" charge="1.0" fixed="true"/>
+      <particle x="190.0" y="170.0" charge="1.0" fixed="true"/>
+      <particle x="190.0" y="200.0" charge="1.0" fixed="true"/>
+      <particle x="190.0" y="230.0" charge="1.0" fixed="true"/>
+      <particle x="190.0" y="260.0" charge="1.0" fixed="true"/>
+      <particle x="190.0" y="290.0" charge="1.0" fixed="true"/>
+      <particle x="200.0" y="150.0" charge="-1.0"/>
+      <particle x="200.0" y="180.0" charge="-1.0"/>
+      <particle x="210.0" y="210.0" charge="-1.0"/>
+      <particle x="200.0" y="240.0" charge="-1.0"/>
+      <particle x="210.0" y="280.0" charge="-1.0"/>
+      <particle x="170.0" y="150.0" charge="-1.0"/>
+      <particle x="170.0" y="180.0" charge="-1.0"/>
+      <particle x="170.0" y="210.0" charge="-1.0"/>
+      <particle x="170.0" y="240.0" charge="-1.0"/>
+      <particle x="170.0" y="270.0" charge="-1.0"/>
+      <particle x="220.0" y="150.0" charge="1.0" fixed="true"/>
+      <particle x="220.0" y="180.0" charge="1.0" fixed="true"/>
+      <particle x="220.0" y="210.0" charge="1.0" fixed="true"/>
+      <particle x="220.0" y="240.0" charge="1.0" fixed="true"/>
+      <particle x="220.0" y="270.0" charge="1.0" fixed="true"/>
+     </components>
+    </element>
+    <element name="Styro-Plate" closed="true">
+     <shape>
+      <polygon points="270.0,110.0;310.0,110.0;310.0,330.0;270.0,330.0"/>
+     </shape>
+     <components>
+      <particle x="280.0" y="130.0" charge="-2.5/>
+      <particle x="290.0" y="150.0" charge="-2.5/>
+      <particle x="280.0" y="170.0" charge="-2.5/>
+      <particle x="280.0" y="200.0" charge="-2.5/>
+      <particle x="290.0" y="220.0" charge="-2.5/>
+      <particle x="280.0" y="230.0" charge="-2.5/>
+      <particle x="290.0" y="260.0" charge="-2.5/>
+      <particle x="300.0" y="280.0" charge="-2.5/>
+      <particle x="290.0" y="300.0" charge="-2.5/>
+      <particle x="280.0" y="310.0" charge="-2.5/>
+     </components>
+    </element>
+    <element name="Electroscope" closed="false">
+     <shape>
+      <polygon points="171.0,187.0;151.0,187.0;151.0,287.0;171.0,287.0;171.0,287.0"/>
+     </shape>
+     <modifiers>
+      <rotator x="161.0" y="191.0"/>
+      <eforce ex="0.0" ey="-0.042"/>
+     </modifiers>
+    </element>
+   </components>
+  </view>
+ </scene>
+</jacob>

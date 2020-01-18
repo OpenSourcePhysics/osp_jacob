@@ -1,0 +1,35 @@
+<jacob>
+ <properties>
+  <property name="sceneScale" value="1.0"/>
+  <property name="vvectorScale" value="12.5"/>
+  <property name="evectorScale" value="16.07142857142857"/>
+  <property name="mvectorScale" value="0.0"/>
+  <property name="eforceScale" value="1000.0"/>
+  <property name="integratorType" value="test"/>
+  <property name="electricConst" value="1.25"/>
+  <property name="magneticConst" value="0.0"/>
+  <property name="integrationStep" value="1.7857142857142856"/>
+  <property name="zeroX" value="109.0"/>
+  <property name="zeroY" value="132.0"/>
+  <property name="fieldDetectorScale" value="1.0"/>
+  <property name="energyGaugeScale" value="1.0"/>
+  <property name="surfacepressureGaugeScale" value="1.0"/>
+  <property name="velocityGaugeScale" value="0.0"/>
+ </properties>
+ <scene>
+  <view>
+   <components>
+    <element name="E1" closed="true">
+     <shape>
+      <polygon points="35.0,95.0;255.0,95.0;255.0,300.0;35.0,300.0"/>
+     </shape>
+    </element>
+    <element name="E2" closed="true">
+     <shape>
+      <polygon points="267.0,95.0;487.0,95.0;487.0,300.0;267.0,300.0;267.0,300.0"/>
+     </shape>
+    </element>
+   </components>
+  </view>
+ </scene>
+</jacob>

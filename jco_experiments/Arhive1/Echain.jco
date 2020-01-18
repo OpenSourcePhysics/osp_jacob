@@ -1,0 +1,146 @@
+<jacob>
+ <properties>
+  <property name="sceneScale" value="1.0"/>
+  <property name="vvectorScale" value="0.0"/>
+  <property name="evectorScale" value="21.428571428571427"/>
+  <property name="mvectorScale" value="0.0"/>
+  <property name="eforceScale" value="1000.0"/>
+  <property name="integratorType" value="standard"/>
+  <property name="electricConst" value="4.107142857142857"/>
+  <property name="magneticConst" value="0.0"/>
+  <property name="integrationStep" value="1.6071428571428572"/>
+  <property name="dipolSuscept" value="1.0E-4"/>
+  <property name="transforcePeriod" value="10"/>
+  <property name="transforceConst" value="0.05"/>
+  <property name="circforcePeriod" value="10"/>
+  <property name="circforceConst" value="0.05"/>
+  <property name="rotatforcePeriod" value="10"/>
+  <property name="rotatforceConst" value="0.05"/>
+  <property name="pulseforcePeriod" value="10"/>
+  <property name="pulseforceConst" value="0"/>
+  <property name="gausspulseforcePeriod" value="10"/>
+  <property name="gausspulseforceConst" value="0"/>
+  <property name="translationConst" value="1.5"/>
+  <property name="rotationConst" value="0.5"/>
+  <property name="zeroX" value="162.0"/>
+  <property name="zeroY" value="252.0"/>
+  <property name="fieldDetectorScale" value="1.0"/>
+  <property name="energyGaugeScale" value="1.0"/>
+  <property name="surfacepressureGaugeScale" value="1.0"/>
+  <property name="velocityGaugeScale" value="0.0"/>
+ </properties>
+ <scene>
+  <view>
+   <components>
+    <element name="E1" closed="false">
+     <shape>
+      <circle x="252.0896980278942" y="232.8445134592159" r="17.72004514666935"/>
+     </shape>
+     <components>
+      <element name="E2" closed="false">
+       <shape>
+        <circle x="269.809671911063" y="232.79425831206532" r="15.264337522473747"/>
+       </shape>
+       <modifiers>
+        <translator/>
+       </modifiers>
+       <components>
+        <element name="E3" closed="false">
+         <shape>
+          <circle x="285.07225666789066" y="232.56294350352232" r="10.63014581273465"/>
+         </shape>
+         <components>
+          <element name="E4" closed="false">
+           <shape>
+            <circle x="295.7023597300908" y="232.53279575064704" r="10.0"/>
+           </shape>
+           <modifiers>
+            <translator/>
+           </modifiers>
+           <components>
+            <element name="E5" closed="false">
+             <shape>
+              <circle x="305.6015248214372" y="231.1162751915767" r="10.816653826391969"/>
+             </shape>
+             <components>
+              <element name="E6" closed="false">
+               <shape>
+                <circle x="316.41813514722804" y="231.08559849040623" r="9.899494936611665"/>
+               </shape>
+               <modifiers>
+                <translator/>
+               </modifiers>
+               <components>
+                <element name="E7" closed="false">
+                 <shape>
+                  <circle x="326.31759027171415" y="231.05752290873542" r="8.94427190999916"/>
+                 </shape>
+                 <modifiers>
+                  <translator/>
+                 </modifiers>
+                 <components>
+                  <element name="E8" closed="false">
+                   <shape>
+                    <circle x="335.2618262111432" y="231.0321563988172" r="10.04987562112089"/>
+                   </shape>
+                   <modifiers>
+                    <translator/>
+                   </modifiers>
+                   <components>
+                    <element name="E9" closed="false">
+                     <shape>
+                      <circle x="345.3116614153628" y="231.00365432819754" r="8.0"/>
+                     </shape>
+                     <modifiers>
+                      <translator/>
+                     </modifiers>
+                     <components>
+                      <particle x="353.3116292423068" y="230.98096583198617" charge="1.0"/>
+                     </components>
+                    </element>
+                   </components>
+                  </element>
+                 </components>
+                </element>
+               </components>
+              </element>
+             </components>
+            </element>
+           </components>
+          </element>
+         </components>
+        </element>
+       </components>
+      </element>
+     </components>
+    </element>
+    <element name="E10" closed="false">
+     <shape>
+      <circle x="138.0" y="229.0" r="82.49242389456137"/>
+     </shape>
+     <components>
+      <particle x="171.28375490421203" y="153.52025662817647" charge="1.0"/>
+      <particle x="194.19066010366788" y="168.60455549369584" charge="1.0"/>
+      <particle x="218.85808380797056" y="245.33922528467025" charge="1.0"/>
+      <particle x="167.09486986661975" y="306.19124657268117" charge="1.0"/>
+      <particle x="113.80208056002739" y="307.8635574570194" charge="1.0"/>
+      <particle x="59.12841928187764" y="253.17175531534082" charge="1.0"/>
+      <particle x="93.46908300787535" y="159.55939637473978" charge="1.0"/>
+      <particle x="118.09156771757573" y="148.94592874777618" charge="1.0"/>
+      <particle x="144.96510011773537" y="146.80214491636707" charge="1.0"/>
+      <particle x="211.02930277908843" y="190.63698479524544" charge="1.0"/>
+      <particle x="219.65363583137534" y="217.26612785491784" charge="1.0"/>
+      <particle x="208.75973956260322" y="271.4035288275937" charge="1.0"/>
+      <particle x="190.75359401433488" y="292.4196997672705" charge="1.0"/>
+      <particle x="140.48976758103626" y="311.45484253451957" charge="1.0"/>
+      <particle x="89.80552726662728" y="295.9499275425462" charge="1.0"/>
+      <particle x="70.94666406088591" y="277.050495725188" charge="1.0"/>
+      <particle x="55.53699135315898" y="226.7972279030678" charge="1.0"/>
+      <particle x="73.6140521257949" y="177.43014721428668" charge="1.0"/>
+      <particle x="60.53221243545367" y="200.64965802932315" charge="1.0"/>
+     </components>
+    </element>
+   </components>
+  </view>
+ </scene>
+</jacob>

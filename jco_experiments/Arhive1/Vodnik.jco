@@ -1,0 +1,76 @@
+<jacob>
+ <properties>
+  <property name="sceneScale" value="1.0"/>
+  <property name="vvectorScale" value="25.0"/>
+  <property name="evectorScale" value="30.0"/>
+  <property name="mvectorScale" value="0.0"/>
+  <property name="eforceScale" value="1000.0"/>
+  <property name="integratorType" value="standard"/>
+  <property name="electricConst" value="10.0"/>
+  <property name="magneticConst" value="0.0"/>
+  <property name="integrationStep" value="3.0"/>
+ </properties>
+ <scene>
+  <view>
+   <components>
+    <element name="E1" closed="false">
+     <shape>
+      <polygon points="160.0,180.0;420.0,180.0;420.0,220.0;160.0,220.0"/>
+     </shape>
+     <modifiers>
+      <eforce ex="0.035" ey="0.0"/>
+     </modifiers>
+     <components>
+      <particle x="205.0" y="189.0" charge="1.0" fixed="true">
+       <modifiers>
+        <random/>
+       </modifiers>
+      </particle>
+      <particle x="250.0" y="211.0" charge="1.0" fixed="true">
+       <modifiers>
+        <random/>
+       </modifiers>
+      </particle>
+      <particle x="293.0" y="190.0" charge="1.0" fixed="true">
+       <modifiers>
+        <random/>
+       </modifiers>
+      </particle>
+      <particle x="331.0" y="211.0" charge="1.0" fixed="true">
+       <modifiers>
+        <random/>
+       </modifiers>
+      </particle>
+      <particle x="362.0" y="189.0" charge="1.0" fixed="true">
+       <modifiers>
+        <random/>
+       </modifiers>
+      </particle>
+      <particle x="394.0" y="212.0" charge="1.0" fixed="true">
+       <modifiers>
+        <random/>
+       </modifiers>
+      </particle>
+     </components>
+    </element>
+    <element name="E2" closed="false">
+     <shape>
+      <polygon points="150.0,180.0;170.0,180.0;170.0,220.0;150.0,220.0"/>
+     </shape>
+     <modifiers>
+      <pargen charge="-1.0"/>
+      <eforce ex="0.026" ey="0.0"/>
+     </modifiers>
+    </element>
+    <element name="E3" closed="false">
+     <shape>
+      <polygon points="430.0,180.0;410.0,180.0;410.0,220.0;430.0,220.0"/>
+     </shape>
+     <modifiers>
+      <parcon charge="-1.0"/>
+     </modifiers>
+    </element>
+   </components>
+  </view>
+ </scene>
+</jacob>

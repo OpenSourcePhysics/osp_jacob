@@ -1,0 +1,758 @@
+<jacob>
+ <properties>
+  <property name="sceneScale" value="0.5"/>
+  <property name="vvectorScale" value="0.0"/>
+  <property name="evectorScale" value="142.85714285714286"/>
+  <property name="mvectorScale" value="0.0"/>
+  <property name="eforceScale" value="1000.0"/>
+  <property name="mfluxdensityScale" value="100.0"/>
+  <property name="integratorType" value="collision"/>
+  <property name="electricConst" value="1.5"/>
+  <property name="magneticConst" value="0.0"/>
+  <property name="integrationStep" value="1.3571428571428572"/>
+  <property name="frictionConst" value="0.2"/>
+  <property name="elasticityConst" value="0.0"/>
+  <property name="inertiaConst " value="1.0"/>
+  <property name="dipolSuscept" value="1.0E-4"/>
+  <property name="oscforcePeriod" value="10"/>
+  <property name="oscforceConst" value="0.0050"/>
+  <property name="transforcePeriod" value="10"/>
+  <property name="transforceConst" value="0.05"/>
+  <property name="circforcePeriod" value="10"/>
+  <property name="circforceConst" value="0.05"/>
+  <property name="circoscforcePeriod" value="10"/>
+  <property name="circoscforceConst" value="0.05"/>
+  <property name="rotatforcePeriod" value="10"/>
+  <property name="rotatforceConst" value="0.05"/>
+  <property name="repelerforceConst" value="0.01"/>
+  <property name="centralforceConst" value="0.01"/>
+  <property name="pulseforcePeriod" value="10"/>
+  <property name="pulseforceConst" value="1"/>
+  <property name="gausspulseforcePeriod" value="10"/>
+  <property name="gausspulseforceConst" value="0"/>
+  <property name="oscchargePeriod" value="292.85714285714283"/>
+  <property name="oscchargeConst" value="0.09"/>
+  <property name="randomForce" value="0.0"/>
+  <property name="translationConst" value="40.0"/>
+  <property name="rotationConst" value="0.1"/>
+  <property name="collisionConst" value="1.292857142857143"/>
+  <property name="zeroX" value="240.0"/>
+  <property name="zeroY" value="600.0"/>
+  <property name="potentialDetectorScale" value="0.181"/>
+  <property name="voltageDetectorScale" value="0.181"/>
+  <property name="genericDetectorScale" value="1.0"/>
+  <property name="fieldDetectorStrengthScale" value="1.0"/>
+  <property name="energyGaugeScale" value="1.0"/>
+  <property name="surfacepressureGaugeScale" value="1.0"/>
+  <property name="velocityGaugeScale" value="1.0"/>
+  <property name="depxGaugeScale" value="10.0"/>
+  <property name="currentGaugeScale" value="0.24"/>
+  <property name="resistanceDetectorScale" value="1.0"/>
+  <property name="resistanceGaugeScale" value="1.0"/>
+  <property name="capacitanceGaugeScale" value="112.0"/>
+  <property name="genericGaugeScale" value="1.0"/>
+  <property name="indicatorResolution" value="12"/>
+ </properties>
+ <scene>
+  <view>
+   <components>
+    <element name="ES" closed="true">
+     <shape>
+      <polygon points="15.0,0.0;1065.0,0.0;1065.0,767.5;15.0,767.5"/>
+     </shape>
+     <modifiers>
+      <eforce ex="0.266" ey="-0.00175"/>
+     </modifiers>
+     <components>
+      <element name="D100" closed="true">
+       <shape>
+        <circle x="136.45265534506706" y="176.42150287579577" r="30.0"/>
+       </shape>
+       <modifiers>
+        <translator/>
+        <rotator x="136.45265534506706" y="176.42150287579577"/>
+       </modifiers>
+       <components>
+        <particle x="148.43691611505685" y="197.21519167304555" charge="1.0" fixed="true"/>
+        <particle x="118.45266050371609" y="176.4078752811182" charge="-2.0" fixed="true"/>
+        <particle x="148.46838769687906" y="155.64598420478222" charge="1.0" fixed="true"/>
+       </components>
+      </element>
+      <element name="D110" closed="true">
+       <shape>
+        <circle x="71.038497579654" y="218.16481995028914" r="30.0"/>
+       </shape>
+       <modifiers>
+        <translator/>
+        <rotator x="71.038497579654" y="218.16481995028914"/>
+       </modifiers>
+       <components>
+        <particle x="82.82427891611488" y="239.07164558903995" charge="1.0" fixed="true"/>
+        <particle x="53.03944799174364" y="217.97984986637528" charge="-2.0" fixed="true"/>
+        <particle x="83.2514490270735" y="197.50462109009013" charge="1.0" fixed="true"/>
+       </components>
+      </element>
+      <element name="D120" closed="true">
+       <shape>
+        <circle x="268.5375355393638" y="255.1755579506802" r="30.0"/>
+       </shape>
+       <modifiers>
+        <translator/>
+        <rotator x="268.5375355393638" y="255.1755579506802"/>
+       </modifiers>
+       <components>
+        <particle x="279.73933781313195" y="276.40100555065817" charge="1.0" fixed="true"/>
+        <particle x="250.55052706549284" y="254.49179910362875" charge="-2.0" fixed="true"/>
+        <particle x="281.3184112307553" y="234.86178881343753" charge="1.0" fixed="true"/>
+       </components>
+      </element>
+      <element name="D130" closed="true">
+       <shape>
+        <circle x="61.78296663693279" y="476.10013849840533" r="30.0"/>
+       </shape>
+       <modifiers>
+        <translator/>
+        <rotator x="61.78296663693279" y="476.10013849840533"/>
+       </modifiers>
+       <components>
+        <particle x="73.79710844869929" y="496.8765769931704" charge="1.0" fixed="true"/>
+        <particle x="43.782970805046986" y="476.11238807311236" charge="-2.0" fixed="true"/>
+        <particle x="73.76881926768141" y="455.3073672373639" charge="1.0" fixed="true"/>
+       </components>
+      </element>
+      <element name="D140" closed="true">
+       <shape>
+        <circle x="207.84241168686813" y="525.5343889709477" r="30.0"/>
+       </shape>
+       <modifiers>
+        <translator/>
+        <rotator x="207.84241168686813" y="525.5343889709477"/>
+       </modifiers>
+       <components>
+        <particle x="219.69672094734503" y="546.4024351649972" charge="1.0" fixed="true"/>
+        <particle x="189.84285211564412" y="525.4084713710965" charge="-2.0" fixed="true"/>
+        <particle x="219.9875151880236" y="504.8342329100335" charge="1.0" fixed="true"/>
+       </components>
+      </element>
+      <element name="D150" closed="true">
+       <shape>
+        <circle x="158.51147602882833" y="626.7031387595426" r="30.0"/>
+       </shape>
+       <modifiers>
+        <translator/>
+        <rotator x="158.51147602882833" y="626.7031387595426"/>
+       </modifiers>
+       <components>
+        <particle x="170.94615056225402" y="647.2306536906725" charge="1.0" fixed="true"/>
+        <particle x="140.5154610236018" y="627.0818786856722" charge="-2.0" fixed="true"/>
+        <particle x="170.0714881690387" y="605.6706372602391" charge="1.0" fixed="true"/>
+       </components>
+      </element>
+      <element name="D160" closed="true">
+       <shape>
+        <circle x="216.0718950549152" y="676.8941516442056" r="30.0"/>
+       </shape>
+       <modifiers>
+        <translator/>
+        <rotator x="216.0718950549152" y="676.8941516442056"/>
+       </modifiers>
+       <components>
+        <particle x="227.72921107388743" y="697.8728785653939" charge="1.0" fixed="true"/>
+        <particle x="198.07431870819528" y="676.59877790804" charge="-2.0" fixed="true"/>
+        <particle x="228.41134749823453" y="656.3092563712373" charge="1.0" fixed="true"/>
+       </components>
+      </element>
+      <element name="D101" closed="true">
+       <shape>
+        <circle x="201.63206434165218" y="217.63481523542265" r="30.0"/>
+       </shape>
+       <modifiers>
+        <translator/>
+        <rotator x="201.63206434165218" y="217.63481523542265"/>
+       </modifiers>
+       <components>
+        <particle x="213.3346779288144" y="238.5883074319415" charge="1.0" fixed="true"/>
+        <particle x="183.63389184132816" y="217.37832615459467" charge="-2.0" fixed="true"/>
+        <particle x="213.927014088255" y="197.02330848000793" charge="1.0" fixed="true"/>
+       </components>
+      </element>
+      <element name="D111" closed="true">
+       <shape>
+        <circle x="136.49539964780524" y="259.7601216814724" r="30.0"/>
+       </shape>
+       <modifiers>
+        <translator/>
+        <rotator x="136.49539964780524" y="259.7601216814724"/>
+       </modifiers>
+       <components>
+        <particle x="147.9661604432295" y="280.8414320481018" charge="1.0" fixed="true"/>
+        <particle x="118.50115160759732" y="259.3051079811651" charge="-2.0" fixed="true"/>
+        <particle x="149.01696957265847" y="239.2854962485858" charge="1.0" fixed="true"/>
+       </components>
+      </element>
+      <element name="D121" closed="true">
+       <shape>
+        <circle x="339.09760193595594" y="285.07746233445033" r="30.0"/>
+       </shape>
+       <modifiers>
+        <translator/>
+        <rotator x="339.09760193595594" y="285.07746233445033"/>
+       </modifiers>
+       <components>
+        <particle x="350.5972141015536" y="306.1430484891443" charge="1.0" fixed="true"/>
+        <particle x="321.1027478071755" y="284.64708472824697" charge="-2.0" fixed="true"/>
+        <particle x="351.5911286087326" y="264.5857129880276" charge="1.0" fixed="true"/>
+       </components>
+      </element>
+      <element name="D131" closed="true">
+       <shape>
+        <circle x="135.76079555437582" y="497.5967207905622" r="30.0"/>
+       </shape>
+       <modifiers>
+        <translator/>
+        <rotator x="135.76079555437582" y="497.5967207905622"/>
+       </modifiers>
+       <components>
+        <particle x="147.40304992866072" y="518.5838099904583" charge="1.0" fixed="true"/>
+        <particle x="117.76343586506837" y="497.2884283746886" charge="-2.0" fixed="true"/>
+        <particle x="148.11502076583463" y="477.0206881451624" charge="1.0" fixed="true"/>
+       </components>
+      </element>
+      <element name="D141" closed="true">
+       <shape>
+        <circle x="275.82718987248074" y="561.291727359855" r="30.0"/>
+       </shape>
+       <modifiers>
+        <translator/>
+        <rotator x="275.82718987248074" y="561.291727359855"/>
+       </modifiers>
+       <components>
+        <particle x="287.37169179122526" y="582.3327462384192" charge="1.0" fixed="true"/>
+        <particle x="257.8314590001932" y="560.8997192321472" charge="-2.0" fixed="true"/>
+        <particle x="288.2769957834533" y="540.7733859849014" charge="1.0" fixed="true"/>
+       </components>
+      </element>
+      <element name="D151" closed="true">
+       <shape>
+        <circle x="85.98195677921792" y="654.2130527549123" r="30.0"/>
+       </shape>
+       <modifiers>
+        <translator/>
+        <rotator x="85.98195677921792" y="654.2130527549123"/>
+       </modifiers>
+       <components>
+        <particle x="98.53638740124909" y="674.6675454583894" charge="1.0" fixed="true"/>
+        <particle x="67.98846256890495" y="654.6969598776544" charge="-2.0" fixed="true"/>
+        <particle x="97.41885177093663" y="633.1133505544456" charge="1.0" fixed="true"/>
+       </components>
+      </element>
+      <element name="D161" closed="true">
+       <shape>
+        <circle x="365.17989938404094" y="658.0245387627692" r="30.0"/>
+       </shape>
+       <modifiers>
+        <translator/>
+        <rotator x="365.17989938404094" y="658.0245387627692"/>
+       </modifiers>
+       <components>
+        <particle x="377.34992589866675" y="678.7100519213385" charge="1.0" fixed="true"/>
+        <particle x="347.1805045268286" y="658.1721354231033" charge="-2.0" fixed="true"/>
+        <particle x="377.0090660123657" y="637.142230057089" charge="1.0" fixed="true"/>
+       </components>
+      </element>
+      <element name="D102" closed="true">
+       <shape>
+        <circle x="495.78578815796754" y="166.796760284137" r="30.0"/>
+       </shape>
+       <modifiers>
+        <translator/>
+        <rotator x="495.78578815796754" y="166.796760284137"/>
+       </modifiers>
+       <components>
+        <particle x="508.0701378537152" y="187.41458637110796" charge="1.0" fixed="true"/>
+        <particle x="477.7874861504678" y="167.04399468063968" charge="-2.0" fixed="true"/>
+        <particle x="507.49917447222055" y="145.84928833516256" charge="1.0" fixed="true"/>
+       </components>
+      </element>
+      <element name="D112" closed="true">
+       <shape>
+        <circle x="541.7598732401433" y="275.139023849946" r="30.0"/>
+       </shape>
+       <modifiers>
+        <translator/>
+        <rotator x="541.7598732401433" y="275.139023849946"/>
+       </modifiers>
+       <components>
+        <particle x="554.0378186951684" y="295.76066431338654" charge="1.0" fixed="true"/>
+        <particle x="523.7614953127224" y="275.3806681789043" charge="-2.0" fixed="true"/>
+        <particle x="553.4797650216799" y="254.19519094789362" charge="1.0" fixed="true"/>
+       </components>
+      </element>
+      <element name="D122" closed="true">
+       <shape>
+        <circle x="466.3607233042029" y="289.41289255914427" r="30.0"/>
+       </shape>
+       <modifiers>
+        <translator/>
+        <rotator x="466.3607233042029" y="289.41289255914427"/>
+       </modifiers>
+       <components>
+        <particle x="478.044423039345" y="310.37693702816324" charge="1.0" fixed="true"/>
+        <particle x="448.36278959634626" y="289.1401614688795" charge="-2.0" fixed="true"/>
+        <particle x="478.6742685128688" y="268.81248954381164" charge="1.0" fixed="true"/>
+       </components>
+      </element>
+      <element name="D132" closed="true">
+       <shape>
+        <circle x="388.1221455410644" y="410.95392240117843" r="30.0"/>
+       </shape>
+       <modifiers>
+        <translator/>
+        <rotator x="388.1221455410644" y="410.95392240117843"/>
+       </modifiers>
+       <components>
+        <particle x="400.59680621094816" y="431.45716217374274" charge="1.0" fixed="true"/>
+        <particle x="370.12690291266495" y="411.3677372692494" charge="-2.0" fixed="true"/>
+        <particle x="399.641141709047" y="389.89892947118653" charge="1.0" fixed="true"/>
+       </components>
+      </element>
+      <element name="D142" closed="true">
+       <shape>
+        <circle x="504.6183159813989" y="609.6845268445637" r="30.0"/>
+       </shape>
+       <modifiers>
+        <translator/>
+        <rotator x="504.6183159813989" y="609.6845268445637"/>
+       </modifiers>
+       <components>
+        <particle x="517.0780991499778" y="630.1968110516431" charge="1.0" fixed="true"/>
+        <particle x="486.62277788344886" y="610.0852868291362" charge="-2.0" fixed="true"/>
+        <particle x="516.1525836100855" y="588.6378959913881" charge="1.0" fixed="true"/>
+       </components>
+      </element>
+      <element name="D152" closed="true">
+       <shape>
+        <circle x="292.7065614737427" y="683.1621154106308" r="30.0"/>
+       </shape>
+       <modifiers>
+        <translator/>
+        <rotator x="292.7065614737427" y="683.1621154106308"/>
+       </modifiers>
+       <components>
+        <particle x="304.63089379867165" y="703.9902285898089" charge="1.0" fixed="true"/>
+        <particle x="274.70668050734514" y="683.0966540058554" charge="-2.0" fixed="true"/>
+        <particle x="304.7820704373442" y="662.4212841044852" charge="1.0" fixed="true"/>
+       </components>
+      </element>
+      <element name="D162" closed="true">
+       <shape>
+        <circle x="500.22170843472827" y="706.1363376637178" r="30.0"/>
+       </shape>
+       <modifiers>
+        <translator/>
+        <rotator x="500.22170843472827" y="706.1363376637178"/>
+       </modifiers>
+       <components>
+        <particle x="512.0230623875443" y="727.0343769229485" charge="1.0" fixed="true"/>
+        <particle x="482.222526036589" y="705.9647771831494" charge="-2.0" fixed="true"/>
+        <particle x="512.4192643460988" y="685.467045711912" charge="1.0" fixed="true"/>
+       </components>
+      </element>
+      <element name="D103" closed="true">
+       <shape>
+        <circle x="572.1498096433791" y="163.03013642332166" r="30.0"/>
+       </shape>
+       <modifiers>
+        <translator/>
+        <rotator x="572.1498096433791" y="163.03013642332166"/>
+       </modifiers>
+       <components>
+        <particle x="584.7016891893378" y="183.4861946913202" charge="1.0" fixed="true"/>
+        <particle x="554.1562552226087" y="163.5117994868537" charge="-2.0" fixed="true"/>
+        <particle x="583.5893359917795" y="141.9318607372802" charge="1.0" fixed="true"/>
+       </components>
+      </element>
+      <element name="D113" closed="true">
+       <shape>
+        <circle x="404.2296837830543" y="242.9687276012756" r="30.0"/>
+       </shape>
+       <modifiers>
+        <translator/>
+        <rotator x="404.2296837830543" y="242.9687276012756"/>
+       </modifiers>
+       <components>
+        <particle x="416.8928129484703" y="263.35610506234127" charge="1.0" fixed="true"/>
+        <particle x="386.2390202476542" y="243.54840471486574" charge="-2.0" fixed="true"/>
+        <particle x="415.554105998172" y="221.8084473220887" charge="1.0" fixed="true"/>
+       </components>
+      </element>
+      <element name="D123" closed="true">
+       <shape>
+        <circle x="715.2667687664574" y="376.03257841918213" r="30.0"/>
+       </shape>
+       <modifiers>
+        <translator/>
+        <rotator x="715.2667687664574" y="376.03257841918213"/>
+       </modifiers>
+       <components>
+        <particle x="727.1328725443782" y="396.89392020564424" charge="1.0" fixed="true"/>
+        <particle x="697.2671408916568" y="375.91683573597504" charge="-2.0" fixed="true"/>
+        <particle x="727.4001688216028" y="355.32556021032735" charge="1.0" fixed="true"/>
+       </components>
+      </element>
+      <element name="D133" closed="true">
+       <shape>
+        <circle x="346.55294460801696" y="529.4296158839811" r="30.0"/>
+       </shape>
+       <modifiers>
+        <translator/>
+        <rotator x="346.55294460801696" y="529.4296158839811"/>
+       </modifiers>
+       <components>
+        <particle x="359.250911074606" y="549.795313701965" charge="1.0" fixed="true"/>
+        <particle x="328.56329842591754" y="530.0400503545893" charge="-2.0" fixed="true"/>
+        <particle x="357.8411730508923" y="508.2500054385207" charge="1.0" fixed="true"/>
+       </components>
+      </element>
+      <element name="D143" closed="true">
+       <shape>
+        <circle x="645.3922054733556" y="553.7777553124273" r="30.0"/>
+       </shape>
+       <modifiers>
+        <translator/>
+        <rotator x="645.3922054733556" y="553.7777553124273"/>
+       </modifiers>
+       <components>
+        <particle x="658.1126867282401" y="574.129397915523" charge="1.0" fixed="true"/>
+        <particle x="627.4032453755061" y="554.4080842725866" charge="-2.0" fixed="true"/>
+        <particle x="656.6570043489365" y="532.585674095786" charge="1.0" fixed="true"/>
+       </components>
+      </element>
+      <element name="D153" closed="true">
+       <shape>
+        <circle x="442.0459744006349" y="654.8967835520009" r="30.0"/>
+       </shape>
+       <modifiers>
+        <translator/>
+        <rotator x="442.0459744006349" y="654.8967835520009"/>
+       </modifiers>
+       <components>
+        <particle x="453.97956919034624" y="675.71959112915" charge="1.0" fixed="true"/>
+        <particle x="424.046066099549" y="654.8393278953398" charge="-2.0" fixed="true"/>
+        <particle x="454.1122573457053" y="634.1505835170678" charge="1.0" fixed="true"/>
+       </components>
+      </element>
+      <element name="D163" closed="true">
+       <shape>
+        <circle x="631.5626878470564" y="694.8422853697563" r="30.0"/>
+       </shape>
+       <modifiers>
+        <translator/>
+        <rotator x="631.5626878470564" y="694.8422853697563"/>
+       </modifiers>
+       <components>
+        <particle x="643.0700305867118" y="715.9036495960382" charge="1.0" fixed="true"/>
+        <particle x="613.5676769759475" y="694.4185121418476" charge="-2.0" fixed="true"/>
+        <particle x="644.0486929355457" y="674.3459521140193" charge="1.0" fixed="true"/>
+       </components>
+      </element>
+      <element name="D104" closed="true">
+       <shape>
+        <circle x="721.0102958471288" y="200.44205982156893" r="30.0"/>
+       </shape>
+       <modifiers>
+        <translator/>
+        <rotator x="721.0102958471288" y="200.44205982156893"/>
+       </modifiers>
+       <components>
+        <particle x="732.8993895621313" y="221.29030796465943" charge="1.0" fixed="true"/>
+        <particle x="703.0105513167648" y="200.34615965678452" charge="-2.0" fixed="true"/>
+        <particle x="733.1208615059461" y="179.72167856485734" charge="1.0" fixed="true"/>
+       </components>
+      </element>
+      <element name="D114" closed="true">
+       <shape>
+        <circle x="644.2730563134617" y="190.2697651750928" r="30.0"/>
+       </shape>
+       <modifiers>
+        <translator/>
+        <rotator x="644.2730563134617" y="190.2697651750928"/>
+       </modifiers>
+       <components>
+        <particle x="656.2472178107952" y="211.069271333552" charge="1.0" fixed="true"/>
+        <particle x="626.2730702124144" y="190.24739639995119" charge="-2.0" fixed="true"/>
+        <particle x="656.2988762841923" y="169.50008405015595" charge="1.0" fixed="true"/>
+       </components>
+      </element>
+      <element name="D124" closed="true">
+       <shape>
+        <circle x="884.7855977453977" y="296.44574890830785" r="30.0"/>
+       </shape>
+       <modifiers>
+        <translator/>
+        <rotator x="884.7855977453977" y="296.44574890830785"/>
+       </modifiers>
+       <components>
+        <particle x="896.6837018662928" y="317.2888561221651" charge="1.0" fixed="true"/>
+        <particle x="866.7858134443101" y="296.35762902228646" charge="-2.0" fixed="true"/>
+        <particle x="896.8872060259538" y="275.72013487581245" charge="1.0" fixed="true"/>
+       </components>
+      </element>
+      <element name="D134" closed="true">
+       <shape>
+        <circle x="569.4942576767987" y="567.7990673325219" r="30.0"/>
+       </shape>
+       <modifiers>
+        <translator/>
+        <rotator x="569.4942576767987" y="567.7990673325219"/>
+       </modifiers>
+       <components>
+        <particle x="582.465480736815" y="587.9918227741971" charge="1.0" fixed="true"/>
+        <particle x="551.5144696406198" y="568.6518405579902" charge="-2.0" fixed="true"/>
+        <particle x="580.4960853316886" y="546.469280923555" charge="1.0" fixed="true"/>
+       </components>
+      </element>
+      <element name="D144" closed="true">
+       <shape>
+        <circle x="787.292306961481" y="492.9074415616044" r="30.0"/>
+       </shape>
+       <modifiers>
+        <translator/>
+        <rotator x="787.292306961481" y="492.9074415616044"/>
+       </modifiers>
+       <components>
+        <particle x="799.6413541176147" y="513.4865823195564" charge="1.0" fixed="true"/>
+        <particle x="769.2948702645994" y="493.21120518968" charge="-2.0" fixed="true"/>
+        <particle x="798.9398420678561" y="471.92328263288545" charge="1.0" fixed="true"/>
+       </components>
+      </element>
+      <element name="D154" closed="true">
+       <shape>
+        <circle x="562.4508797643972" y="660.390340136861" r="30.0"/>
+       </shape>
+       <modifiers>
+        <translator/>
+        <rotator x="562.4508797643972" y="660.390340136861"/>
+       </modifiers>
+       <components>
+        <particle x="574.8760397874254" y="680.9236155307715" charge="1.0" fixed="true"/>
+        <particle x="544.4546911702413" y="660.7607400336658" charge="-2.0" fixed="true"/>
+        <particle x="574.0206378669111" y="639.3631982138777" charge="1.0" fixed="true"/>
+       </components>
+      </element>
+      <element name="D164" closed="true">
+       <shape>
+        <circle x="705.3353680070355" y="714.5571163168916" r="30.0"/>
+       </shape>
+       <modifiers>
+        <translator/>
+        <rotator x="705.3353680070355" y="714.5571163168916"/>
+       </modifiers>
+       <components>
+        <particle x="716.9330021377765" y="735.5688959314191" charge="1.0" fixed="true"/>
+        <particle x="687.3387040143324" y="714.2105832972089" charge="-2.0" fixed="true"/>
+        <particle x="717.7332858665657" y="694.0073807286076" charge="1.0" fixed="true"/>
+       </components>
+      </element>
+      <element name="D105" closed="true">
+       <shape>
+        <circle x="789.6202541619258" y="164.24813559865484" r="30.0"/>
+       </shape>
+       <modifiers>
+        <translator/>
+        <rotator x="789.6202541619258" y="164.24813559865484"/>
+       </modifiers>
+       <components>
+        <particle x="802.2392168277894" y="184.66287981056038" charge="1.0" fixed="true"/>
+        <particle x="771.6283778377735" y="164.78886319772482" charge="-2.0" fixed="true"/>
+        <particle x="800.990459928265" y="143.11242125465606" charge="1.0" fixed="true"/>
+       </components>
+      </element>
+      <element name="D115" closed="true">
+       <shape>
+        <circle x="638.8496198553253" y="362.70044119718773" r="30.0"/>
+       </shape>
+       <modifiers>
+        <translator/>
+        <rotator x="638.8496198553253" y="362.70044119718773"/>
+       </modifiers>
+       <components>
+        <particle x="650.698579862426" y="383.57152518317446" charge="1.0" fixed="true"/>
+        <particle x="620.8500931503745" y="362.5699099833733" charge="-2.0" fixed="true"/>
+        <particle x="651.0000287881584" y="342.00339882961947" charge="1.0" fixed="true"/>
+       </components>
+      </element>
+      <element name="D125" closed="true">
+       <shape>
+        <circle x="955.3041065013233" y="326.4654443238242" r="30.0"/>
+       </shape>
+       <modifiers>
+        <translator/>
+        <rotator x="955.3041065013233" y="326.4654443238242"/>
+       </modifiers>
+       <components>
+        <particle x="967.298100785625" y="347.2535202595173" charge="1.0" fixed="true"/>
+        <particle x="937.304107252628" y="326.46024365522777" charge="-2.0" fixed="true"/>
+        <particle x="967.3101112152823" y="305.68430261292724" charge="1.0" fixed="true"/>
+       </components>
+      </element>
+      <element name="D135" closed="true">
+       <shape>
+        <circle x="716.2939205286693" y="523.5491044756855" r="30.0"/>
+       </shape>
+       <modifiers>
+        <translator/>
+        <rotator x="716.2939205286693" y="523.5491044756855"/>
+       </modifiers>
+       <components>
+        <particle x="729.0201293851939" y="543.8971660084227" charge="1.0" fixed="true"/>
+        <particle x="698.3051385536322" y="524.1844965236222" charge="-2.0" fixed="true"/>
+        <particle x="727.5527543055276" y="502.3538535456975" charge="1.0" fixed="true"/>
+       </components>
+      </element>
+      <element name="D145" closed="true">
+       <shape>
+        <circle x="888.6733572828077" y="596.9481511162992" r="30.0"/>
+       </shape>
+       <modifiers>
+        <translator/>
+        <rotator x="888.6733572828077" y="596.9481511162992"/>
+       </modifiers>
+       <components>
+        <particle x="901.1149043109131" y="617.4715014165646" charge="1.0" fixed="true"/>
+        <particle x="870.6774700991703" y="597.3329165952372" charge="-2.0" fixed="true"/>
+        <particle x="900.2263264995521" y="575.9117801774478" charge="1.0" fixed="true"/>
+       </components>
+      </element>
+      <element name="D155" closed="true">
+       <shape>
+        <circle x="773.4716166344796" y="677.4791153784457" r="30.0"/>
+       </shape>
+       <modifiers>
+        <translator/>
+        <rotator x="773.4716166344796" y="677.4791153784457"/>
+       </modifiers>
+       <components>
+        <particle x="785.3647841006324" y="698.3250398631508" charge="1.0" fixed="true"/>
+        <particle x="755.471853707826" y="677.3867325645444" charge="-2.0" fixed="true"/>
+        <particle x="785.5781330705296" y="656.7563679789407" charge="1.0" fixed="true"/>
+       </components>
+      </element>
+      <element name="D165" closed="true">
+       <shape>
+        <circle x="821.2661224905635" y="741.3422367442396" r="30.0"/>
+       </shape>
+       <modifiers>
+        <translator/>
+        <rotator x="821.2661224905635" y="741.3422367442396"/>
+       </modifiers>
+       <components>
+        <particle x="832.2123981600175" y="762.7005852049303" charge="1.0" fixed="true"/>
+        <particle x="803.2886148521394" y="740.4426706764121" charge="-2.0" fixed="true"/>
+        <particle x="834.2898570056756" y="721.1833097073182" charge="1.0" fixed="true"/>
+       </components>
+      </element>
+      <element name="D106" closed="true">
+       <shape>
+        <circle x="997.3772193708726" y="160.99136797520651" r="30.0"/>
+       </shape>
+       <modifiers>
+        <translator/>
+        <rotator x="997.3772193708726" y="160.99136797520651"/>
+       </modifiers>
+       <components>
+        <particle x="1010.1592681832308" y="181.30439896909078" charge="1.0" fixed="true"/>
+        <particle x="979.3902504148144" y="161.6761655904362" charge="-2.0" fixed="true"/>
+        <particle x="1008.5777958332569" y="139.7652734943494" charge="1.0" fixed="true"/>
+       </components>
+      </element>
+      <element name="D116" closed="true">
+       <shape>
+        <circle x="810.6921901135629" y="273.47852277812353" r="30.0"/>
+       </shape>
+       <modifiers>
+        <translator/>
+        <rotator x="810.6921901135629" y="273.47852277812353"/>
+       </modifiers>
+       <components>
+        <particle x="822.6582975294065" y="294.2826635513567" charge="1.0" fixed="true"/>
+        <particle x="792.692214022476" y="273.4491847430611" charge="-2.0" fixed="true"/>
+        <particle x="822.7260508191689" y="252.71349938497377" charge="1.0" fixed="true"/>
+       </components>
+      </element>
+      <element name="D126" closed="true">
+       <shape>
+        <circle x="1029.3162012072537" y="349.69336648342875" r="30.0"/>
+       </shape>
+       <modifiers>
+        <translator/>
+        <rotator x="1029.3162012072537" y="349.69336648342875"/>
+       </modifiers>
+       <components>
+        <particle x="1041.3263042488627" y="370.47213990560016" charge="1.0" fixed="true"/>
+        <particle x="1011.316203334339" y="349.70211720219237" charge="-2.0" fixed="true"/>
+        <particle x="1041.3060953295292" y="328.9029254362394" charge="1.0" fixed="true"/>
+       </components>
+      </element>
+      <element name="D136" closed="true">
+       <shape>
+        <circle x="861.9629172166482" y="471.89253031427404" r="30.0"/>
+       </shape>
+       <modifiers>
+        <translator/>
+        <rotator x="861.9629172166482" y="471.89253031427404"/>
+       </modifiers>
+       <components>
+        <particle x="874.2870355579652" y="492.48660973310746" charge="1.0" fixed="true"/>
+        <particle x="843.9651258804562" y="472.17450020433023" charge="-2.0" fixed="true"/>
+        <particle x="873.6358539902538" y="450.92249104203097" charge="1.0" fixed="true"/>
+       </components>
+      </element>
+      <element name="D146" closed="true">
+       <shape>
+        <circle x="1011.7430233074351" y="539.4994383085175" r="30.0"/>
+       </shape>
+       <modifiers>
+        <translator/>
+        <rotator x="1011.7430233074351" y="539.4994383085175"/>
+       </modifiers>
+       <components>
+        <particle x="1023.3174759180114" y="560.5239964909274" charge="1.0" fixed="true"/>
+        <particle x="993.7467524614849" y="539.1330564868578" charge="-2.0" fixed="true"/>
+        <particle x="1024.163598491457" y="518.9633892216543" charge="1.0" fixed="true"/>
+       </components>
+      </element>
+      <element name="D156" closed="true">
+       <shape>
+        <circle x="940.3245833624771" y="509.2218398826073" r="30.0"/>
+       </shape>
+       <modifiers>
+        <translator/>
+        <rotator x="940.3245833624771" y="509.2218398826073"/>
+       </modifiers>
+       <components>
+        <particle x="952.5088055439124" y="529.8989946635108" charge="1.0" fixed="true"/>
+        <particle x="922.3252940557554" y="509.3817912906267" charge="-2.0" fixed="true"/>
+        <particle x="952.139413590004" y="488.331416557678" charge="1.0" fixed="true"/>
+       </components>
+      </element>
+      <element name="D166" closed="true">
+       <shape>
+        <circle x="1002.5042663692413" y="708.3882077504453" r="30.0"/>
+       </shape>
+       <modifiers>
+        <translator/>
+        <rotator x="1002.5042663692413" y="708.3882077504453"/>
+       </modifiers>
+       <components>
+        <particle x="1014.0339315527089" y="729.4373602454298" charge="1.0" fixed="true"/>
+        <particle x="984.5088163338481" y="707.9835127743344" charge="-2.0" fixed="true"/>
+        <particle x="1014.9685345662978" y="687.8786485569412" charge="1.0" fixed="true"/>
+       </components>
+      </element>
+     </components>
+    </element>
+   </components>
+  </view>
+ </scene>
+</jacob>

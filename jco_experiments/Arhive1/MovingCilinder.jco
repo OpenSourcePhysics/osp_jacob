@@ -1,0 +1,56 @@
+<jacob>
+ <properties>
+  <property name="sceneScale" value="1.0"/>
+  <property name="vvectorScale" value="0.0"/>
+  <property name="evectorScale" value="96.42857142857143"/>
+  <property name="mvectorScale" value="0.0"/>
+  <property name="eforceScale" value="1000.0"/>
+  <property name="integratorType" value="test"/>
+  <property name="electricConst" value="1.6071428571428572"/>
+  <property name="magneticConst" value="0.0"/>
+  <property name="integrationStep" value="2.142857142857143"/>
+  <property name="zeroX" value="260.0"/>
+  <property name="zeroY" value="5.0"/>
+  <property name="fieldDetectorScale" value="1.0"/>
+  <property name="energyGaugeScale" value="1.0"/>
+  <property name="surfacepressureGaugeScale" value="1.0"/>
+  <property name="velocityGaugeScale" value="0.0"/>
+ </properties>
+ <scene>
+  <view>
+   <components>
+    <element name="E1" closed="true">
+     <shape>
+      <circle x="281.6085096298584" y="310.7811862507448" r="58.463663928973865"/>
+     </shape>
+     <modifiers>
+      <rotatforce ex="0.018" ey="0.0"/>
+      <translator/>
+     </modifiers>
+     <components>
+      <particle x="228.0813162609626" y="287.26864555330343" charge="1.0"/>
+      <particle x="242.47674501552765" y="354.21740383663285" charge="1.0"/>
+      <particle x="293.2344368817302" y="368.07724035165285" charge="1.0"/>
+      <particle x="338.9558282266818" y="299.41082786789525" charge="1.0"/>
+      <particle x="321.13490894152176" y="267.7037703874999" charge="1.0"/>
+      <particle x="287.91247093137054" y="252.6583845984755" charge="1.0"/>
+      <particle x="269.4729246816316" y="253.59091104626293" charge="1.0"/>
+      <particle x="238.00451138851753" y="271.8364646909603" charge="1.0"/>
+      <particle x="223.4353262321486" y="304.96047036896357" charge="1.0"/>
+      <particle x="224.4719752231179" y="323.1673251159181" charge="1.0"/>
+      <particle x="231.04259611430376" y="340.12549388165417" charge="1.0"/>
+      <particle x="257.65782668989976" y="364.1137727875852" charge="1.0"/>
+      <particle x="275.1311398424141" y="368.8849183222452" charge="1.0"/>
+      <particle x="252.26609259500987" y="260.21417563559146" charge="1.0"/>
+      <particle x="305.73119913597014" y="257.52617849568264" charge="1.0"/>
+      <particle x="324.51905128837745" y="350.48868446673043" charge="1.0"/>
+      <particle x="310.24263188276" y="361.7526198464941" charge="1.0"/>
+      <particle x="334.6648758564023" y="335.3376925746267" charge="1.0"/>
+      <particle x="339.65624903390307" y="317.74250437880954" charge="1.0"/>
+      <particle x="332.5838633292865" y="282.15404327038084" charge="1.0"/>
+     </components>
+    </element>
+   </components>
+  </view>
+ </scene>
+</jacob>

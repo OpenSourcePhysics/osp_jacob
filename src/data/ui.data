@@ -1,0 +1,102 @@
+<jacob>
+  <ui>
+    <menubar>
+      <menu label="FileMenu">
+        <menuitem label="FileNew"  action="FileNew"/>
+        <menuitem label="FileOpen" action="FileOpen"/>
+        <menuitem label="FileSave" action="FileSave"/>
+        <separator/>
+        <menu label="FileExport">
+          <menuitem label="FileExportParticles" action="FileExportParticles"/>
+        </menu>
+        <separator/>
+        <menuitem label="FileOpenScript" action="FileOpenScript"/>
+        <separator/>
+        <menuitem label="FileExit" action="FileExit"/>
+      </menu>
+      <menu label="SceneMenu">
+        <menuitem label="SetZero" action="Scene:SetZero()"/>
+        <separator/>
+        <pcheckbox label="SceneRun"   property="sceneRun"/>
+        <separator/>
+        <pcheckbox label="SnapToGrid" property="snapToGrid"/>
+        <pcheckbox label="ShowControls" property="showControls"/>
+        <pcheckbox label="ShowGadgets"  property="showGadgets"/>
+      </menu>
+      <menu label="ElementMenu">
+        <menuitem label="CreateCircleElement"  
+                  action="Scene:CreateCircleEl()"/>
+        <menuitem label="CreatePolygonElement" 
+                  action="Scene:CreatePolygonEl()"/>
+        <menuitem label="CreateRingElement" 
+                  action="Scene:CreateRingEl()"/>
+        <separator/>
+        <menuitem label="DeleteElement" action="Scene:Delete(element)"/>
+        <menuitem label="MoveElement"   action="Scene:Move(element)"/>
+        <menuitem label="ScaleElement"  action="Scene:Scale(element)"/>
+        <menuitem label="RotateElement" action="Scene:Rotate(element)"/>
+        <separator/>
+        <menuitem label="SetUnsetElementClosed" 
+                  action="Scene:SetAttr(element,closed)"/>
+      </menu>
+      <menu label="ParticleMenu">
+        <menuitem label="CreateParticlePos" action="Scene:CreateParticle(1)"/>
+        <menuitem label="CreateParticleNeg" action="Scene:CreateParticle(-1)"/>
+        <separator/>
+        <menuitem label="DeleteParticle" action="Scene:Delete(particle)"/>
+        <menuitem label="MoveParticle" action="Scene:Move(particle)"/>
+        <separator/>
+        <menuitem label="SetUnsetParticleFixed" 
+                  action="Scene:SetAttr(particle,fixed)"/>
+      </menu>
+      <menu label="ModifiersMenu">
+        <menuitem label="SetUnsetRotator"    
+                  action="Scene:SetVecMod(element,rotator)"/>
+        <menuitem label="SetUnsetTranslator" 
+                  action="Scene:SetMod(element,translator)"/>
+        <menuitem label="SetUnsetInflator" 
+                  action="Scene:SetMod(element,inflator)"/>
+        <menuitem label="SetUnsetTrail"      
+                  action="Scene:SetMod(elementorparticle,trail)"/>
+        <menuitem label="SetUnsetParGenerator"      
+                  action="Scene:SetMod(element,pargen)"/>
+        <menuitem label="SetUnsetParConsumer"      
+                  action="Scene:SetMod(element,parcon)"/>
+        <separator/>
+        <menuitem label="SetUnsetEForce"     
+                  action="Scene:SetVecMod(element,eforce)"/>
+        <menuitem label="SetUnsetCircularForce" 
+                  action="Scene:SetVecMod(element,circforce)"/>
+        <menuitem label="SetUnsetRotatForce" 
+                  action="Scene:SetVecMod(element,rotatforce)"/>                  
+        <menuitem label="SetUnsetTransForce" 
+                  action="Scene:SetVecMod(element,transforce)"/>
+        <menuitem label="SetUnsetPulseForce" 
+                  action="Scene:SetVecMod(element,pulseforce)"/>
+        <menuitem label="SetUnsetGaussPulseForce" 
+                  action="Scene:SetVecMod(element,gausspulseforce)"/>
+      </menu>
+      <menu label="PropertiesMenu">
+        <menuitem label="EditProperties" action="EditProperties"/>
+      </menu>
+    </menubar>
+    <controls>
+      <pslider property="animationDelay" label="Delay" 
+               minvalue="0" maxvalue="1000" fgcolor="#00ff00"/>
+      <pslider property="integrationStep" label="I Step" 
+               minvalue="0" maxvalue="5"/>
+      <pslider property="electricConst" label="E Const" 
+               minvalue="0" maxvalue="10"/>
+      <pslider property="magneticConst" label="M Const" 
+               minvalue="0" maxvalue="0.02"/>
+      <pslider property="evectorScale" label="E Vector" 
+               minvalue="0" maxvalue="300"/>
+      <pslider property="mvectorScale" label="M Vector" 
+               minvalue="0" maxvalue="2000"/>
+      <pslider property="vvectorScale" label="V Vector" 
+               minvalue="0" maxvalue="100"/>
+      <pslider property="dipolSuscept" label="D Susc" 
+               minvalue="0.0001" maxvalue="0.1"/>
+    </controls>
+  </ui>
+</jacob>

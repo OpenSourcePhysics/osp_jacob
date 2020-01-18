@@ -1,0 +1,44 @@
+<jacob>
+ <properties>
+  <property name="sceneScale" value="1.0"/>
+  <property name="vvectorScale" value="25.0"/>
+  <property name="evectorScale" value="30.0"/>
+  <property name="mvectorScale" value="0.0"/>
+  <property name="eforceScale" value="1000.0"/>
+  <property name="integratorType" value="test"/>
+  <property name="electricConst" value="1.0"/>
+  <property name="magneticConst" value="0.0"/>
+  <property name="integrationStep" value="1.0"/>
+ </properties>
+ <scene>
+  <view>
+   <components>
+    <element name="oblak" closed="true">
+     <shape>
+      <polygon points="0.0,0.0;570.0,0.0;570.0,40.0;0.0,40.0"/>
+     </shape>
+    </element>
+    <element name="zemlja" closed="false">
+     <shape>
+      <polygon points="0.0,430.0;570.0,430.0;570.0,470.0;0.0,470.0"/>
+     </shape>
+    </element>
+    <element name="temelj" closed="false">
+     <shape>
+      <polygon points="835.0,405.0;965.0,405.0;965.0,385.0;900.0,275.0;835.0,385.0"/>
+     </shape>
+    </element>
+    <element name="spica" closed="false">
+     <shape>
+      <polygon points="895.0,156.0;905.0,156.0;905.0,336.0;895.0,336.0"/>
+     </shape>
+    </element>
+    <element name="vrh" closed="false">
+     <shape>
+      <circle x="784.0" y="183.0" r="5.0"/>
+     </shape>
+    </element>
+   </components>
+  </view>
+ </scene>
+</jacob>

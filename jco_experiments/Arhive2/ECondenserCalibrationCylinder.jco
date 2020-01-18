@@ -1,0 +1,91 @@
+<jacob>
+ <properties>
+  <property name="sceneScale" value="1.0"/>
+  <property name="vvectorScale" value="0.0"/>
+  <property name="evectorScale" value="5.357142857142857"/>
+  <property name="mvectorScale" value="0.0"/>
+  <property name="eforceScale" value="1000.0"/>
+  <property name="integratorType" value="test"/>
+  <property name="electricConst" value="5.0"/>
+  <property name="magneticConst" value="0.0"/>
+  <property name="integrationStep" value="2.5"/>
+  <property name="dipolSuscept" value="1.0E-4"/>
+  <property name="transforcePeriod" value="10"/>
+  <property name="transforceConst" value="0.05"/>
+  <property name="circforcePeriod" value="10"/>
+  <property name="circforceConst" value="0.05"/>
+  <property name="rotatforcePeriod" value="10"/>
+  <property name="rotatforceConst" value="0.05"/>
+  <property name="repelerforceConst" value="0.01"/>
+  <property name="centralforceConst" value="0.01"/>
+  <property name="pulseforcePeriod" value="10"/>
+  <property name="pulseforceConst" value="1"/>
+  <property name="gausspulseforcePeriod" value="10"/>
+  <property name="gausspulseforceConst" value="0"/>
+  <property name="oscchargePeriod" value="500.0"/>
+  <property name="oscchargeConst" value="0.09"/>
+  <property name="randomForce" value="0.0"/>
+  <property name="translationConst" value="8.0"/>
+  <property name="rotationConst" value="0.05"/>
+  <property name="zeroX" value="280.0"/>
+  <property name="zeroY" value="441.0"/>
+ </properties>
+ <scene>
+  <view>
+   <components>
+    <element name="E1" closed="false">
+     <shape>
+      <circle x="180.0" y="232.0" r="63.245553203367585"/>
+     </shape>
+     <components>
+      <element name="E3" closed="false">
+       <shape>
+        <polygon points="120.0,220.0;120.0,240.0;40.0,240.0;40.0,220.0;40.0,220.0"/>
+       </shape>
+       <modifiers>
+        <eforce ex="0.029" ey="0.0"/>
+       </modifiers>
+       <components>
+        <element name="E5" closed="false">
+         <shape>
+          <polygon points="60.0,240.0;60.0,220.0;40.0,220.0;40.0,240.0;40.0,240.0"/>
+         </shape>
+         <modifiers>
+          <eforce ex="0.041" ey="0.0"/>
+          <pargen charge="1.0"/>
+         </modifiers>
+        </element>
+       </components>
+      </element>
+     </components>
+    </element>
+    <element name="E2" closed="false">
+     <shape>
+      <circle x="386.0" y="229.0" r="60.0"/>
+     </shape>
+     <components>
+      <element name="E4" closed="false">
+       <shape>
+        <polygon points="440.0,220.0;440.0,240.0;520.0,240.0;520.0,220.0;520.0,220.0"/>
+       </shape>
+       <modifiers>
+        <eforce ex="0.035" ey="0.0"/>
+       </modifiers>
+       <components>
+        <element name="E6" closed="false">
+         <shape>
+          <polygon points="500.0,220.0;500.0,240.0;520.0,240.0;520.0,220.0;520.0,220.0"/>
+         </shape>
+         <modifiers>
+          <eforce ex="0.024" ey="0.0"/>
+          <pargen charge="-1.0"/>
+         </modifiers>
+        </element>
+       </components>
+      </element>
+     </components>
+    </element>
+   </components>
+  </view>
+ </scene>
+</jacob>

@@ -1,0 +1,311 @@
+<jacob>
+ <properties>
+  <property name="sceneScale" value="0.5"/>
+  <property name="vvectorScale" value="0.0"/>
+  <property name="evectorScale" value="107.14285714285714"/>
+  <property name="mvectorScale" value="500.0"/>
+  <property name="eforceScale" value="1000.0"/>
+  <property name="mfluxdensityScale" value="100.0"/>
+  <property name="integratorType" value="collision"/>
+  <property name="electricConst" value="0.7857142857142857"/>
+  <property name="magneticConst" value="0.0"/>
+  <property name="integrationStep" value="0.6428571428571429"/>
+  <property name="frictionConst" value="0.014285714285714285"/>
+  <property name="elasticityConst" value="0.0"/>
+  <property name="inertiaConst " value="1.0"/>
+  <property name="dipolSuscept" value="1.0E-4"/>
+  <property name="oscforcePeriod" value="10"/>
+  <property name="oscforceConst" value="0.0050"/>
+  <property name="transforcePeriod" value="10"/>
+  <property name="transforceConst" value="0.05"/>
+  <property name="circforcePeriod" value="10"/>
+  <property name="circforceConst" value="0.05"/>
+  <property name="circoscforcePeriod" value="10"/>
+  <property name="circoscforceConst" value="0.05"/>
+  <property name="rotatforcePeriod" value="10"/>
+  <property name="rotatforceConst" value="0.05"/>
+  <property name="repelerforceConst" value="0.01"/>
+  <property name="centralforceConst" value="0.01"/>
+  <property name="pulseforcePeriod" value="10"/>
+  <property name="pulseforceConst" value="1"/>
+  <property name="gausspulseforcePeriod" value="10"/>
+  <property name="gausspulseforceConst" value="0"/>
+  <property name="oscchargePeriod" value="133.75"/>
+  <property name="oscchargeConst" value="0.09"/>
+  <property name="randomForce" value="0.0"/>
+  <property name="translationConst" value="40.0"/>
+  <property name="rotationConst" value="0.1"/>
+  <property name="collisionConst" value="1.4857142857142858"/>
+  <property name="zeroX" value="2.0"/>
+  <property name="zeroY" value="0.0"/>
+  <property name="potentialDetectorScale" value="0.181"/>
+  <property name="voltageDetectorScale" value="0.181"/>
+  <property name="genericDetectorScale" value="1.0"/>
+  <property name="fieldDetectorStrengthScale" value="1.0"/>
+  <property name="energyGaugeScale" value="1.0"/>
+  <property name="surfacepressureGaugeScale" value="1.0"/>
+  <property name="velocityGaugeScale" value="0.0"/>
+  <property name="depxGaugeScale" value="10.0"/>
+  <property name="currentGaugeScale" value="0.24"/>
+  <property name="resistanceDetectorScale" value="1.0"/>
+  <property name="resistanceGaugeScale" value="1.0"/>
+  <property name="capacitanceGaugeScale" value="112.0"/>
+  <property name="genericGaugeScale" value="1.0"/>
+  <property name="indicatorResolution" value="12"/>
+ </properties>
+ <scene>
+  <view>
+   <components>
+    <element name="BOX" closed="true">
+     <shape>
+      <polygon points="30.0,30.0;1050.0,30.0;1050.0,840.0;30.0,840.0"/>
+     </shape>
+     <components>
+      <element name="T10" closed="true">
+       <shape>
+        <circle x="150.0" y="210.0" r="30.0"/>
+       </shape>
+       <modifiers>
+        <osccharge ex="0.0" ey="0.165"/>
+       </modifiers>
+       <components>
+        <particle x="150.0" y="210.0" charge="1.2703592013148748" fixed="true"/>
+       </components>
+      </element>
+      <element name="T20" closed="true">
+       <shape>
+        <circle x="150.0" y="420.0" r="30.0"/>
+       </shape>
+       <modifiers>
+        <osccharge ex="0.0" ey="0.165"/>
+       </modifiers>
+       <components>
+        <particle x="150.0" y="420.0" charge="1.2703592013148748" fixed="true"/>
+       </components>
+      </element>
+      <element name="T11" closed="true">
+       <shape>
+        <circle x="270.0" y="210.0" r="30.0"/>
+       </shape>
+       <modifiers>
+        <osccharge ex="0.0" ey="1.6500000000000001"/>
+       </modifiers>
+       <components>
+        <particle x="270.0" y="210.0" charge="12.703592013148748" fixed="true"/>
+       </components>
+      </element>
+      <element name="T21" closed="true">
+       <shape>
+        <circle x="270.0" y="420.0" r="30.0"/>
+       </shape>
+       <modifiers>
+        <osccharge ex="0.0" ey="1.6500000000000001"/>
+       </modifiers>
+       <components>
+        <particle x="270.0" y="420.0" charge="12.703592013148748" fixed="true"/>
+       </components>
+      </element>
+      <element name="T12" closed="true">
+       <shape>
+        <circle x="390.0" y="210.0" r="30.0"/>
+       </shape>
+       <modifiers>
+        <osccharge ex="0.0" ey="1.6500000000000001"/>
+       </modifiers>
+       <components>
+        <particle x="390.0" y="210.0" charge="12.703592013148748" fixed="true"/>
+       </components>
+      </element>
+      <element name="T22" closed="true">
+       <shape>
+        <circle x="390.0" y="420.0" r="30.0"/>
+       </shape>
+       <modifiers>
+        <osccharge ex="0.0" ey="1.6500000000000001"/>
+       </modifiers>
+       <components>
+        <particle x="390.0" y="420.0" charge="12.703592013148748" fixed="true"/>
+       </components>
+      </element>
+      <element name="T13" closed="true">
+       <shape>
+        <circle x="510.0" y="210.0" r="30.0"/>
+       </shape>
+       <modifiers>
+        <osccharge ex="0.0" ey="0.165"/>
+       </modifiers>
+       <components>
+        <particle x="510.0" y="210.0" charge="1.2703592013148748" fixed="true"/>
+       </components>
+      </element>
+      <element name="T23" closed="true">
+       <shape>
+        <circle x="510.0" y="420.0" r="30.0"/>
+       </shape>
+       <modifiers>
+        <osccharge ex="0.0" ey="0.165"/>
+       </modifiers>
+       <components>
+        <particle x="510.0" y="420.0" charge="1.2703592013148748" fixed="true"/>
+       </components>
+      </element>
+      <element name="T14" closed="true">
+       <shape>
+        <circle x="630.0" y="210.0" r="30.0"/>
+       </shape>
+       <modifiers>
+        <osccharge ex="0.0" ey="0.165"/>
+       </modifiers>
+       <components>
+        <particle x="630.0" y="210.0" charge="1.2703592013148748" fixed="true"/>
+       </components>
+      </element>
+      <element name="T24" closed="true">
+       <shape>
+        <circle x="630.0" y="420.0" r="30.0"/>
+       </shape>
+       <modifiers>
+        <osccharge ex="0.0" ey="0.165"/>
+       </modifiers>
+       <components>
+        <particle x="630.0" y="420.0" charge="1.2703592013148748" fixed="true"/>
+       </components>
+      </element>
+      <element name="T15" closed="true">
+       <shape>
+        <circle x="750.0" y="210.0" r="30.0"/>
+       </shape>
+       <modifiers>
+        <osccharge ex="0.0" ey="0.165"/>
+       </modifiers>
+       <components>
+        <particle x="750.0" y="210.0" charge="1.2703592013148748" fixed="true"/>
+       </components>
+      </element>
+      <element name="T25" closed="true">
+       <shape>
+        <circle x="750.0" y="420.0" r="30.0"/>
+       </shape>
+       <modifiers>
+        <osccharge ex="0.0" ey="0.165"/>
+       </modifiers>
+       <components>
+        <particle x="750.0" y="420.0" charge="1.2703592013148748" fixed="true"/>
+       </components>
+      </element>
+      <element name="T16" closed="true">
+       <shape>
+        <circle x="870.0" y="210.0" r="30.0"/>
+       </shape>
+       <modifiers>
+        <osccharge ex="0.0" ey="1.6500000000000001"/>
+       </modifiers>
+       <components>
+        <particle x="870.0" y="210.0" charge="12.703592013148748" fixed="true"/>
+       </components>
+      </element>
+      <element name="T26" closed="true">
+       <shape>
+        <circle x="870.0" y="420.0" r="30.0"/>
+       </shape>
+       <modifiers>
+        <osccharge ex="0.0" ey="1.6500000000000001"/>
+       </modifiers>
+       <components>
+        <particle x="870.0" y="420.0" charge="12.703592013148748" fixed="true"/>
+       </components>
+      </element>
+      <element name="T17" closed="true">
+       <shape>
+        <circle x="990.0" y="210.0" r="30.0"/>
+       </shape>
+       <modifiers>
+        <osccharge ex="0.0" ey="1.6500000000000001"/>
+       </modifiers>
+       <components>
+        <particle x="990.0" y="210.0" charge="12.703592013148748" fixed="true"/>
+       </components>
+      </element>
+      <element name="T27" closed="true">
+       <shape>
+        <circle x="990.0" y="420.0" r="30.0"/>
+       </shape>
+       <modifiers>
+        <osccharge ex="0.0" ey="1.6500000000000001"/>
+       </modifiers>
+       <components>
+        <particle x="990.0" y="420.0" charge="12.703592013148748" fixed="true"/>
+       </components>
+      </element>
+      <element name="fieldD" closed="true">
+       <shape>
+        <polygon points="120.0,750.0;330.0,750.0;330.0,780.0;120.0,780.0"/>
+       </shape>
+       <components>
+        <element name="fieldK" closed="true">
+         <shape>
+          <circle x="186.0" y="769.0" r="30.0"/>
+         </shape>
+        </element>
+       </components>
+      </element>
+      <element name="waveconstD" closed="true">
+       <shape>
+        <polygon points="420.0,750.0;630.0,750.0;630.0,780.0;420.0,780.0"/>
+       </shape>
+       <components>
+        <element name="waveconstK" closed="true">
+         <shape>
+          <circle x="504.0" y="771.0" r="30.0"/>
+         </shape>
+        </element>
+       </components>
+      </element>
+      <element name="stepD" closed="true">
+       <shape>
+        <polygon points="720.0,750.0;930.0,750.0;930.0,780.0;720.0,780.0"/>
+       </shape>
+       <components>
+        <element name="stepK" closed="true">
+         <shape>
+          <circle x="899.818181818182" y="767.0" r="30.0"/>
+         </shape>
+        </element>
+       </components>
+      </element>
+      <element name="delayD" closed="true">
+       <shape>
+        <polygon points="720.0,660.0;930.0,660.0;930.0,690.0;720.0,690.0"/>
+       </shape>
+       <components>
+        <element name="delayK" closed="true">
+         <shape>
+          <circle x="863.8161818543637" y="675.9" r="30.0"/>
+         </shape>
+        </element>
+       </components>
+      </element>
+      <element name="E1" closed="true">
+       <shape>
+        <circle x="708.9333565091757" y="317.1802325895724" r="27.72291480499207"/>
+       </shape>
+       <modifiers>
+        <translator/>
+       </modifiers>
+       <components>
+        <particle x="720.7733251335497" y="311.50544510798653" charge="1.0"/>
+        <particle x="711.8812649721835" y="295.8871112159395" charge="1.0"/>
+        <particle x="689.3053105909689" y="310.1992643609907" charge="1.0"/>
+        <particle x="723.3264695755848" y="327.6791091610033" charge="1.0"/>
+        <particle x="708.8717534994208" y="341.53753852999455" charge="-1.0"/>
+        <particle x="692.6916850183442" y="333.12594459243604" charge="-1.0"/>
+        <particle x="691.3072388456005" y="312.1768559774203" charge="-1.0"/>
+        <particle x="710.1353166416077" y="290.6061228986418" charge="-1.0"/>
+       </components>
+      </element>
+     </components>
+    </element>
+   </components>
+  </view>
+ </scene>
+</jacob>

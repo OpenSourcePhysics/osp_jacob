@@ -1,0 +1,79 @@
+<jacob>
+ <properties>
+  <property name="sceneScale" value="1.0"/>
+  <property name="vvectorScale" value="0.0"/>
+  <property name="evectorScale" value="0.0"/>
+  <property name="mvectorScale" value="535.7142857142857"/>
+  <property name="eforceScale" value="1000.0"/>
+  <property name="integratorType" value="standard"/>
+  <property name="electricConst" value="8.75"/>
+  <property name="magneticConst" value="3.2142857142857147E-4"/>
+  <property name="integrationStep" value="1.7857142857142856"/>
+ </properties>
+ <scene>
+  <view>
+   <components>
+    <element name="E1" closed="false">
+     <shape>
+      <polygon points="40.0,60.0;460.0,60.0;460.0,80.0;40.0,80.0"/>
+     </shape>
+     <modifiers>
+      <eforce ex="0.087" ey="0.0"/>
+     </modifiers>
+    </element>
+    <element name="E2" closed="false">
+     <shape>
+      <polygon points="50.0,170.0;460.0,170.0;460.0,190.0;50.0,190.0"/>
+     </shape>
+     <modifiers>
+      <eforce ex="-0.177" ey="-0.0010"/>
+     </modifiers>
+    </element>
+    <element name="E3" closed="true">
+     <shape>
+      <circle x="0.0" y="0.0" r="0.0"/>
+     </shape>
+    </element>
+    <element name="E4" closed="true">
+     <shape>
+      <circle x="0.0" y="0.0" r="0.0"/>
+     </shape>
+    </element>
+    <element name="E5" closed="false">
+     <shape>
+      <circle x="469.0" y="71.0" r="14.534441853748634"/>
+     </shape>
+     <modifiers>
+      <parcon charge="-1.0"/>
+     </modifiers>
+    </element>
+    <element name="E6" closed="false">
+     <shape>
+      <circle x="462.0" y="181.0" r="5.996253511966891"/>
+     </shape>
+     <modifiers>
+      <pargen charge="-1.0"/>
+      <eforce ex="-0.268" ey="0.0"/>
+     </modifiers>
+    </element>
+    <element name="E7" closed="false">
+     <shape>
+      <circle x="39.0" y="71.0" r="5.725983343138684"/>
+     </shape>
+     <modifiers>
+      <pargen charge="-1.0"/>
+      <eforce ex="0.326" ey="0.0"/>
+     </modifiers>
+    </element>
+    <element name="E8" closed="false">
+     <shape>
+      <circle x="43.0" y="180.0" r="14.142135623730951"/>
+     </shape>
+     <modifiers>
+      <parcon charge="-1.0"/>
+     </modifiers>
+    </element>
+   </components>
+  </view>
+ </scene>
+</jacob>

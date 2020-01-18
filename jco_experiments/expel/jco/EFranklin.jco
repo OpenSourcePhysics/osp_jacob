@@ -1,0 +1,34 @@
+<jacob>
+ <properties>
+  <property name="sceneScale" value="1.0"/>
+  <property name="vvectorScale" value="25.0"/>
+  <property name="evectorScale" value="30.0"/>
+  <property name="mvectorScale" value="0.0"/>
+  <property name="eforceScale" value="1000.0"/>
+  <property name="integratorType" value="test"/>
+  <property name="electricConst" value="1.0"/>
+  <property name="magneticConst" value="0.0"/>
+  <property name="integrationStep" value="1.0"/>
+ </properties>
+ <scene>
+  <view>
+   <components>
+    <element name="Cev" closed="false">
+     <shape>
+      <ring x="290.0" y="230.0" r1="142.12670403551894" r2="120.41594578792295"/>
+     </shape>
+    </element>
+    <element name="Valj" closed="false">
+     <shape>
+      <circle x="320.0" y="210.0" r="31.622776601683793"/>
+     </shape>
+    </element>
+    <element name="Valj1" closed="false">
+     <shape>
+      <circle x="100.0" y="370.0" r="28.284271247461902"/>
+     </shape>
+    </element>
+   </components>
+  </view>
+ </scene>
+</jacob>

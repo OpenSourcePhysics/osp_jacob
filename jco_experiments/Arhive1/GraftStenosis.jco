@@ -1,0 +1,111 @@
+<jacob>
+ <properties>
+  <property name="sceneScale" value="1.0"/>
+  <property name="vvectorScale" value="12.5"/>
+  <property name="evectorScale" value="32.14285714285714"/>
+  <property name="mvectorScale" value="0.0"/>
+  <property name="eforceScale" value="1000.0"/>
+  <property name="integratorType" value="standard"/>
+  <property name="electricConst" value="3.75"/>
+  <property name="magneticConst" value="0.0"/>
+  <property name="integrationStep" value="2.232142857142857"/>
+ </properties>
+ <scene>
+  <view>
+   <components>
+    <element name="E1" closed="false">
+     <shape>
+      <polygon points="235.51832082841355,214.2262935174252;235.51832082841355,316.160559723862;541.321119447726,316.160559723862;541.321119447726,214.2262935174252;541.321119447726,214.2262935174252"/>
+     </shape>
+     <modifiers>
+      <eforce ex="0.091" ey="0.0"/>
+     </modifiers>
+     <components>
+      <particle x="235.52138957904188" y="214.26483021328556" charge="1.0"/>
+      <particle x="309.18987756879244" y="316.129913440793" charge="1.0"/>
+      <particle x="464.66222127811903" y="214.2544297304191" charge="1.0"/>
+      <particle x="407.5062365321009" y="316.12440853954115" charge="1.0"/>
+      <particle x="324.33772319497353" y="214.25386972434973" charge="1.0"/>
+      <particle x="235.5260386454476" y="316.12263089729413" charge="1.0"/>
+      <particle x="519.6396961443614" y="316.1425106177166" charge="1.0"/>
+      <particle x="401.6798645106195" y="214.2661195172367" charge="1.0"/>
+      <particle x="433.74373947683347" y="245.5539242024171" charge="1.0"/>
+     </components>
+    </element>
+    <element name="E3" closed="false">
+     <shape>
+      <polygon points="179.15628735092858,231.15628735092858;246.8437126490714,231.15628735092858;246.8437126490714,298.8437126490714;179.15628735092858,298.8437126490714"/>
+     </shape>
+     <modifiers>
+      <eforce ex="0.068" ey="0.0"/>
+     </modifiers>
+     <components>
+      <element name="E10" closed="true">
+       <shape>
+        <circle x="246.8437126490714" y="237.2481556277614" r="1.5135368418858661"/>
+       </shape>
+      </element>
+      <element name="E11" closed="false">
+       <shape>
+        <circle x="244.81308989012712" y="237.2481556277614" r="9.081221051315197"/>
+       </shape>
+       <modifiers>
+        <eforce ex="0.123" ey="0.061"/>
+       </modifiers>
+      </element>
+      <element name="E12" closed="false">
+       <shape>
+        <circle x="245.4899641431087" y="297.4899641431087" r="7.701045735748271"/>
+       </shape>
+       <modifiers>
+        <eforce ex="0.121" ey="-0.06"/>
+       </modifiers>
+      </element>
+      <particle x="193.4592720448548" y="231.19348398438285" charge="1.0"/>
+      <particle x="184.41422658539503" y="298.802688550595" charge="1.0"/>
+     </components>
+    </element>
+    <element name="E4" closed="true">
+     <shape>
+      <polygon points="562.0,35.0;562.0,200.0;566.0,201.0;566.0,35.0"/>
+     </shape>
+    </element>
+    <element name="E5" closed="true">
+     <shape>
+      <polygon points="566.0,337.0;566.0,463.0;569.0,463.0;569.0,337.0;569.0,337.0"/>
+     </shape>
+    </element>
+    <element name="E13" closed="false">
+     <shape>
+      <polygon points="172.9275110141676,238.37176212278607;180.60873347874852,238.37176212278607;180.09665198110983,287.0195043984655;172.9275110141676,286.50742290082655;173.43959251180638,274.72954845513584"/>
+     </shape>
+     <modifiers>
+      <pargen charge="1.0"/>
+      <transforce ex="0.181" ey="0.0"/>
+     </modifiers>
+     <components>
+      <particle x="173.84429178391494" y="263.41524179450437" charge="1.0"/>
+     </components>
+    </element>
+    <element name="E15" closed="false">
+     <shape>
+      <polygon points="523.7366241330216,199.34987236561784;560.332453907019,199.34987236561784;579.2206241129534,221.7795744851645;672.4809645047534,221.7795744851645;672.4809645047534,303.23480849825563;582.7621560265659,303.23480849825563;561.5129645448901,324.4839999799317;523.7366241330216,324.4839999799317;523.7366241330216,323.30348934206074"/>
+     </shape>
+     <modifiers>
+      <eforce ex="0.05822222222222217" ey="-0.0010"/>
+     </modifiers>
+     <components>
+      <element name="E16" closed="false">
+       <shape>
+        <polygon points="663.4017665041735,221.77957448516446;685.8314686237202,221.77957448516446;685.8314686237202,303.2348084982557;663.4017665041735,303.2348084982557;663.4017665041735,303.2348084982557"/>
+       </shape>
+       <modifiers>
+        <parcon charge="1.0"/>
+       </modifiers>
+      </element>
+     </components>
+    </element>
+   </components>
+  </view>
+ </scene>
+</jacob>

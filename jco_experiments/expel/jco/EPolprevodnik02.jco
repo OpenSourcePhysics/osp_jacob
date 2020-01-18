@@ -1,0 +1,199 @@
+<jacob>
+ <properties>
+  <property name="sceneScale" value="1.0"/>
+  <property name="vvectorScale" value="12.5"/>
+  <property name="evectorScale" value="37.5"/>
+  <property name="mvectorScale" value="0.0"/>
+  <property name="eforceScale" value="1000.0"/>
+  <property name="integratorType" value="test"/>
+  <property name="electricConst" value="4.0"/>
+  <property name="magneticConst" value="0.0"/>
+  <property name="integrationStep" value="2.6"/>
+  <property name="zeroX" value="109.0"/>
+  <property name="zeroY" value="132.0"/>
+  <property name="fieldDetectorScale" value="1.0"/>
+  <property name="energyGaugeScale" value="1.0"/>
+  <property name="surfacepressureGaugeScale" value="1.0"/>
+  <property name="velocityGaugeScale" value="0.0"/>
+ </properties>
+ <scene>
+  <view>
+   <components>
+    <element name="Npolpr" closed="true">
+     <shape>
+      <polygon points="40.0,130.0;250.0,130.0;250.0,310.0;40.0,310.0"/>
+     </shape>
+     <components>
+      <particle x="70.0" y="160.0" charge="1.0" fixed="true"/>
+      <particle x="110.0" y="160.0" charge="1.0" fixed="true"/>
+      <particle x="150.0" y="160.0" charge="1.0" fixed="true"/>
+      <particle x="190.0" y="160.0" charge="1.0" fixed="true"/>
+      <particle x="230.0" y="160.0" charge="1.0" fixed="true"/>
+      <particle x="70.0" y="200.0" charge="1.0" fixed="true"/>
+      <particle x="110.0" y="200.0" charge="1.0" fixed="true"/>
+      <particle x="150.0" y="200.0" charge="1.0" fixed="true"/>
+      <particle x="190.0" y="200.0" charge="1.0" fixed="true"/>
+      <particle x="230.0" y="200.0" charge="1.0" fixed="true"/>
+      <particle x="70.0" y="240.0" charge="1.0" fixed="true"/>
+      <particle x="110.0" y="240.0" charge="1.0" fixed="true"/>
+      <particle x="150.0" y="240.0" charge="1.0" fixed="true"/>
+      <particle x="190.0" y="240.0" charge="1.0" fixed="true"/>
+      <particle x="230.0" y="240.0" charge="1.0" fixed="true"/>
+      <particle x="70.0" y="280.0" charge="1.0" fixed="true"/>
+      <particle x="110.0" y="280.0" charge="1.0" fixed="true"/>
+      <particle x="150.0" y="280.0" charge="1.0" fixed="true"/>
+      <particle x="190.0" y="280.0" charge="1.0" fixed="true"/>
+      <particle x="230.0" y="280.0" charge="1.0" fixed="true"/>
+      <element name="E1" closed="true">
+       <shape>
+        <polygon points="45.0,175.0;255.0,175.0;255.0,180.0;45.0,180.0"/>
+       </shape>
+       <components>
+        <particle x="90.0" y="180.0" charge="-1.0"/>
+        <particle x="130.0" y="175.0" charge="-1.0"/>
+        <particle x="170.0" y="180.0" charge="-1.0"/>
+        <particle x="210.0" y="180.0" charge="-1.0"/>
+        <particle x="240.0" y="180.0" charge="-1.0"/>
+       </components>
+      </element>
+      <element name="E2" closed="true">
+       <shape>
+        <polygon points="45.0,215.0;255.0,215.0;255.0,220.0;45.0,220.0"/>
+       </shape>
+       <components>
+        <particle x="90.0" y="215.0" charge="-1.0"/>
+        <particle x="130.0" y="215.0" charge="-1.0"/>
+        <particle x="170.0" y="215.0" charge="-1.0"/>
+        <particle x="210.0" y="215.0" charge="-1.0"/>
+        <particle x="240.0" y="215.0" charge="-1.0"/>
+       </components>
+      </element>
+      <element name="E3" closed="true">
+       <shape>
+        <polygon points="45.0,255.0;255.0,255.0;255.0,260.0;45.0,260.0"/>
+       </shape>
+       <components>
+        <particle x="90.0" y="255.0" charge="-1.0"/>
+        <particle x="130.0" y="255.0" charge="-1.0"/>
+        <particle x="210.0" y="260.0" charge="-1.0"/>
+        <particle x="240.0" y="260.0" charge="-1.0"/>
+       </components>
+      </element>
+      <element name="E4" closed="true">
+       <shape>
+        <polygon points="45.0,295.0;255.0,295.0;255.0,300.0;45.0,300.0"/>
+       </shape>
+       <components>
+        <particle x="85.0" y="300.0" charge="-1.0"/>
+        <particle x="125.0" y="300.0" charge="-1.0"/>
+        <particle x="170.0" y="295.0" charge="-1.0"/>
+        <particle x="205.0" y="295.0" charge="-1.0"/>
+        <particle x="240.0" y="295.0" charge="-1.0"/>
+       </components>
+      </element>
+      <element name="E5" closed="true">
+       <shape>
+        <polygon points="45.0,145.0;255.0,145.0;255.0,150.0;45.0,150.0"/>
+       </shape>
+       <components>
+        <particle x="90.0" y="150.0" charge="-1.0"/>
+        <particle x="130.0" y="150.0" charge="-1.0"/>
+        <particle x="170.0" y="150.0" charge="-1.0"/>
+        <particle x="240.0" y="150.0" charge="-1.0"/>
+       </components>
+      </element>
+      <particle x="210.0" y="150.0" charge="-1.0"/>
+      <particle x="170.0" y="260.0" charge="-1.0"/>
+     </components>
+    </element>
+    <element name="PPolpr" closed="true">
+     <shape>
+      <polygon points="256.0,131.0;466.0,131.0;466.0,311.0;256.0,311.0"/>
+     </shape>
+     <components>
+      <particle x="286.0" y="161.0" charge="-1.0" fixed="true"/>
+      <particle x="326.0" y="161.0" charge="-1.0" fixed="true"/>
+      <particle x="366.0" y="161.0" charge="-1.0" fixed="true"/>
+      <particle x="406.0" y="161.0" charge="-1.0" fixed="true"/>
+      <particle x="446.0" y="161.0" charge="-1.0" fixed="true"/>
+      <particle x="286.0" y="201.0" charge="-1.0" fixed="true"/>
+      <particle x="326.0" y="201.0" charge="-1.0" fixed="true"/>
+      <particle x="366.0" y="201.0" charge="-1.0" fixed="true"/>
+      <particle x="406.0" y="201.0" charge="-1.0" fixed="true"/>
+      <particle x="446.0" y="201.0" charge="-1.0" fixed="true"/>
+      <particle x="286.0" y="241.0" charge="-1.0" fixed="true"/>
+      <particle x="326.0" y="241.0" charge="-1.0" fixed="true"/>
+      <particle x="366.0" y="241.0" charge="-1.0" fixed="true"/>
+      <particle x="406.0" y="241.0" charge="-1.0" fixed="true"/>
+      <particle x="446.0" y="241.0" charge="-1.0" fixed="true"/>
+      <particle x="286.0" y="281.0" charge="-1.0" fixed="true"/>
+      <particle x="326.0" y="281.0" charge="-1.0" fixed="true"/>
+      <particle x="366.0" y="281.0" charge="-1.0" fixed="true"/>
+      <particle x="406.0" y="281.0" charge="-1.0" fixed="true"/>
+      <particle x="446.0" y="281.0" charge="-1.0" fixed="true"/>
+      <element name="E6" closed="true">
+       <shape>
+        <polygon points="461.0,146.0;461.0,151.0;251.0,151.0;251.0,146.0"/>
+       </shape>
+       <components>
+        <particle x="270.0" y="150.0" charge="1.0"/>
+        <particle x="305.0" y="150.0" charge="1.0"/>
+        <particle x="345.0" y="150.0" charge="1.0"/>
+        <particle x="385.0" y="150.0" charge="1.0"/>
+        <particle x="425.0" y="150.0" charge="1.0"/>
+       </components>
+      </element>
+      <element name="E7" closed="true">
+       <shape>
+        <polygon points="461.0,181.0;461.0,176.0;251.0,176.0;251.0,181.0"/>
+       </shape>
+       <components>
+        <particle x="270.0" y="180.0" charge="1.0"/>
+        <particle x="305.0" y="180.0" charge="1.0"/>
+        <particle x="350.0" y="180.0" charge="1.0"/>
+        <particle x="385.0" y="180.0" charge="1.0"/>
+        <particle x="425.0" y="180.0" charge="1.0"/>
+       </components>
+      </element>
+      <element name="E8" closed="true">
+       <shape>
+        <polygon points="461.0,216.0;461.0,221.0;251.0,221.0;251.0,216.0;251.0,216.0"/>
+       </shape>
+       <components>
+        <particle x="270.0" y="220.0" charge="1.0"/>
+        <particle x="310.0" y="220.0" charge="1.0"/>
+        <particle x="345.0" y="220.0" charge="1.0"/>
+        <particle x="385.0" y="220.0" charge="1.0"/>
+        <particle x="425.0" y="220.0" charge="1.0"/>
+       </components>
+      </element>
+      <element name="E9" closed="true">
+       <shape>
+        <polygon points="461.0,256.0;461.0,261.0;251.0,261.0;251.0,256.0;251.0,256.0"/>
+       </shape>
+       <components>
+        <particle x="270.0" y="260.0" charge="1.0"/>
+        <particle x="305.0" y="260.0" charge="1.0"/>
+        <particle x="345.0" y="260.0" charge="1.0"/>
+        <particle x="385.0" y="260.0" charge="1.0"/>
+       </components>
+      </element>
+      <element name="E10" closed="true">
+       <shape>
+        <polygon points="459.0,295.0;459.0,300.0;249.0,300.0;249.0,295.0"/>
+       </shape>
+       <components>
+        <particle x="265.0" y="300.0" charge="1.0"/>
+        <particle x="305.0" y="300.0" charge="1.0"/>
+        <particle x="345.0" y="300.0" charge="1.0"/>
+        <particle x="385.0" y="300.0" charge="1.0"/>
+        <particle x="425.0" y="295.0" charge="1.0"/>
+       </components>
+      </element>
+      <particle x="425.0" y="260.0" charge="1.0"/>
+     </components>
+    </element>
+   </components>
+  </view>
+ </scene>
+</jacob>

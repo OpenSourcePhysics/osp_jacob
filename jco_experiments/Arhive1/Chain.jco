@@ -1,0 +1,83 @@
+<jacob>
+ <properties>
+  <property name="sceneScale" value="1.0"/>
+  <property name="vvectorScale" value="0.0"/>
+  <property name="evectorScale" value="42.857142857142854"/>
+  <property name="mvectorScale" value="321.42857142857144"/>
+  <property name="eforceScale" value="1000.0"/>
+  <property name="integratorType" value="test"/>
+  <property name="electricConst" value="4.285714285714286"/>
+  <property name="magneticConst" value="0.0"/>
+  <property name="integrationStep" value="0.8035714285714286"/>
+  <property name="dipolSuscept" value="0.0018839285714285713"/>
+  <property name="transforcePeriod" value="10"/>
+  <property name="transforceConst" value="0.05"/>
+  <property name="circforcePeriod" value="10"/>
+  <property name="circforceConst" value="0.05"/>
+  <property name="rotatforcePeriod" value="10"/>
+  <property name="rotatforceConst" value="0.05"/>
+  <property name="pulseforcePeriod" value="10"/>
+  <property name="pulseforceConst" value="0"/>
+  <property name="gausspulseforcePeriod" value="10"/>
+  <property name="gausspulseforceConst" value="0"/>
+  <property name="translationConst" value="1.5"/>
+  <property name="rotationConst" value="0.5"/>
+  <property name="zeroX" value="260.0"/>
+  <property name="zeroY" value="5.0"/>
+  <property name="fieldDetectorScale" value="1.0"/>
+  <property name="energyGaugeScale" value="1.0"/>
+  <property name="surfacepressureGaugeScale" value="1.0"/>
+  <property name="velocityGaugeScale" value="0.0"/>
+ </properties>
+ <scene>
+  <view>
+   <components>
+    <element name="E1" closed="true">
+     <shape>
+      <circle x="200.0" y="220.0" r="144.22205101855957"/>
+     </shape>
+     <components>
+      <element name="E2" closed="false">
+       <shape>
+        <circle x="70.80503375417541" y="284.0988353774095" r="22.360679774997898"/>
+       </shape>
+       <modifiers>
+        <translator/>
+       </modifiers>
+       <components>
+        <element name="E3" closed="false">
+         <shape>
+          <circle x="48.50517848415261" y="282.4506682329621" r="22.360679774997898"/>
+         </shape>
+         <modifiers>
+          <translator/>
+         </modifiers>
+         <components>
+          <element name="E4" closed="false">
+           <shape>
+            <circle x="26.205323214129802" y="280.80250108851465" r="22.360679774997898"/>
+           </shape>
+           <modifiers>
+            <translator/>
+           </modifiers>
+           <components>
+            <element name="E5" closed="false">
+             <shape>
+              <circle x="3.905467944106995" y="279.1543339440672" r="22.360679774997898"/>
+             </shape>
+             <modifiers>
+              <translator/>
+             </modifiers>
+            </element>
+           </components>
+          </element>
+         </components>
+        </element>
+       </components>
+      </element>
+     </components>
+    </element>
+   </components>
+  </view>
+ </scene>
+</jacob>

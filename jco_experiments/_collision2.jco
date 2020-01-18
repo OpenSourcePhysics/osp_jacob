@@ -1,0 +1,317 @@
+<jacob>
+ <properties>
+  <property name="sceneScale" value="0.5"/>
+  <property name="vvectorScale" value="0.0"/>
+  <property name="evectorScale" value="464.2857142857143"/>
+  <property name="mvectorScale" value="2000.0"/>
+  <property name="eforceScale" value="1000.0"/>
+  <property name="mfluxdensityScale" value="100.0"/>
+  <property name="integratorType" value="collision"/>
+  <property name="electricConst" value="3.142857142857143"/>
+  <property name="magneticConst" value="0.0"/>
+  <property name="integrationStep" value="1.0714285714285714"/>
+  <property name="frictionConst" value="0.2"/>
+  <property name="elasticityConst" value="0.0"/>
+  <property name="inertiaConst " value="1.0"/>
+  <property name="dipolSuscept" value="1.0E-4"/>
+  <property name="oscforcePeriod" value="10"/>
+  <property name="oscforceConst" value="0.0050"/>
+  <property name="transforcePeriod" value="10"/>
+  <property name="transforceConst" value="0.05"/>
+  <property name="circforcePeriod" value="10"/>
+  <property name="circforceConst" value="0.05"/>
+  <property name="circoscforcePeriod" value="10"/>
+  <property name="circoscforceConst" value="0.05"/>
+  <property name="rotatforcePeriod" value="10"/>
+  <property name="rotatforceConst" value="0.05"/>
+  <property name="repelerforceConst" value="0.01"/>
+  <property name="centralforceConst" value="0.01"/>
+  <property name="pulseforcePeriod" value="10"/>
+  <property name="pulseforceConst" value="1"/>
+  <property name="gausspulseforcePeriod" value="10"/>
+  <property name="gausspulseforceConst" value="0"/>
+  <property name="oscchargePeriod" value="451.9642857142857"/>
+  <property name="oscchargeConst" value="0.09"/>
+  <property name="randomForce" value="0.0"/>
+  <property name="translationConst" value="40.0"/>
+  <property name="rotationConst" value="0.1"/>
+  <property name="collisionConst" value="1.1"/>
+  <property name="zeroX" value="240.0"/>
+  <property name="zeroY" value="600.0"/>
+  <property name="potentialDetectorScale" value="0.181"/>
+  <property name="voltageDetectorScale" value="0.181"/>
+  <property name="genericDetectorScale" value="1.0"/>
+  <property name="fieldDetectorStrengthScale" value="1.0"/>
+  <property name="energyGaugeScale" value="1.0"/>
+  <property name="surfacepressureGaugeScale" value="1.0"/>
+  <property name="velocityGaugeScale" value="0.0"/>
+  <property name="depxGaugeScale" value="10.0"/>
+  <property name="currentGaugeScale" value="0.24"/>
+  <property name="resistanceDetectorScale" value="1.0"/>
+  <property name="resistanceGaugeScale" value="1.0"/>
+  <property name="capacitanceGaugeScale" value="112.0"/>
+  <property name="genericGaugeScale" value="1.0"/>
+  <property name="indicatorResolution" value="12"/>
+ </properties>
+ <scene>
+  <view>
+   <components>
+    <element name="E1" closed="true">
+     <shape>
+      <polygon points="30.0,30.0;1020.0,30.0;1050.0,840.0;30.0,840.0"/>
+     </shape>
+     <components>
+      <element name="E2" closed="true">
+       <shape>
+        <polygon points="150.0,60.0;180.0,60.0;180.0,270.0;150.0,270.0"/>
+       </shape>
+       <modifiers>
+        <rotator x="164.0" y="164.0"/>
+        <translator/>
+       </modifiers>
+       <components>
+        <element name="E10" closed="true">
+         <shape>
+          <circle x="150.0" y="60.0" r="67.08203932499369"/>
+         </shape>
+         <components>
+          <particle x="150.0" y="120.0" charge="1.0" fixed="true"/>
+          <particle x="150.0" y="0.0" charge="-1.0" fixed="true"/>
+         </components>
+        </element>
+        <element name="E11" closed="true">
+         <shape>
+          <circle x="180.0" y="270.0" r="67.08203932499369"/>
+         </shape>
+         <components>
+          <particle x="150.0" y="240.0" charge="1.0"/>
+          <particle x="210.0" y="300.0" charge="1.0"/>
+          <particle x="210.0" y="240.0" charge="-1.0"/>
+          <particle x="150.0" y="300.0" charge="-1.0"/>
+         </components>
+        </element>
+       </components>
+      </element>
+      <element name="E3" closed="true">
+       <shape>
+        <polygon points="450.0,60.0;480.0,60.0;480.0,270.0;450.0,270.0"/>
+       </shape>
+       <modifiers>
+        <rotator x="464.0" y="166.0"/>
+        <translator/>
+       </modifiers>
+       <components>
+        <element name="E12" closed="true">
+         <shape>
+          <circle x="450.0" y="60.0" r="67.08203932499369"/>
+         </shape>
+         <components>
+          <particle x="450.0" y="120.0" charge="1.0" fixed="true"/>
+          <particle x="450.0" y="0.0" charge="-1.0" fixed="true"/>
+         </components>
+        </element>
+        <element name="E13" closed="true">
+         <shape>
+          <circle x="480.0" y="270.0" r="67.08203932499369"/>
+         </shape>
+         <components>
+          <particle x="450.0" y="240.0" charge="1.0"/>
+          <particle x="510.0" y="300.0" charge="1.0"/>
+          <particle x="510.0" y="240.0" charge="-1.0"/>
+          <particle x="450.0" y="300.0" charge="-1.0"/>
+         </components>
+        </element>
+       </components>
+      </element>
+      <element name="E4" closed="true">
+       <shape>
+        <polygon points="690.0,60.0;720.0,60.0;720.0,270.0;690.0,270.0"/>
+       </shape>
+       <modifiers>
+        <rotator x="704.0" y="164.0"/>
+        <translator/>
+       </modifiers>
+       <components>
+        <element name="E14" closed="true">
+         <shape>
+          <circle x="720.0" y="270.0" r="67.08203932499369"/>
+         </shape>
+         <components>
+          <particle x="750.0" y="300.0" charge="1.0"/>
+          <particle x="690.0" y="240.0" charge="1.0"/>
+          <particle x="750.0" y="240.0" charge="-1.0"/>
+          <particle x="690.0" y="300.0" charge="-1.0"/>
+         </components>
+        </element>
+        <element name="E15" closed="true">
+         <shape>
+          <circle x="690.0" y="60.0" r="67.08203932499369"/>
+         </shape>
+         <components>
+          <particle x="690.0" y="120.0" charge="1.0" fixed="true"/>
+          <particle x="690.0" y="0.0" charge="-1.0" fixed="true"/>
+         </components>
+        </element>
+       </components>
+      </element>
+      <element name="E5" closed="true">
+       <shape>
+        <polygon points="930.0,60.0;960.0,60.0;960.0,270.0;930.0,270.0"/>
+       </shape>
+       <modifiers>
+        <rotator x="946.0" y="166.0"/>
+        <translator/>
+       </modifiers>
+       <components>
+        <element name="E16" closed="true">
+         <shape>
+          <circle x="930.0" y="60.0" r="67.08203932499369"/>
+         </shape>
+         <components>
+          <particle x="930.0" y="120.0" charge="1.0" fixed="true"/>
+          <particle x="930.0" y="0.0" charge="-1.0" fixed="true"/>
+         </components>
+        </element>
+        <element name="E17" closed="true">
+         <shape>
+          <circle x="960.0" y="270.0" r="67.08203932499369"/>
+         </shape>
+         <components>
+          <particle x="990.0" y="300.0" charge="1.0"/>
+          <particle x="930.0" y="240.0" charge="1.0"/>
+          <particle x="990.0" y="240.0" charge="-1.0"/>
+          <particle x="930.0" y="300.0" charge="-1.0"/>
+         </components>
+        </element>
+       </components>
+      </element>
+      <element name="E18" closed="true">
+       <shape>
+        <polygon points="150.0,510.0;180.0,510.0;180.0,720.0;150.0,720.0"/>
+       </shape>
+       <modifiers>
+        <rotator x="166.0" y="614.0"/>
+        <translator/>
+       </modifiers>
+       <components>
+        <element name="E22" closed="true">
+         <shape>
+          <circle x="150.0" y="510.0" r="67.08203932499369"/>
+         </shape>
+         <components>
+          <particle x="150.0" y="570.0" charge="1.0" fixed="true"/>
+          <particle x="150.0" y="450.0" charge="-1.0" fixed="true"/>
+         </components>
+        </element>
+        <element name="E23" closed="true">
+         <shape>
+          <circle x="180.0" y="720.0" r="67.08203932499369"/>
+         </shape>
+         <components>
+          <particle x="150.0" y="690.0" charge="1.0"/>
+          <particle x="210.0" y="750.0" charge="1.0"/>
+          <particle x="210.0" y="690.0" charge="-1.0"/>
+          <particle x="150.0" y="750.0" charge="-1.0"/>
+         </components>
+        </element>
+       </components>
+      </element>
+      <element name="E19" closed="true">
+       <shape>
+        <polygon points="450.0,510.0;480.0,510.0;480.0,720.0;450.0,720.0"/>
+       </shape>
+       <modifiers>
+        <rotator x="466.0" y="614.0"/>
+        <translator/>
+       </modifiers>
+       <components>
+        <element name="E24" closed="true">
+         <shape>
+          <circle x="450.0" y="510.0" r="67.08203932499369"/>
+         </shape>
+         <components>
+          <particle x="450.0" y="570.0" charge="1.0" fixed="true"/>
+          <particle x="450.0" y="450.0" charge="-1.0" fixed="true"/>
+         </components>
+        </element>
+        <element name="E25" closed="true">
+         <shape>
+          <circle x="480.0" y="720.0" r="67.08203932499369"/>
+         </shape>
+         <components>
+          <particle x="510.0" y="750.0" charge="1.0"/>
+          <particle x="450.0" y="690.0" charge="1.0"/>
+          <particle x="510.0" y="690.0" charge="-1.0"/>
+          <particle x="450.0" y="750.0" charge="-1.0"/>
+         </components>
+        </element>
+       </components>
+      </element>
+      <element name="E20" closed="true">
+       <shape>
+        <polygon points="690.0,510.0;720.0,510.0;720.0,720.0;690.0,720.0"/>
+       </shape>
+       <modifiers>
+        <rotator x="706.0" y="614.0"/>
+        <translator/>
+       </modifiers>
+       <components>
+        <element name="E26" closed="true">
+         <shape>
+          <circle x="690.0" y="510.0" r="67.08203932499369"/>
+         </shape>
+         <components>
+          <particle x="690.0" y="570.0" charge="1.0" fixed="true"/>
+          <particle x="690.0" y="450.0" charge="-1.0" fixed="true"/>
+         </components>
+        </element>
+        <element name="E27" closed="true">
+         <shape>
+          <circle x="720.0" y="720.0" r="67.08203932499369"/>
+         </shape>
+         <components>
+          <particle x="750.0" y="750.0" charge="1.0"/>
+          <particle x="690.0" y="690.0" charge="1.0"/>
+          <particle x="750.0" y="690.0" charge="-1.0"/>
+          <particle x="690.0" y="750.0" charge="-1.0"/>
+         </components>
+        </element>
+       </components>
+      </element>
+      <element name="E21" closed="true">
+       <shape>
+        <polygon points="930.0,510.0;960.0,510.0;960.0,720.0;930.0,720.0"/>
+       </shape>
+       <modifiers>
+        <rotator x="944.0" y="618.0"/>
+        <translator/>
+       </modifiers>
+       <components>
+        <element name="E28" closed="true">
+         <shape>
+          <circle x="930.0" y="510.0" r="67.08203932499369"/>
+         </shape>
+         <components>
+          <particle x="930.0" y="570.0" charge="1.0" fixed="true"/>
+          <particle x="930.0" y="450.0" charge="-1.0" fixed="true"/>
+         </components>
+        </element>
+        <element name="E29" closed="true">
+         <shape>
+          <circle x="960.0" y="720.0" r="67.08203932499369"/>
+         </shape>
+         <components>
+          <particle x="990.0" y="750.0" charge="1.0"/>
+          <particle x="930.0" y="690.0" charge="1.0"/>
+          <particle x="990.0" y="690.0" charge="-1.0"/>
+          <particle x="930.0" y="750.0" charge="-1.0"/>
+         </components>
+        </element>
+       </components>
+      </element>
+     </components>
+    </element>
+   </components>
+  </view>
+ </scene>
+</jacob>
