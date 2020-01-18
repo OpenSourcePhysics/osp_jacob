@@ -1,0 +1,68 @@
+<jacob>
+ <properties>
+  <property name="sceneScale" value="1.0"/>
+  <property name="vvectorScale" value="25.0"/>
+  <property name="evectorScale" value="30.0"/>
+  <property name="mvectorScale" value="0.0"/>
+  <property name="eforceScale" value="1000.0"/>
+  <property name="integratorType" value="standard"/>
+  <property name="electricConst" value="10.0"/>
+  <property name="magneticConst" value="0.0"/>
+  <property name="integrationStep" value="3.0"/>
+ </properties>
+ <scene>
+  <view>
+   <components>
+    <element name="E1" closed="true">
+     <shape>
+      <circle x="130.0" y="180.0" r="78.10249675906654"/>
+     </shape>
+     <components>
+      <particle x="169.41035995563576" y="247.43013812952796" charge="1.0"/>
+      <particle x="200.18826032833522" y="214.25796421391448" charge="1.0"/>
+      <particle x="207.9777366152572" y="175.58722396199641" charge="1.0"/>
+      <particle x="145.08642660075708" y="256.63158443109455" charge="1.0"/>
+      <particle x="111.95191206711078" y="255.98859468345694" charge="1.0"/>
+      <particle x="203.07293160822377" y="152.42561576064028" charge="1.0"/>
+      <particle x="148.23621184525274" y="104.05633286747958" charge="1.0"/>
+      <particle x="190.12240262067792" y="130.14724979384687" charge="1.0"/>
+     </components>
+    </element>
+    <element name="E2" closed="false">
+     <shape>
+      <polygon points="346.89495287889486,134.10352935130862;421.11404470209106,207.53054351462472;462.61826564126534,116.55032783983017;536.8424571842281,64.6777012455104;410.74563904694685,42.326136296869265;308.58964089783,63.870324426336495;239.95079073214566,146.86856686515563;239.95079073214566,146.86856686515563"/>
+     </shape>
+     <modifiers>
+      <rotator x="521.0" y="69.0"/>
+     </modifiers>
+     <components>
+      <element name="E4" closed="false">
+       <shape>
+        <circle x="418.8656190335123" y="205.1472834780536" r="40.0"/>
+       </shape>
+       <components>
+        <particle x="402.41667075017506" y="241.60866167981794" charge="-1.0"/>
+       </components>
+      </element>
+      <particle x="240.01386031697274" y="146.85912039558679" charge="-1.0"/>
+      <particle x="244.73778936987503" y="141.39065202129348" charge="-1.0"/>
+      <particle x="257.5272995228731" y="125.85818264974347" charge="-1.0"/>
+      <particle x="286.9896864689639" y="90.15511727375367" charge="-1.0"/>
+      <particle x="373.5588179901212" y="50.2122444087822" charge="-1.0"/>
+      <particle x="536.8404996764334" y="64.67738238526587" charge="-1.0"/>
+     </components>
+    </element>
+    <element name="ring" closed="true">
+     <shape>
+      <ring x="180.0" y="350.0" r1="72.11102550927978" r2="58.309518948453004"/>
+     </shape>
+     <components>
+      <particle x="128.23030747454237" y="299.8014050413801" charge="-1.0"/>
+      <particle x="154.1992290677403" y="282.66263875602885" charge="-1.0"/>
+      <particle x="179.41943826578614" y="277.8913115632189" charge="-1.0"/>
+     </components>
+    </element>
+   </components>
+  </view>
+ </scene>
+</jacob>

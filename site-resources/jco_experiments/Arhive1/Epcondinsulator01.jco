@@ -1,0 +1,141 @@
+<jacob>
+ <properties>
+  <property name="sceneScale" value="1.0"/>
+  <property name="vvectorScale" value="0.0"/>
+  <property name="evectorScale" value="21.428571428571427"/>
+  <property name="mvectorScale" value="0.0"/>
+  <property name="eforceScale" value="1000.0"/>
+  <property name="integratorType" value="standard"/>
+  <property name="electricConst" value="5.0"/>
+  <property name="magneticConst" value="0.0"/>
+  <property name="integrationStep" value="1.1607142857142858"/>
+  <property name="dipolSuscept" value="1.0E-4"/>
+  <property name="transforcePeriod" value="10"/>
+  <property name="transforceConst" value="0.05"/>
+  <property name="circforcePeriod" value="10"/>
+  <property name="circforceConst" value="0.05"/>
+  <property name="rotatforcePeriod" value="10"/>
+  <property name="rotatforceConst" value="0.05"/>
+  <property name="pulseforcePeriod" value="10"/>
+  <property name="pulseforceConst" value="0"/>
+  <property name="gausspulseforcePeriod" value="10"/>
+  <property name="gausspulseforceConst" value="0"/>
+  <property name="translationConst" value="1.5"/>
+  <property name="rotationConst" value="0.5"/>
+  <property name="zeroX" value="162.0"/>
+  <property name="zeroY" value="252.0"/>
+  <property name="fieldDetectorScale" value="1.0"/>
+  <property name="energyGaugeScale" value="1.0"/>
+  <property name="surfacepressureGaugeScale" value="1.0"/>
+  <property name="velocityGaugeScale" value="0.0"/>
+ </properties>
+ <scene>
+  <view>
+   <components>
+    <element name="E1" closed="true">
+     <shape>
+      <polygon points="8.0,98.0;478.0,98.0;478.0,118.0;8.0,118.0"/>
+     </shape>
+     <components>
+      <particle x="63.046280351723546" y="117.97986211281015" charge="1.0"/>
+      <particle x="39.041646710724926" y="117.97797595497741" charge="1.0"/>
+      <particle x="451.1657872195905" y="117.97905972512773" charge="1.0"/>
+      <particle x="173.53424281472192" y="117.97928873720416" charge="1.0"/>
+      <particle x="347.66837053572203" y="117.98030243488658" charge="1.0"/>
+      <particle x="428.31564798374166" y="117.98137826090101" charge="1.0"/>
+      <particle x="8.056731824466015" y="117.96839386277748" charge="1.0"/>
+      <particle x="260.9636780244558" y="117.9792312758221" charge="1.0"/>
+      <particle x="89.13512985265777" y="117.9800300606543" charge="1.0"/>
+      <particle x="477.9290490226014" y="117.97033310790435" charge="1.0"/>
+      <particle x="202.57135082694234" y="117.97916030413272" charge="1.0"/>
+      <particle x="116.55055909884332" y="117.9797938457189" charge="1.0"/>
+      <particle x="375.72808044395896" y="117.98089614205537" charge="1.0"/>
+      <particle x="319.04914291777055" y="117.97980734890378" charge="1.0"/>
+      <particle x="290.09916104424997" y="117.97945057832868" charge="1.0"/>
+      <particle x="18.487912089352484" y="117.97124606295753" charge="1.0"/>
+      <particle x="8.030555178364159" y="98.0207488776353" charge="1.0"/>
+      <particle x="469.5618178393062" y="117.9723000133845" charge="1.0"/>
+      <particle x="402.8335458176012" y="117.98142826822246" charge="1.0"/>
+      <particle x="231.75319346413377" y="117.97913816486916" charge="1.0"/>
+      <particle x="477.96499801116937" y="98.02424579356827" charge="1.0"/>
+      <particle x="144.79046531725578" y="117.97951108935624" charge="1.0"/>
+     </components>
+    </element>
+    <element name="E2" closed="true">
+     <shape>
+      <polygon points="-1.0,333.0;459.0,333.0;459.0,353.0;-1.0,353.0"/>
+     </shape>
+     <components>
+      <particle x="147.5373227346907" y="333.02024455342826" charge="-1.0"/>
+      <particle x="452.657356061797" y="333.0305544687718" charge="-1.0"/>
+      <particle x="319.01736604261833" y="333.02028727738167" charge="-1.0"/>
+      <particle x="234.04589890715266" y="333.0207543566936" charge="-1.0"/>
+      <particle x="346.13653584793366" y="333.01999108576194" charge="-1.0"/>
+      <particle x="458.9067607335128" y="333.03175233754365" charge="-1.0"/>
+      <particle x="119.1753452255441" y="333.0197977378804" charge="-1.0"/>
+      <particle x="396.6168290975495" y="333.0197447361264" charge="-1.0"/>
+      <particle x="91.52904101989526" y="333.0191950758419" charge="-1.0"/>
+      <particle x="176.27637748557888" y="333.0205431106409" charge="-1.0"/>
+      <particle x="372.1608909884903" y="333.0197312371646" charge="-1.0"/>
+      <particle x="418.87348561610463" y="333.0207054813546" charge="-1.0"/>
+      <particle x="262.7561342062737" y="333.02069245583374" charge="-1.0"/>
+      <particle x="40.99690816514505" y="333.0176202039137" charge="-1.0"/>
+      <particle x="458.9602723183935" y="352.97288526672884" charge="-1.0"/>
+      <particle x="205.16900403421678" y="333.0207082876813" charge="-1.0"/>
+      <particle x="65.15684399011901" y="333.0184508483641" charge="-1.0"/>
+      <particle x="20.540254345281767" y="333.01681234966094" charge="-1.0"/>
+      <particle x="291.14231104345123" y="333.0205321039555" charge="-1.0"/>
+      <particle x="438.1309298023594" y="333.02439975052255" charge="-1.0"/>
+      <particle x="5.838421298353589" y="333.01618038016977" charge="-1.0"/>
+      <particle x="-0.9189049641093787" y="333.0158813395035" charge="-1.0"/>
+     </components>
+    </element>
+    <element name="E3" closed="true">
+     <shape>
+      <polygon points="161.0,219.0;651.0,219.0;651.0,219.0;161.0,219.0"/>
+     </shape>
+     <components>
+      <element name="E4" closed="true">
+       <shape>
+        <polygon points="579.0,215.0;579.0,135.0;759.0,135.0;759.0,305.0;579.0,305.0"/>
+       </shape>
+       <components>
+        <particle x="579.0000907080083" y="209.91136139383983" charge="-1.0"/>
+        <particle x="747.8739242266903" y="288.78938955983074" charge="-1.0"/>
+        <particle x="716.8258777658552" y="301.0887722609262" charge="-1.0"/>
+        <particle x="579.0271432651356" y="135.0094848783828" charge="-1.0"/>
+        <particle x="676.8077105532939" y="135.0023968786102" charge="-1.0"/>
+        <particle x="602.5294625838102" y="135.00674046034138" charge="-1.0"/>
+        <particle x="758.9998259606929" y="160.70254806738922" charge="-1.0"/>
+        <particle x="752.9684438188557" y="250.3701528596649" charge="-1.0"/>
+        <particle x="735.3023927501258" y="190.7136555874967" charge="-1.0"/>
+        <particle x="651.2721864370307" y="304.9946113303947" charge="1.0"/>
+        <particle x="758.9995995970376" y="269.1931947002546" charge="1.0"/>
+        <particle x="579.0000489696637" y="222.75261874933724" charge="1.0"/>
+        <particle x="758.9979656378858" y="304.9996804553751" charge="1.0"/>
+        <particle x="579.0314205975011" y="304.98828003502337" charge="1.0"/>
+        <particle x="745.6172104587918" y="200.49939963490974" charge="1.0"/>
+        <particle x="752.9076644772476" y="167.01922706057226" charge="1.0"/>
+        <particle x="742.8408874125472" y="304.9985578831976" charge="1.0"/>
+        <particle x="694.4188318428619" y="304.9996258211643" charge="1.0"/>
+        <particle x="598.282714844501" y="304.99060416575196" charge="1.0"/>
+       </components>
+      </element>
+      <element name="E5" closed="true">
+       <shape>
+        <circle x="543.0" y="219.0" r="20.0"/>
+       </shape>
+       <modifiers>
+        <translator/>
+       </modifiers>
+       <components>
+        <particle x="531.361241289762" y="235.26466402004232" charge="1.0"/>
+        <particle x="531.6338100363258" y="202.5437025516165" charge="-1.0"/>
+       </components>
+      </element>
+     </components>
+    </element>
+   </components>
+  </view>
+ </scene>
+</jacob>

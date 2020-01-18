@@ -1,0 +1,84 @@
+#
+# Frame Titles
+#
+
+PropertyEditorTitle=Property Editor
+ColorEditorTitle=Color Editor
+GadgetsFrameTitle=Gadgets
+
+#
+# Buttons
+#
+
+DoneButton=Done
+SaveButton=Save
+CancelButton=Cancel
+ApplyButton=Apply
+
+#
+# Menus
+#
+
+FileMenu=File
+FileNew=New
+FileOpen=Open
+FileSave=Save
+FileExport=Export
+FileExportParticles=Particles
+FileOpenScript=Open Script
+FileExit=Exit
+
+SceneMenu=Scene
+SceneRun=Scene Run
+SnapToGrid=Snap To Grid
+SetZero=Set Zero 
+ShowControls=Show Controls
+ShowGadgets=Show Gadgets
+
+ElementMenu=Element
+CreateCircleElement=Create Circle 
+CreatePolygonElement=Create Polygon
+CreateRingElement=Create Ring 
+DeleteElement=Delete 
+MoveElement=Move 
+ScaleElement=Scale 
+RotateElement=Rotate 
+SetUnsetElementClosed=Open / Close 
+
+ParticleMenu=Particle
+CreateParticlePos=Create Positive
+CreateParticleNeg=Create Negative
+DeleteParticle=Delete 
+MoveParticle=Move
+SetUnsetParticleFixed=Fix / Unfix 
+
+ModifiersMenu=Modifiers
+SetUnsetRotator=Rotator 
+SetUnsetTranslator=Translator 
+SetUnsetInflator=Inflator 
+SetUnsetTrail=Trail
+SetUnsetParGenerator=Particle Generator
+SetUnsetParConsumer=Particle Consumer 
+SetUnsetEForce=E Force 
+SetUnsetCircularForce=Circular Force 
+SetUnsetTransForce=Trans Force 
+SetUnsetRotatForce=Rotational Force
+SetUnsetPulseForce=Pulse Force 
+SetUnsetGaussPulseForce=Gauss Pulse Force 
+
+PropertiesMenu=Properties
+EditProperties=Edit Properties
+
+#
+# Gadgets 
+#
+
+AddGadget=Add
+Add_fielddetector=Field Detector 
+Title_fielddetector=Field 
+Add_energygauge=Energy Gauge 
+Title_energygauge=Energy 
+Add_surfacepressuregauge=Surface Pressure Gauge 
+Title_surfacepressuregauge=Surface Pressure 
+Add_velocitygauge=Velocity Gauge 
+Title_velocitygauge=Velocity

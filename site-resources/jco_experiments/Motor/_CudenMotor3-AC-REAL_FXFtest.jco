@@ -1,0 +1,74 @@
+<jacob>
+ <properties>
+  <property name="sceneScale" value="0.5"/>
+  <property name="vvectorScale" value="0.0"/>
+  <property name="evectorScale" value="0.0"/>
+  <property name="mvectorScale" value="250.0"/>
+  <property name="eforceScale" value="1000.0"/>
+  <property name="integratorType" value="test"/>
+  <property name="electricConst" value="3.142857142857143"/>
+  <property name="magneticConst" value="0.0025"/>
+  <property name="integrationStep" value="1.3571428571428572"/>
+  <property name="dipolSuscept" value="1.0E-4"/>
+  <property name="oscforcePeriod" value="10"/>
+  <property name="oscforceConst" value="0.0050"/>
+  <property name="transforcePeriod" value="10"/>
+  <property name="transforceConst" value="0.05"/>
+  <property name="circforcePeriod" value="10"/>
+  <property name="circforceConst" value="0.05"/>
+  <property name="rotatforcePeriod" value="10"/>
+  <property name="rotatforceConst" value="0.05"/>
+  <property name="repelerforceConst" value="0.01"/>
+  <property name="centralforceConst" value="0.01"/>
+  <property name="pulseforcePeriod" value="10"/>
+  <property name="pulseforceConst" value="0"/>
+  <property name="gausspulseforcePeriod" value="10"/>
+  <property name="gausspulseforceConst" value="0"/>
+  <property name="oscchargePeriod" value="500.0"/>
+  <property name="oscchargeConst" value="0.09"/>
+  <property name="randomForce" value="0.0"/>
+  <property name="translationConst" value="1.5"/>
+  <property name="rotationConst" value="0.5"/>
+  <property name="zeroX" value="0.0"/>
+  <property name="zeroY" value="0.0"/>
+  <property name="potentialDetectorScale" value="0.181"/>
+  <property name="voltageDetectorScale" value="0.181"/>
+  <property name="genericDetectorScale" value="1.0"/>
+  <property name="fieldDetectorStrengthScale" value="1.0"/>
+  <property name="energyGaugeScale" value="1.0"/>
+  <property name="surfacepressureGaugeScale" value="1.0"/>
+  <property name="velocityGaugeScale" value="0.0"/>
+  <property name="currentGaugeScale" value="0.24"/>
+  <property name="resistanceDetectorScale" value="1.0"/>
+  <property name="resistanceGaugeScale" value="1.0"/>
+  <property name="capacitanceGaugeScale" value="112.0"/>
+  <property name="genericGaugeScale" value="1.0"/>
+  <property name="indicatorResolution" value="12"/>
+ </properties>
+ <scene>
+  <view>
+   <components>
+    <element name="E1" closed="false">
+     <shape>
+      <polygon points="480.0,400.0;500.0,400.0;500.0,600.0;700.0,600.0;700.0,620.0;500.0,620.0;480.0,600.0"/>
+     </shape>
+     <modifiers>
+      <rotator x="490.0" y="390.0"/>
+      <oscforcefix ex="-0.47714285714285726" ey="-0.4728571428571428"/>
+     </modifiers>
+     <components>
+      <particle x="608.822475810739" y="619.9526806696063" charge="1.0"/>
+      <particle x="557.2333195984886" y="619.9237429163466" charge="1.0"/>
+      <particle x="504.0528623726434" y="619.8233669487076" charge="1.0"/>
+      <particle x="504.43721768884404" y="606.3101325791431" charge="1.0"/>
+      <particle x="480.0466639815934" y="583.2229170217074" charge="1.0"/>
+      <particle x="499.95000682089767" y="558.1887435630572" charge="1.0"/>
+      <particle x="499.9420366816564" y="527.3286673987664" charge="1.0"/>
+      <particle x="480.04895611206007" y="505.1012911811531" charge="1.0"/>
+      <particle x="499.92933288924996" y="484.0701037028674" charge="1.0"/>
+     </components>
+    </element>
+   </components>
+  </view>
+ </scene>
+</jacob>

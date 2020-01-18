@@ -1,0 +1,68 @@
+<jacob>
+ <properties>
+  <property name="sceneScale" value="1.0"/>
+  <property name="vvectorScale" value="0.0"/>
+  <property name="evectorScale" value="21.428571428571427"/>
+  <property name="mvectorScale" value="0.0"/>
+  <property name="eforceScale" value="1000.0"/>
+  <property name="integratorType" value="test"/>
+  <property name="electricConst" value="4.642857142857143"/>
+  <property name="magneticConst" value="0.0"/>
+  <property name="integrationStep" value="2.7678571428571432"/>
+  <property name="dipolSuscept" value="1.0E-4"/>
+  <property name="transforcePeriod" value="10"/>
+  <property name="transforceConst" value="0.05"/>
+  <property name="circforcePeriod" value="10"/>
+  <property name="circforceConst" value="0.05"/>
+  <property name="rotatforcePeriod" value="10"/>
+  <property name="rotatforceConst" value="0.05"/>
+  <property name="repelerforceConst" value="0.01"/>
+  <property name="centralforceConst" value="0.01"/>
+  <property name="pulseforcePeriod" value="10"/>
+  <property name="pulseforceConst" value="0"/>
+  <property name="gausspulseforcePeriod" value="10"/>
+  <property name="gausspulseforceConst" value="0"/>
+  <property name="randomForce" value="0.0"/>
+  <property name="translationConst" value="3.5"/>
+  <property name="rotationConst" value="0.5"/>
+  <property name="zeroX" value="162.0"/>
+  <property name="zeroY" value="252.0"/>
+ </properties>
+ <scene>
+  <view>
+   <components>
+    <element name="E1" closed="true">
+     <shape>
+      <circle x="224.93209251242644" y="139.99432056349218" r="5.0"/>
+     </shape>
+     <modifiers>
+      <rotator x="255.0" y="45.0"/>
+     </modifiers>
+     <components>
+      <particle x="224.93209251242644" y="139.99432056349218" charge="1.0" fixed="true"/>
+     </components>
+    </element>
+    <element name="E2" closed="true">
+     <shape>
+      <circle x="404.0" y="310.0" r="5.0"/>
+     </shape>
+     <components>
+      <particle x="400.3253888540728" y="306.6092430157519" charge="-1.0"/>
+     </components>
+    </element>
+    <element name="E3" closed="true">
+     <shape>
+      <polygon points="184.92622179610885,287.64754237409255;379.85213654101847,282.27280881234446;380.1277639031623,292.2690095684951;185.20184915825115,297.64374313024314"/>
+     </shape>
+     <modifiers>
+      <rotator x="281.0" y="289.0"/>
+     </modifiers>
+     <components>
+      <particle x="374.99184984401916" y="287.40872287148574" charge="1.0" fixed="true"/>
+      <particle x="190.06213585525512" y="292.5078290710996" charge="-1.0" fixed="true"/>
+     </components>
+    </element>
+   </components>
+  </view>
+ </scene>
+</jacob>

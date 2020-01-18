@@ -1,0 +1,54 @@
+<jacob>
+ <properties>
+  <property name="sceneScale" value="1.0"/>
+  <property name="vvectorScale" value="0.0"/>
+  <property name="evectorScale" value="48.214285714285715"/>
+  <property name="mvectorScale" value="0.0"/>
+  <property name="eforceScale" value="1000.0"/>
+  <property name="integratorType" value="test"/>
+  <property name="electricConst" value="4.821428571428571"/>
+  <property name="magneticConst" value="0.0"/>
+  <property name="integrationStep" value="2.7678571428571432"/>
+  <property name="dipolSuscept" value="1.0E-4"/>
+  <property name="transforcePeriod" value="10"/>
+  <property name="transforceConst" value="0.05"/>
+  <property name="circforcePeriod" value="10"/>
+  <property name="circforceConst" value="0.05"/>
+  <property name="rotatforcePeriod" value="10"/>
+  <property name="rotatforceConst" value="0.05"/>
+  <property name="repelerforceConst" value="0.01"/>
+  <property name="centralforceConst" value="0.01"/>
+  <property name="pulseforcePeriod" value="10"/>
+  <property name="pulseforceConst" value="0"/>
+  <property name="gausspulseforcePeriod" value="10"/>
+  <property name="gausspulseforceConst" value="0"/>
+  <property name="oscchargePeriod" value="500.0"/>
+  <property name="oscchargeConst" value="0.09"/>
+  <property name="randomForce" value="0.0"/>
+  <property name="translationConst" value="9.5"/>
+  <property name="rotationConst" value="0.5"/>
+  <property name="zeroX" value="276.0"/>
+  <property name="zeroY" value="442.0"/>
+ </properties>
+ <scene>
+  <view>
+   <components>
+    <element name="E1" closed="true">
+     <shape>
+      <polygon points="130.0,170.0;150.0,190.0;210.0,180.0;260.0,180.0;310.0,190.0;310.0,200.0;260.0,220.0;210.0,220.0;150.0,200.0;130.0,220.0;130.0,220.0"/>
+     </shape>
+    </element>
+    <element name="E2" closed="true">
+     <shape>
+      <polygon points="80.0,300.0;80.0,60.0;70.0,60.0;70.0,300.0"/>
+     </shape>
+    </element>
+    <element name="E3" closed="true">
+     <shape>
+      <polygon points="370.0,60.0;380.0,60.0;380.0,310.0;370.0,310.0;370.0,310.0"/>
+     </shape>
+    </element>
+   </components>
+  </view>
+ </scene>
+</jacob>

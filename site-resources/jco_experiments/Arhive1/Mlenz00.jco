@@ -1,0 +1,60 @@
+<jacob>
+ <properties>
+  <property name="sceneScale" value="1.0"/>
+  <property name="vvectorScale" value="0.0"/>
+  <property name="evectorScale" value="0.0"/>
+  <property name="mvectorScale" value="535.7142857142857"/>
+  <property name="eforceScale" value="1000.0"/>
+  <property name="integratorType" value="standard"/>
+  <property name="electricConst" value="5.0"/>
+  <property name="magneticConst" value="1.4285714285714284E-4"/>
+  <property name="integrationStep" value="2.6785714285714284"/>
+ </properties>
+ <scene>
+  <view>
+   <components>
+    <element name="E1" closed="true">
+     <shape>
+      <ring x="270.0" y="230.0" r1="103.72925856811075" r2="67.62320319471145"/>
+     </shape>
+     <modifiers>
+      <circforce ex="0.092" ey="0.0010"/>
+     </modifiers>
+     <components>
+      <particle x="264.0458192563843" y="126.44177089790337" charge="1.0"/>
+      <particle x="343.0436481106792" y="156.34957872643741" charge="1.0"/>
+      <particle x="253.9635827468981" y="332.4821565189492" charge="1.0"/>
+      <particle x="306.7162562546796" y="132.98620917760877" charge="1.0"/>
+      <particle x="222.43236450980066" y="137.82039739203958" charge="1.0"/>
+      <particle x="189.06598482539817" y="165.11976979998224" charge="1.0"/>
+      <particle x="297.0106918447406" y="330.15079435111056" charge="1.0"/>
+      <particle x="213.7104580836736" y="317.1277599502025" charge="1.0"/>
+      <particle x="183.17776522616583" y="286.75965672876464" charge="1.0"/>
+      <particle x="167.61002204985454" y="246.6147975750142" charge="1.0"/>
+      <particle x="169.68659502191667" y="203.59962377554018" charge="1.0"/>
+      <particle x="335.41777465617776" y="310.50014808758755" charge="1.0"/>
+      <particle x="366.7115049944017" y="192.49474857026306" charge="1.0"/>
+      <particle x="373.60145301090927" y="235.14762247239824" charge="1.0"/>
+      <particle x="362.52253308827613" y="276.8971209566091" charge="1.0"/>
+     </components>
+    </element>
+    <element name="E2" closed="false">
+     <shape>
+      <ring x="270.0" y="230.0" r1="210.23796041628637" r2="92.19544457292888"/>
+     </shape>
+     <modifiers>
+      <circforce ex="0.093" ey="0.0010"/>
+     </modifiers>
+    </element>
+    <element name="E3" closed="true">
+     <shape>
+      <circle x="270.0" y="230.0" r="10.0"/>
+     </shape>
+     <components>
+      <particle x="270.95297460516474" y="230.99988943000074" charge="-5.0" fixed="true"/>
+     </components>
+    </element>
+   </components>
+  </view>
+ </scene>
+</jacob>

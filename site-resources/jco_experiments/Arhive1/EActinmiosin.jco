@@ -1,0 +1,131 @@
+<jacob>
+ <properties>
+  <property name="sceneScale" value="1.0"/>
+  <property name="vvectorScale" value="0.0"/>
+  <property name="evectorScale" value="0.0"/>
+  <property name="mvectorScale" value="0.0"/>
+  <property name="eforceScale" value="1000.0"/>
+  <property name="integratorType" value="standard"/>
+  <property name="electricConst" value="1.875"/>
+  <property name="magneticConst" value="0.0"/>
+  <property name="integrationStep" value="2.6785714285714284"/>
+  <property name="zeroX" value="260.0"/>
+  <property name="zeroY" value="5.0"/>
+  <property name="fieldDetectorScale" value="1.0"/>
+  <property name="energyGaugeScale" value="1.0"/>
+  <property name="surfacepressureGaugeScale" value="1.0"/>
+  <property name="velocityGaugeScale" value="0.0"/>
+ </properties>
+ <scene>
+  <view>
+   <components>
+    <element name="Actin1" closed="true">
+     <shape>
+      <polygon points="17.0,362.0;497.0,362.0;497.0,372.0;17.0,372.0"/>
+     </shape>
+     <components>
+      <element name="Actin2" closed="true">
+       <shape>
+        <polygon points="242.0,365.0;308.0,311.0;317.0,320.0;249.0,373.0"/>
+       </shape>
+       <components>
+        <particle x="288.0" y="330.0" charge="-1.0" fixed="true"/>
+        <particle x="271.0" y="342.0" charge="-1.0" fixed="true"/>
+        <particle x="284.0" y="343.0" charge="-1.0" fixed="true"/>
+        <particle x="301.0" y="329.0" charge="-1.0" fixed="true"/>
+       </components>
+      </element>
+     </components>
+    </element>
+    <element name="Actin3" closed="true">
+     <shape>
+      <polygon points="301.01632274475355,319.1516025629859;310.7487849812078,326.24238381867684;379.02548404563413,235.63172018113968;368.5288092635692,229.73088816185987;368.5288092635692,229.73088816185987"/>
+     </shape>
+     <modifiers>
+      <rotator x="311.0" y="318.0"/>
+      <transforce ex="0.06879147358164113" ey="9.53144343375243E-5"/>
+     </modifiers>
+     <components>
+      <particle x="331.54647789477156" y="280.7730978173312" charge="-1.0" fixed="true"/>
+      <particle x="319.87042136558915" y="297.6452554720576" charge="-1.0" fixed="true"/>
+      <particle x="333.67516134876547" y="290.5439067271706" charge="-1.0" fixed="true"/>
+      <particle x="345.13834953256963" y="272.6946681814362" charge="-1.0" fixed="true"/>
+      <element name="A" closed="true">
+       <shape>
+        <ring x="372.2134223323571" y="232.7831183018771" r1="12.206555615733702" r2="9.219544457292887"/>
+       </shape>
+       <components>
+        <element name="Actin6" closed="true">
+         <shape>
+          <circle x="376.4053939748478" y="223.2271564136134" r="21.540659228538015"/>
+         </shape>
+         <components>
+          <particle x="379.4875331719797" y="203.04584479011635" charge="1.0" fixed="true"/>
+         </components>
+        </element>
+       </components>
+      </element>
+     </components>
+    </element>
+    <element name="M" closed="true">
+     <shape>
+      <polygon points="15.0,152.0;487.0,152.0;487.0,157.0;15.0,157.0"/>
+     </shape>
+     <components>
+      <element name="Myosin13" closed="true">
+       <shape>
+        <circle x="413.4390853408922" y="156.82077727801078" r="20.0"/>
+       </shape>
+       <modifiers>
+        <translator/>
+       </modifiers>
+       <components>
+        <particle x="412.8522579903144" y="175.6527798057008" charge="1.0" fixed="true"/>
+        <particle x="412.73369084512274" y="139.93376666771172" charge="-1.0" fixed="true"/>
+       </components>
+      </element>
+      <element name="Myosin14" closed="true">
+       <shape>
+        <circle x="305.849106261607" y="156.9640529157874" r="20.0"/>
+       </shape>
+       <modifiers>
+        <translator/>
+       </modifiers>
+       <components>
+        <particle x="304.23453372083236" y="173.95573448850558" charge="1.0" fixed="true"/>
+        <particle x="304.15648998579445" y="138.02091887766193" charge="-1.0" fixed="true"/>
+       </components>
+      </element>
+      <element name="Myosin16" closed="true">
+       <shape>
+        <circle x="238.78854205960553" y="156.98546990752294" r="20.0"/>
+       </shape>
+       <modifiers>
+        <translator/>
+       </modifiers>
+       <components>
+        <particle x="237.2523147475991" y="175.68324335443592" charge="1.0" fixed="true"/>
+        <particle x="238.19232940280307" y="138.3114450390052" charge="-1.0" fixed="true"/>
+       </components>
+      </element>
+     </components>
+    </element>
+    <element name="Ca++" closed="true">
+     <shape>
+      <polygon points="18.0,5.0;484.0,5.0;484.0,11.0;18.0,11.0;18.0,11.0"/>
+     </shape>
+     <components>
+      <particle x="444.470187317499" y="10.988326676816305" charge="1.0"/>
+      <particle x="483.975281785606" y="10.989831863243225" charge="1.0"/>
+      <particle x="233.2026644267868" y="10.985305087537705" charge="1.0"/>
+      <particle x="70.85468510845938" y="10.991311198760894" charge="1.0"/>
+      <particle x="153.70219182323154" y="10.988409180143442" charge="1.0"/>
+      <particle x="18.01815289774791" y="10.992728111907867" charge="1.0"/>
+      <particle x="378.3748374104007" y="10.986158365818564" charge="1.0"/>
+      <particle x="306.35967331072277" y="10.98462066460504" charge="1.0"/>
+     </components>
+    </element>
+   </components>
+  </view>
+ </scene>
+</jacob>

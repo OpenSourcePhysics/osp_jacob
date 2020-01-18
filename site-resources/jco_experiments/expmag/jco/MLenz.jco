@@ -1,0 +1,20 @@
+<jacob>
+ <properties>
+  <property name="sceneScale" value="1.0"/>
+  <property name="vvectorScale" value="25.0"/>
+  <property name="evectorScale" value="30.0"/>
+  <property name="mvectorScale" value="0.0"/>
+  <property name="eforceScale" value="1000.0"/>
+  <property name="integratorType" value="simple"/>
+  <property name="electricConst" value="2.0"/>
+  <property name="magneticConst" value="0.0"/>
+  <property name="integrationStep" value="1.0"/>
+  <property name="zeroX" value="0.0"/>
+  <property name="zeroY" value="0.0"/>
+  <property name="fieldDetectorScale" value="1.0"/>
+  <property name="energyGaugeScale" value="1.0"/>
+ </properties>
+ <scene>
+  <view/>
+ </scene>
+</jacob>

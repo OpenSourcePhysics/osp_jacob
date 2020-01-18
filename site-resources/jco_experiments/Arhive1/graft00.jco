@@ -1,0 +1,166 @@
+<jacob>
+ <properties>
+  <property name="sceneScale" value="1.0"/>
+  <property name="vvectorScale" value="25.0"/>
+  <property name="evectorScale" value="32.14285714285714"/>
+  <property name="mvectorScale" value="0.0"/>
+  <property name="eforceScale" value="1000.0"/>
+  <property name="integratorType" value="standard"/>
+  <property name="electricConst" value="3.75"/>
+  <property name="magneticConst" value="0.0"/>
+  <property name="integrationStep" value="2.232142857142857"/>
+ </properties>
+ <scene>
+  <view>
+   <components>
+    <element name="E1" closed="false">
+     <shape>
+      <circle x="186.0" y="250.0" r="44.721359549995796"/>
+     </shape>
+     <modifiers>
+      <eforce ex="0.032" ey="0.0010"/>
+     </modifiers>
+     <components>
+      <element name="E2" closed="false">
+       <shape>
+        <circle x="230.6182427321123" y="246.96480387811448" r="41.23105625617661"/>
+       </shape>
+       <modifiers>
+        <eforce ex="0.051381757267887705" ey="0.0050351961218855195"/>
+       </modifiers>
+       <components>
+        <element name="E3" closed="false">
+         <shape>
+          <circle x="271.8083087266011" y="245.1267442028989" r="40.297066917586356"/>
+         </shape>
+         <modifiers>
+          <eforce ex="0.06019169127339887" ey="0.001873255797101109"/>
+         </modifiers>
+         <components>
+          <element name="E4" closed="true">
+           <shape>
+            <circle x="29.690331207393257" y="-35.220387661447006" r="0.0"/>
+           </shape>
+          </element>
+          <element name="E5" closed="false">
+           <shape>
+            <circle x="311.72378705168467" y="250.65921130539635" r="45.94572540300743"/>
+           </shape>
+           <modifiers>
+            <eforce ex="0.05427621294831533" ey="0.0023407886946036458"/>
+           </modifiers>
+           <components>
+            <element name="E6" closed="false">
+             <shape>
+              <circle x="357.55090271440787" y="247.3599458047205" r="47.34758836478511"/>
+             </shape>
+             <modifiers>
+              <eforce ex="0.04944909728559213" ey="0.004640054195279504"/>
+             </modifiers>
+             <components>
+              <element name="E7" closed="false">
+               <shape>
+                <circle x="403.99208538772365" y="256.580069223897" r="38.17284611572392"/>
+               </shape>
+               <modifiers>
+                <eforce ex="0.06300791461227635" ey="-0.004580069223896999"/>
+               </modifiers>
+               <components>
+                <element name="E8" closed="false">
+                 <shape>
+                  <circle x="441.50507633894586" y="249.51312572134503" r="43.65231958747397"/>
+                 </shape>
+                 <components>
+                  <particle x="466.12239543337864" y="239.94057316453961" charge="-1.0" fixed="true"/>
+                  <element name="E10" closed="false">
+                   <shape>
+                    <circle x="485.09933509543833" y="251.76381646841384" r="33.47980080556883"/>
+                   </shape>
+                   <modifiers>
+                    <eforce ex="0.038138412611531634" ey="0.0365832603464321"/>
+                   </modifiers>
+                   <components>
+                    <element name="E9" closed="false">
+                     <shape>
+                      <circle x="516.5020977672439" y="240.15504570838897" r="33.47980080556883"/>
+                     </shape>
+                     <modifiers>
+                      <eforce ex="0.04849790223275613" ey="-1.5504570838896826E-4"/>
+                     </modifiers>
+                     <components>
+                      <particle x="519.4270945505442" y="243.515987098371" charge="-1.0" fixed="true"/>
+                      <particle x="539.4270945505442" y="243.515987098371" charge="-1.0" fixed="true"/>
+                      <element name="E11" closed="false">
+                       <shape>
+                        <circle x="549.9629499111702" y="239.0287971643878" r="38.17284611572392"/>
+                       </shape>
+                       <modifiers>
+                        <eforce ex="0.026101629207634404" ey="0.05037855365918284"/>
+                       </modifiers>
+                       <components>
+                        <particle x="538.0645791188047" y="220.40735082357065" charge="-1.0" fixed="true"/>
+                        <particle x="568.0645791188047" y="260.4073508235707" charge="-1.0" fixed="true"/>
+                        <element name="E12" closed="false">
+                         <shape>
+                          <circle x="587.8930931300291" y="243.3265193484741" r="38.17284611572392"/>
+                         </shape>
+                         <modifiers>
+                          <eforce ex="0.02168425382478074" ey="0.05241090411807536"/>
+                          <parcon charge="1.0"/>
+                         </modifiers>
+                         <components>
+                          <particle x="568.5773469548099" y="210.73742346654944" charge="-1.0" fixed="true"/>
+                         </components>
+                        </element>
+                        <particle x="577.0366512454251" y="252.79125640547335" charge="1.0"/>
+                        <particle x="581.4137897957693" y="250.03816138374162" charge="1.0"/>
+                       </components>
+                      </element>
+                      <particle x="535.2638016658432" y="249.7274817756784" charge="1.0"/>
+                     </components>
+                    </element>
+                    <particle x="485.0909951090279" y="241.40557220000767" charge="1.0"/>
+                   </components>
+                  </element>
+                 </components>
+                </element>
+                <particle x="426.69123899813286" y="259.64191611906074" charge="-1.0" fixed="true"/>
+                <particle x="438.0076841603318" y="248.92520285986086" charge="1.0"/>
+               </components>
+              </element>
+              <particle x="385.73471063021225" y="229.0748082709518" charge="-1.0" fixed="true"/>
+              <particle x="392.8337159652119" y="243.28814121058875" charge="1.0"/>
+             </components>
+            </element>
+            <particle x="345.9500432979577" y="223.8793093199945" charge="-1.0" fixed="true"/>
+            <particle x="306.9500432979577" y="246.87930931999443" charge="-1.0" fixed="true"/>
+            <particle x="331.77782946465544" y="246.27901077456735" charge="1.0"/>
+            <particle x="346.43792819952967" y="243.08483279575577" charge="1.0"/>
+           </components>
+          </element>
+         </components>
+        </element>
+        <particle x="227.79273011806364" y="251.59681569102574" charge="-1.0" fixed="true"/>
+        <particle x="239.60729595730928" y="250.3461644261212" charge="1.0"/>
+       </components>
+      </element>
+      <particle x="186.0" y="250.0" charge="-1.0" fixed="true"/>
+      <particle x="190.48788242006782" y="257.85232356017735" charge="1.0"/>
+     </components>
+    </element>
+    <element name="E16" closed="false">
+     <shape>
+      <polygon points="95.0,221.0;175.0,221.0;175.0,281.0;95.0,281.0;95.0,271.0"/>
+     </shape>
+     <modifiers>
+      <eforce ex="0.031" ey="-0.0010"/>
+      <pargen charge="1.0"/>
+     </modifiers>
+     <components>
+      <particle x="173.0356320176348" y="252.60661560581613" charge="1.0"/>
+     </components>
+    </element>
+   </components>
+  </view>
+ </scene>
+</jacob>

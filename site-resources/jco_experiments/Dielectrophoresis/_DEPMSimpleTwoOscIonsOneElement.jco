@@ -1,0 +1,100 @@
+<jacob>
+ <properties>
+  <property name="sceneScale" value="0.5"/>
+  <property name="vvectorScale" value="0.0"/>
+  <property name="evectorScale" value="71.42857142857143"/>
+  <property name="mvectorScale" value="0.0"/>
+  <property name="eforceScale" value="1000.0"/>
+  <property name="mfluxdensityScale" value="100.0"/>
+  <property name="integratorType" value="collision"/>
+  <property name="electricConst" value="0.42857142857142855"/>
+  <property name="magneticConst" value="0.0"/>
+  <property name="integrationStep" value="0.5464285714285715"/>
+  <property name="frictionConst" value="0.2"/>
+  <property name="elasticityConst" value="0.0"/>
+  <property name="inertiaConst " value="1.0"/>
+  <property name="dipolSuscept" value="1.0E-4"/>
+  <property name="oscforcePeriod" value="10"/>
+  <property name="oscforceConst" value="0.0050"/>
+  <property name="transforcePeriod" value="10"/>
+  <property name="transforceConst" value="0.05"/>
+  <property name="circforcePeriod" value="10"/>
+  <property name="circforceConst" value="0.05"/>
+  <property name="circoscforcePeriod" value="10"/>
+  <property name="circoscforceConst" value="0.05"/>
+  <property name="rotatforcePeriod" value="10"/>
+  <property name="rotatforceConst" value="0.05"/>
+  <property name="repelerforceConst" value="0.01"/>
+  <property name="centralforceConst" value="0.01"/>
+  <property name="pulseforcePeriod" value="10"/>
+  <property name="pulseforceConst" value="0"/>
+  <property name="gausspulseforcePeriod" value="10"/>
+  <property name="gausspulseforceConst" value="0"/>
+  <property name="oscchargePeriod" value="1000.0"/>
+  <property name="oscchargeConst" value="0.09"/>
+  <property name="randomForce" value="0.0"/>
+  <property name="translationConst" value="1.5"/>
+  <property name="rotationConst" value="0.15"/>
+  <property name="collisionConst" value="1.5"/>
+  <property name="zeroX" value="109.0"/>
+  <property name="zeroY" value="132.0"/>
+  <property name="potentialDetectorScale" value="0.181"/>
+  <property name="voltageDetectorScale" value="0.181"/>
+  <property name="genericDetectorScale" value="1.0"/>
+  <property name="fieldDetectorStrengthScale" value="1.0"/>
+  <property name="energyGaugeScale" value="1.0"/>
+  <property name="surfacepressureGaugeScale" value="1.0"/>
+  <property name="velocityGaugeScale" value="0.0"/>
+  <property name="depxGaugeScale" value="10.0"/>
+  <property name="currentGaugeScale" value="0.24"/>
+  <property name="resistanceDetectorScale" value="1.0"/>
+  <property name="resistanceGaugeScale" value="1.0"/>
+  <property name="capacitanceGaugeScale" value="112.0"/>
+  <property name="genericGaugeScale" value="1.0"/>
+  <property name="indicatorResolution" value="12"/>
+ </properties>
+ <scene>
+  <view>
+   <components>
+    <element name="E1" closed="true">
+     <shape>
+      <circle x="396.0" y="796.0" r="20.0"/>
+     </shape>
+     <modifiers>
+      <osccharge ex="-10" ey="0.0"/>
+     </modifiers>
+     <components>
+      <particle x="415.99936675792185" y="796.1591517581741" charge="-20.627825842034518"/>
+     </components>
+    </element>
+    <element name="E2" closed="true">
+     <shape>
+      <circle x="644.0" y="798.0" r="20.0"/>
+     </shape>
+     <modifiers>
+      <osccharge ex="20" ey="0.0"/>
+     </modifiers>
+     <components>
+      <particle x="624.0007492667212" y="797.8268812331214" charge="20.020811864642244"/>
+     </components>
+    </element>
+    <element name="E3" closed="true">
+     <shape>
+      <circle x="492.50915342405335" y="524.6357782276294" r="31.622776601683793"/>
+     </shape>
+     <modifiers>
+      <translator/>
+     </modifiers>
+     <components>
+      <particle x="516.2780722731349" y="511.52090268307956" charge="1.0"/>
+      <particle x="488.0931676305437" y="509.3786138157762" charge="1.0"/>
+      <particle x="497.57613597792437" y="539.7593210830751" charge="1.0"/>
+      <particle x="471.9343019370008" y="502.36808198612323" charge="-1.0"/>
+      <particle x="513.9567968778033" y="527.7431614912991" charge="-1.0"/>
+      <particle x="479.88900750101266" y="525.3415247615383" charge="-1.0"/>
+     </components>
+    </element>
+   </components>
+  </view>
+ </scene>
+</jacob>

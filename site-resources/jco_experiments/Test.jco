@@ -1,0 +1,99 @@
+<jacob>
+ <properties>
+  <property name="sceneScale" value="1.0"/>
+  <property name="vvectorScale" value="0.0"/>
+  <property name="evectorScale" value="64.28571428571428"/>
+  <property name="mvectorScale" value="0.0"/>
+  <property name="eforceScale" value="1000.0"/>
+  <property name="integratorType" value="test"/>
+  <property name="electricConst" value="7.5"/>
+  <property name="magneticConst" value="0.0"/>
+  <property name="integrationStep" value="2.5"/>
+  <property name="dipolSuscept" value="0.08394464285714287"/>
+  <property name="oscforcePeriod" value="10"/>
+  <property name="oscforceConst" value="0.0050"/>
+  <property name="transforcePeriod" value="10"/>
+  <property name="transforceConst" value="0.05"/>
+  <property name="circforcePeriod" value="10"/>
+  <property name="circforceConst" value="0.05"/>
+  <property name="rotatforcePeriod" value="10"/>
+  <property name="rotatforceConst" value="0.05"/>
+  <property name="repelerforceConst" value="0.01"/>
+  <property name="centralforceConst" value="0.01"/>
+  <property name="pulseforcePeriod" value="10"/>
+  <property name="pulseforceConst" value="1"/>
+  <property name="gausspulseforcePeriod" value="10"/>
+  <property name="gausspulseforceConst" value="0"/>
+  <property name="oscchargePeriod" value="8762.5"/>
+  <property name="oscchargeConst" value="0.09"/>
+  <property name="randomForce" value="0.0"/>
+  <property name="translationConst" value="8.0"/>
+  <property name="rotationConst" value="0.5"/>
+  <property name="zeroX" value="280.0"/>
+  <property name="zeroY" value="600.0"/>
+  <property name="potentialDetectorScale" value="0.181"/>
+  <property name="voltageDetectorScale" value="0.181"/>
+  <property name="genericDetectorScale" value="1.0"/>
+  <property name="fieldDetectorStrengthScale" value="1.0"/>
+  <property name="energyGaugeScale" value="1.0"/>
+  <property name="surfacepressureGaugeScale" value="1.0"/>
+  <property name="velocityGaugeScale" value="0.0"/>
+  <property name="currentGaugeScale" value="0.24"/>
+  <property name="resistanceDetectorScale" value="1.0"/>
+  <property name="resistanceGaugeScale" value="1.0"/>
+  <property name="capacitanceGaugeScale" value="112.0"/>
+  <property name="genericGaugeScale" value="1.0"/>
+  <property name="indicatorResolution" value="12"/>
+ </properties>
+ <scene>
+  <view>
+   <components>
+    <element name="E1" closed="true">
+     <shape>
+      <ring x="260.0" y="220.0" r1="161.24515496597098" r2="151.32745950421557"/>
+     </shape>
+     <modifiers>
+      <oscforce ex="0.115" ey="-0.01"/>
+      <transortoforce ex="-0.065" ey="-0.01"/>
+     </modifiers>
+     <components>
+      <element name="E2" closed="false">
+       <shape>
+        <circle x="190.0" y="80.0" r="44.721359549995796"/>
+       </shape>
+       <components>
+        <particle x="NaN" y="NaN" charge="1.0"/>
+        <particle x="NaN" y="NaN" charge="1.0"/>
+       </components>
+      </element>
+      <element name="E3" closed="false">
+       <shape>
+        <circle x="310.0" y="70.0" r="41.23105625617661"/>
+       </shape>
+       <components>
+        <particle x="NaN" y="NaN" charge="1.0"/>
+       </components>
+      </element>
+      <particle x="NaN" y="NaN" charge="1.0"/>
+      <particle x="NaN" y="NaN" charge="1.0"/>
+      <particle x="NaN" y="NaN" charge="1.0"/>
+      <particle x="NaN" y="NaN" charge="1.0"/>
+      <particle x="NaN" y="NaN" charge="1.0"/>
+      <particle x="NaN" y="NaN" charge="1.0"/>
+      <particle x="NaN" y="NaN" charge="1.0"/>
+      <particle x="NaN" y="NaN" charge="1.0"/>
+      <particle x="NaN" y="NaN" charge="1.0"/>
+      <particle x="NaN" y="NaN" charge="1.0"/>
+      <particle x="NaN" y="NaN" charge="1.0"/>
+      <particle x="NaN" y="NaN" charge="1.0"/>
+      <particle x="NaN" y="NaN" charge="1.0"/>
+      <particle x="NaN" y="NaN" charge="1.0"/>
+      <particle x="NaN" y="NaN" charge="1.0"/>
+      <particle x="NaN" y="NaN" charge="1.0"/>
+      <particle x="NaN" y="NaN" charge="1.0"/>
+     </components>
+    </element>
+   </components>
+  </view>
+ </scene>
+</jacob>
