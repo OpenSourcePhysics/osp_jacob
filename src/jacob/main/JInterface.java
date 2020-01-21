@@ -23,6 +23,9 @@ package jacob.main;
 
 import jacob.scene.*;
 import jacob.scene.modifiers.*;
+
+import java.io.InputStream;
+
 import jacob.geometry.*;
 import jacob.property.*;
 import jacob.system.*;
@@ -57,7 +60,12 @@ public class JInterface
 
     public void readExperiment( String file )
     {
-        mainPanel.readExperiment( file );
+        //mainPanel.readExperiment( file );
+    	if(mainPanel.isJS) {// Likely to cause error.
+    		System.out.println("Debug: Possible error. Reading Experiment in JInterface class");
+    	}
+		InputStream is =  mainPanel.getStreamFromName(file);
+		mainPanel.readExperimentStream(is);
     }
 
     public void newScene()

@@ -23,22 +23,19 @@ package jacob.main;
 
 import java.applet.Applet;
 import java.awt.Frame;
-import java.awt.Panel;
-import java.awt.MenuBar;
 import java.awt.BorderLayout;
 
 import jacob.system.*;
-import jacob.scene.*;
 
 public class Main extends Applet
 {
-    public static final int JACOB_MAJOR_VERSION = 5;
+    public static final int JACOB_MAJOR_VERSION = 6;
 
-    public static final int JACOB_MINOR_VERSION = 3;
+    public static final int JACOB_MINOR_VERSION = 0;
 
     public static final int JACOB_MICRO_VERSION = 0;
 
-    public static final String JACOB_EXTRA_VERSION = "DV";
+    public static final String JACOB_EXTRA_VERSION = "JavaScript";
 
 //-----------------------------------------------------------------------------
 //    Applet
@@ -87,7 +84,7 @@ public class Main extends Applet
 
 //FIXME: make size a propert
 
-//      frame.setSize( scene.getProperties().frameXSize.getValue(), scene.getProperties().frameYSize.getValue());
+        //frame.setSize( scene.getProperties().frameXSize.getValue(), scene.getProperties().frameYSize.getValue());
         frame.setSize(640,480);
         frame.setVisible( true );
     }

@@ -33,13 +33,17 @@ import java.awt.FileDialog;
 import java.awt.event.WindowEvent;
 import java.awt.event.ActionEvent;
 import java.util.Vector;
+
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.io.IOException;
+import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 
 import jacob.system.*;
+import javajs.async.AsyncFileChooser;
 import jacob.property.*;
 import jacob.scene.editor.*;
 import jacob.scene.*;
@@ -51,6 +55,8 @@ import jacob.gadgets.*;
 
 public class MainPanel extends Panel 
 {
+	static public boolean isJS = /** @j2sNative true || */ false;
+	
     private Frame frame = null;
 
     private Panel controlPanel = null;
@@ -169,38 +175,69 @@ public class MainPanel extends Panel
 //    Data R/W methods   
 //------------------------------------------------------------------------------
 
-    public void readExperiment( String file )
-    {
-        InputStream is = systemMgr.getInputStream( file );
+	public InputStream getStreamFromFile(File file) {
+	    InputStream is=null;
+		try {
+			is = new FileInputStream(file);
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+			return null;
+		}
+		return is;
+	}
+	
+	public InputStream getStreamFromName(String name) {
+		InputStream is = null;
+		try {
+			is = systemMgr.getInputStream(name);
+		} catch (Exception e) {
+			e.printStackTrace();
+			return null;
+		}
+		return is;
+		
+	}
+    
+    public void readExperimentStream(InputStream is) {
+		if (is == null) return;
+		System.out.println("Debug: Read experiment:");
+		try {
+			DataElement data = DataMgr.readXMLElement(is);
+			System.out.println("Debug: data name="+data.getName());
+			if (!data.getName().equals("jacob"))
+				throw new DataParseException("experiment must begin with" + " jacob field");
 
-        if ( is == null )
-            return;
-
-        try
-        {
-            
-            DataElement data = DataMgr.readXMLElement( is );
-            if ( !data.getName().equals( "jacob" ) )
-                throw new DataParseException( "experiment must begin with" +
-                                              " jacob field" ); 
-
-            DataElement pdata = data.getOptElement( "properties" );
-            if ( pdata != null ) propertyMgr.readData( pdata );
-            scene.readData( data.getElement( "scene" ) );
-            is.close();
-        }
-        catch ( IOException ex )
-        {
-            SystemMgr.error( "can't load experiment: io error " +
-                             "(" + ex.getMessage() + ")" );
-        }
-        catch ( DataParseException ex )
-        {
-            SystemMgr.error( "can't load experiment: data parse error " + 
-                             "(" + ex.getMessage() + ")" );
-            try {is.close();} catch (IOException ex2) {}
-        }
-    } 
+			DataElement pdata = data.getOptElement("properties");
+			System.out.println("Debug: pdata name="+pdata.getName());
+			if (pdata != null)
+				propertyMgr.readData(pdata);
+			scene.readData(data.getElement("scene"));
+			is.close();
+			System.out.println("Debug: End read:");
+		}
+		catch (IOException ex) {
+			SystemMgr.error("can't load experiment: io error " + "(" + ex.getMessage() + ")");
+		} catch (DataParseException ex) {
+			SystemMgr.error("can't load experiment: data parse error " + "(" + ex.getMessage() + ")");
+			try {
+				is.close();
+			} catch (IOException ex2) {
+			}
+		}
+	}
+    
+	
+	public InputStream getStreamFromFileName(String fileName) {
+	    InputStream is;
+		try {
+			 is = systemMgr.getInputStream( fileName );
+		} catch (Exception e) {
+			e.printStackTrace();
+			return null;
+		}
+		return is;	
+	}
+    
 
     public void writeExperiment( String file )
     {
@@ -244,11 +281,33 @@ public class MainPanel extends Panel
                              "(" + ex.getMessage() + ")" );
         }
     }
+    
+    public void readExperiment(){
+    	if(isJS) {
+    		readExperimentJS();  // uses async JavaScript dialog
+    	}else {
+    		readExperimentJava();// uses regular Java dialog
+    	}
+    }
+    
+	public void readExperimentJS(){
+		AsyncFileChooser fc = new AsyncFileChooser();
+		fc.showOpenDialog(MainPanel.this, new Runnable() {
 
-    public void readExperiment()
-    {
+			@Override
+			public void run() {
+				File file = fc.getSelectedFile();
+				System.out.println("FileChooser returned " + file.length() + " bytes for " + file);
+				InputStream is = getStreamFromFile(file);
+				readExperimentStream(is);
+			}
+			
+		}, null);
+	}
+
+    public void readExperimentJava() {
         if ( frame == null ) return;
-//FIXME: localize this
+        //FIXME: localize this
         FileDialog loadDialog = new FileDialog( MainPanel.this.frame, "Load",
                                                 FileDialog.LOAD );
         loadDialog.show();
@@ -256,7 +315,8 @@ public class MainPanel extends Panel
         String file = loadDialog.getFile();
         
         if ( file == null || dir == null ) return;
-        readExperiment( dir + file );
+        InputStream is=getStreamFromName( dir + file );
+        readExperimentStream(is);
     }
 
     public void writeExperiment()
