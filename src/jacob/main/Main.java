@@ -35,7 +35,7 @@ public class Main extends Applet
 
     public static final int JACOB_MICRO_VERSION = 0;
 
-    public static final String JACOB_EXTRA_VERSION = "JavaScript";
+    public static final String JACOB_EXTRA_VERSION = " JavaScript";
 
 //-----------------------------------------------------------------------------
 //    Applet

@@ -457,3 +457,8 @@ jacob/scene/modifiers/OscForce.js
 jacob/scene/modifiers/RandomForce.js
 jacob/scene/modifiers/ParGeneratorNeg.js
 jacob/geometry/Math2d.js
+jacob/integrator/CircleCollisionIntegrator.js
+jacob/scene/modifiers/Translator.js
+jacob/scene/modifiers/Rotator.js
+java/awt/FileDialog.js
+java/awt/event/MouseWheelEvent.js
