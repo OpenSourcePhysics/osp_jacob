@@ -29,13 +29,18 @@ import java.awt.MenuItem;
 import java.awt.Menu;
 import java.awt.PopupMenu;
 import java.awt.BorderLayout;
+import java.awt.Button;
 import java.awt.FileDialog;
+import java.awt.FlowLayout;
 import java.awt.event.WindowEvent;
 import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.Vector;
 
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.io.IOException;
 import java.io.File;
 import java.io.FileInputStream;
@@ -58,6 +63,8 @@ public class MainPanel extends Panel
 	static public boolean isJS = /** @j2sNative true || */ false;
 	
     private Frame frame = null;
+    
+    private Panel buttonPanel = new Panel();
 
     private Panel controlPanel = null;
 
@@ -114,8 +121,42 @@ public class MainPanel extends Panel
             gadgetFrame = new GadgetFrame( systemMgr, MainPanel.this ); 
             gadgetFrame.setVisible( true );
         }
-
+        initButtonPanel();
+        add("South",buttonPanel);
         systemMgr.getPropertyMgr().attachObserver( listener );
+    }
+    
+    private void initButtonPanel() {
+    	buttonPanel.setLayout( new FlowLayout() );
+    	Button runBtn=new Button("Run");
+    	buttonPanel.add(runBtn);
+    	Button pauseBtn=new Button("Pause");
+    	buttonPanel.add(pauseBtn);
+    	Button loadBtn=new Button("Load");
+    	buttonPanel.add(loadBtn);
+    	
+    	runBtn.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+            	scene.start();
+             }
+          }		
+        );
+    	
+    	pauseBtn.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+            	scene.stop();
+             }
+          }		
+        );
+    	
+    	loadBtn.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+            	readExperimentURL();
+             }
+          }		
+        );
+    	
+    	
     }
 
     private void initUI()
@@ -318,11 +359,23 @@ public class MainPanel extends Panel
         InputStream is=getStreamFromName( dir + file );
         readExperimentStream(is);
     }
+    
+    public void readExperimentURL() {
+        if ( frame == null ) return;
+        String urlStr="https://physlets.org/jacob/jco_experiments/EMCurrent/ICurrent.jco";
+        InputStream is;
+		try {
+			is=new URL(urlStr).openStream();
+	        readExperimentStream(is);
+		} catch ( IOException e) {
+			e.printStackTrace();
+		}
+    }
 
     public void writeExperiment()
     {
         if ( frame == null ) return;
-//FIXME: localize this
+        //FIXME: localize this
         FileDialog saveDialog = new FileDialog( MainPanel.this.frame, "Save",
                                                 FileDialog.SAVE );
         saveDialog.show();
@@ -336,7 +389,7 @@ public class MainPanel extends Panel
     public void writeParticles()
     {
         if ( frame == null ) return;
-//FIXME: localize this
+        //FIXME: localize this
         FileDialog saveDialog = new FileDialog( MainPanel.this.frame, "Save",
                                                 FileDialog.SAVE );
         saveDialog.show();

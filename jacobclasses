@@ -441,6 +441,7 @@ javajs/async/AsyncFileChooser.js
 javajs/util/Base64.js
 javax/swing/JFileChooser.js
 
+jacob/data/DataParseException.js
 jacob/scene/editor/ActionFactory.js
 jacob/scene/editor/CreateParticleAction.js
 java/awt/VKCollection.js
@@ -449,3 +450,10 @@ java/util/StringTokenizer.js
 javax/swing/JWindow.js
 javax/swing/Popup.js
 swingjs/JSKeyEvent.js
+java/awt/Event.js
+
+jacob/geometry/Polygon2d.js
+jacob/scene/modifiers/OscForce.js
+jacob/scene/modifiers/RandomForce.js
+jacob/scene/modifiers/ParGeneratorNeg.js
+jacob/geometry/Math2d.js
