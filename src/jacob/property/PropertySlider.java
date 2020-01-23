@@ -24,6 +24,7 @@ package jacob.property;
 import java.awt.Component;
 import java.awt.Color;
 import java.awt.Graphics;
+import java.awt.Label;
 import java.awt.Dimension;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
@@ -31,7 +32,7 @@ import java.awt.event.MouseMotionListener;
 
 import jacob.system.*;
 
-public class PropertySlider extends Component
+public class PropertySlider extends Label
     implements PropertyObserver, MouseListener, MouseMotionListener
 {
     private final static short BORDER_SIZE = 2;
@@ -162,8 +163,12 @@ public class PropertySlider extends Component
 
     public void paint( Graphics g )
     {
+    	
         int width  = getSize().width;
         int height = getSize().height;
+
+        g.setColor( getBackground());
+        g.fillRect(0, 0, width, height);
 
         g.setColor( getBackground().darker() );
         for ( int i = 0; i < BORDER_SIZE; i++ )
@@ -209,6 +214,7 @@ public class PropertySlider extends Component
 
     public void mouseDragged( MouseEvent e )
     {
+    	System.out.println("dragged " + e);
         setValueFromMouse( e );
     }
 
