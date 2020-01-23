@@ -217,7 +217,6 @@ public class PropertySlider extends Label
 
     public void mouseDragged( MouseEvent e )
     {
-    	System.out.println("dragged " + e);
         setValueFromMouse( e );
     }
 
