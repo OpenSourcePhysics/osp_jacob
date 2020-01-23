@@ -166,6 +166,9 @@ public class PropertySlider extends Label
     	
         int width  = getSize().width;
         int height = getSize().height;
+        
+        g.setColor( getBackground());
+        g.fillRect(0, 0, width, height);
 
         g.setColor( getBackground());
         g.fillRect(0, 0, width, height);

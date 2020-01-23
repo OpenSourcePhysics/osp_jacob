@@ -35,13 +35,14 @@ public class Main extends Applet
 
     public static final int JACOB_MICRO_VERSION = 0;
 
-    public static final String JACOB_EXTRA_VERSION = " JavaScript";
+    public static final String JACOB_EXTRA_VERSION = "";
 
 //-----------------------------------------------------------------------------
 //    Applet
 //------------------------------------------------------------------------------
 
-    public MainPanel mainPanel = null;
+    public static MainPanel mainPanel = null;
+    public static Frame frame = null;
 
     public SystemMgr systemMgr = null;
 
@@ -69,9 +70,9 @@ public class Main extends Applet
     public static void main( String[] args )
     {
         SystemMgr systemMgr = new SystemMgr( new Properties() );
-        MainPanel mainPanel = new MainPanel( systemMgr );
+        mainPanel = new MainPanel( systemMgr );
 
-        Frame frame = new Frame( "Jacob  " +
+        frame = new Frame( "JavaScript Jacob  ver " +
                                  JACOB_MAJOR_VERSION + "." +
                                  JACOB_MINOR_VERSION + "." +
                                  JACOB_MICRO_VERSION +
@@ -82,10 +83,10 @@ public class Main extends Applet
 
         mainPanel.setFrame( frame );
 
-//FIXME: make size a propert
+        //FIXME: make size a property
 
         //frame.setSize( scene.getProperties().frameXSize.getValue(), scene.getProperties().frameYSize.getValue());
-        frame.setSize(640,480);
+        frame.setSize(800,600);
         frame.setVisible( true );
     }
 }
