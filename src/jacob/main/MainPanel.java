@@ -132,8 +132,8 @@ public class MainPanel extends Panel
     	buttonPanel.add(runBtn);
     	Button pauseBtn=new Button("Pause");
     	buttonPanel.add(pauseBtn);
-    	Button loadBtn=new Button("Load");
-    	buttonPanel.add(loadBtn);
+    	//Button testBtn=new Button("Load");
+    	//buttonPanel.add(testBtn);
     	
     	runBtn.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -149,12 +149,13 @@ public class MainPanel extends Panel
           }		
         );
     	
-    	loadBtn.addActionListener(new ActionListener() {
+    	/*
+    	testBtn.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-            	readExperimentURL();
+                // Test button action goes here.
              }
           }		
-        );
+        );*/
     	
     	
     }
@@ -360,9 +361,15 @@ public class MainPanel extends Panel
         readExperimentStream(is);
     }
     
-    public void readExperimentURL() {
+    public void readExperimentURL(String urlStr) {
         if ( frame == null ) return;
-        String urlStr="https://physlets.org/jacob/jco_experiments/EMCurrent/ICurrent.jco";
+		String baseURI = (/** @j2sNative document.body.baseURI || */ null); //html page that has script
+        //System.err.println("debug baseURI="+baseURI);
+        
+        String path=baseURI.substring(0,baseURI.lastIndexOf('/')+1);
+        urlStr=path+urlStr;
+        //System.err.println("debug path+urlStr="+urlStr);
+        
         InputStream is;
 		try {
 			is=new URL(urlStr).openStream();
