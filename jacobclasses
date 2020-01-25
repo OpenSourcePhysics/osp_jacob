@@ -159,7 +159,6 @@ java/awt/EventDispatchThread.js
 java/awt/EventFilter.js
 java/awt/EventQueue.js
 java/awt/EventQueueItem.js
-java/awt/FileDialog.js
 java/awt/FlowLayout.js
 java/awt/FocusTraversalPolicy.js
 java/awt/Font.js
