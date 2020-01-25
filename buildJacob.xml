@@ -18,11 +18,13 @@
    	<loadresource property="coreclasses">
        <file file="jacobclasses"/>
     </loadresource>
- 
+
+   	
+   	<!-- BH note: Do not include coreswingjs here. -->
+
     <antcall target="call-core">
         <param name="call-core.name" value="_jacob" />
         <param name="call-core.list" value="
-			core/coreswingjs.js
          	${coreclasses}
         	" />
     </antcall>

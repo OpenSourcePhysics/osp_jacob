@@ -1,3 +1,12 @@
+java/awt/Button.js
+java/awt/event/InputEvent.js
+java/awt/event/MouseEvent.js
+javax/swing/JButton.js
+javax/swing/KeyStroke.js
+javax/swing/plaf/InputMapUIResource.js
+swingjs/JSMouse.js
+swingjs/a2s/A2SEvent.js
+swingjs/a2s/Button.js
 jacob/data/DataElement.js
 jacob/data/DataMgr.js
 jacob/data/DataParseException.js
@@ -513,6 +522,8 @@ swingjs/api/Interface.js
 swingjs/api/js/DOMNode.js
 swingjs/api/js/HTML5CanvasContext2D.js
 swingjs/api/js/JSInterface.js
+swingjs/jquery/j2sMenu.js
+swingjs/jquery/j2sSlider.js
 swingjs/jquery/JQueryUI.js
 swingjs/plaf/ButtonListener.js
 swingjs/plaf/DefaultMenuLayout.js
@@ -543,5 +554,3 @@ swingjs/plaf/JSViewportUI.js
 swingjs/plaf/JSWindowUI.js
 swingjs/plaf/LazyActionMap.js
 swingjs/plaf/Resizer.js
-swingjs/jquery/j2sMenu.js
-swingjs/jquery/j2sSlider.js
