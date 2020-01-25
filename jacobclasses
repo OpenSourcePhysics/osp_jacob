@@ -512,9 +512,6 @@ swingjs/a2s/Util.js
 swingjs/api/Interface.js
 swingjs/api/js/DOMNode.js
 swingjs/api/js/HTML5CanvasContext2D.js
-swingjs/api/js/JSInterface.js
-swingjs/jquery/j2sMenu.js
-swingjs/jquery/j2sSlider.js
 swingjs/jquery/JQueryUI.js
 swingjs/plaf/ButtonListener.js
 swingjs/plaf/DefaultMenuLayout.js

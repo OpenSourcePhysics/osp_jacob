@@ -263,18 +263,6 @@ public class MainPanel extends Panel
 		}
 	}
     
-	
-	public InputStream getStreamFromFileName(String fileName) {
-	    InputStream is;
-		try {
-			 is = systemMgr.getInputStream( fileName );
-		} catch (Exception e) {
-			e.printStackTrace();
-			return null;
-		}
-		return is;	
-	}
-    
 	public String writeExperimentToBuffer( ) {
         ByteArrayOutputStream os = new ByteArrayOutputStream();
         String result="";
@@ -298,28 +286,6 @@ public class MainPanel extends Panel
         }
         return result;	
 	}
-
-    public void writeExperiment( String file )
-    {
-        OutputStream os = systemMgr.getOutputStream( file );
-
-        if ( os == null )
-            return;
- 
-        try
-        {
-            DataElement data = DataMgr.createXMLElement( "jacob" );
-            propertyMgr.writeExpSpecData( data );
-            scene.writeData( data );
-            DataMgr.writeElement( os, data );   
-            os.close();
-        }
-        catch ( IOException ex )
-        {
-            SystemMgr.error( "can't save experiment: io error " +
-                             "(" + ex.getMessage() + ")" );
-        }
-    }
     
 	public String writeParticlesToBuffer( ) {
         ByteArrayOutputStream os = new ByteArrayOutputStream();
@@ -344,38 +310,11 @@ public class MainPanel extends Panel
         return result;	
 	}
 
-    public void writeParticles( String file )
-    {
-        OutputStream os = systemMgr.getOutputStream( file );
-
-        if ( os == null )
-            return;
- 
-        try
-        {
-            DataElement data = DataMgr.createPDElement();
-            scene.writeData( data );
-            DataMgr.writeElement( os, data );   
-            os.close();
-        }
-        catch ( IOException ex )
-        {
-            SystemMgr.error( "can't save particles: io error " +
-                             "(" + ex.getMessage() + ")" );
-        }
-    }
+   
     
-    public void readExperiment(){
+	public void readExperiment(){
     	runBtn.setLabel("Run");
     	scene.stop();
-    	if(isJS) {
-    		readExperimentJS();  // uses async JavaScript dialog
-    	}else {
-    		readExperimentJava();// uses regular Java dialog
-    	}
-    }
-    
-	public void readExperimentJS(){
 		AsyncFileChooser fc = new AsyncFileChooser();
 		fc.showOpenDialog(MainPanel.this, new Runnable() {
 
@@ -389,30 +328,15 @@ public class MainPanel extends Panel
 		}, null);
 	}
 
-    public void readExperimentJava() {
-        if ( frame == null ) return;
-        //FIXME: localize this
-        FileDialog loadDialog = new FileDialog( MainPanel.this.frame, "Load",
-                                                FileDialog.LOAD );
-        loadDialog.show();
-        String dir  = loadDialog.getDirectory();
-        String file = loadDialog.getFile();
-        
-        if ( file == null || dir == null ) return;
-        InputStream is=getStreamFromName( dir + file );
-        readExperimentStream(is);
-    }
-    
     public void readExperimentURL(String urlStr) {
     	runBtn.setLabel("Run");
     	scene.stop();
         if ( frame == null ) return;
 		String baseURI = (/** @j2sNative document.body.baseURI || */ null); //html page that has script
-        //System.err.println("debug baseURI="+baseURI);
-        
-        String path=baseURI.substring(0,baseURI.lastIndexOf('/')+1);
+		String path="";
+        if(baseURI!=null)path=baseURI.substring(0,baseURI.lastIndexOf('/')+1);
         urlStr=path+urlStr;
-        //System.err.println("debug path+urlStr="+urlStr);
+        //System.err.println("Debug path+urlStr="+urlStr);
         
         InputStream is;
 		try {
@@ -431,17 +355,8 @@ public class MainPanel extends Panel
     public static XML.ObjectLoader getLoader() {
       return new JacobLoader();
     }
-
-    public void writeExperiment()
-    {
-    	if(isJS) {
-    		writeExperimentJS(false);  // uses async JavaScript dialog
-    	}else {
-    		writeExperimentJava();// uses regular Java dialog
-    	}
-    }
     
-    public void writeExperimentJS(boolean partilcesOnly){
+    public void writeExperiment(boolean partilcesOnly){
         JFileChooser chooser = OSPRuntime.getChooser();
         if(chooser==null) {
            return;
@@ -478,9 +393,9 @@ public class MainPanel extends Panel
              }
             String myData="";
             if(partilcesOnly) {
-            	writeParticlesToBuffer( );
+            	myData=writeParticlesToBuffer( );
             }else {
-            	writeExperimentToBuffer( );
+            	myData=writeExperimentToBuffer( );
             }
             XMLControl xml = new JacobControl(this,myData);  
             xml.write(fileName);
@@ -488,44 +403,6 @@ public class MainPanel extends Panel
     
     }
     
-    public void writeExperimentJava()
-    {
-        if ( frame == null ) return;
-        //FIXME: localize this
-        FileDialog saveDialog = new FileDialog( MainPanel.this.frame, "Save",
-                								 FileDialog.SAVE );
-        saveDialog.show();
-        String dir  = saveDialog.getDirectory();
-        String file = saveDialog.getFile();
-        
-        if ( file == null || dir == null ) return;
-        writeExperiment( dir + file );
-    }
-    
-    public void writeParticles()
-    {
-    	if(isJS) {
-    		writeExperimentJS(true);  // uses async JavaScript dialog
-    	}else {
-    		writeParticlesJava();// uses regular Java dialog
-    	}
-    }
-    
-    
-
-    public void writeParticlesJava()
-    {
-        if ( frame == null ) return;
-        //FIXME: localize this
-        FileDialog saveDialog = new FileDialog( MainPanel.this.frame, "Save",
-                                                FileDialog.SAVE );
-        saveDialog.show();
-        String dir  = saveDialog.getDirectory();
-        String file = saveDialog.getFile();
-        
-        if ( file == null || dir == null ) return;
-        writeParticles( dir + file );
-    }
 
 //FIXME
     public void readScript()
@@ -594,11 +471,11 @@ public class MainPanel extends Panel
             }
             else if ( action.equals( "FileSave" ) )
             { 
-                writeExperiment();
+                writeExperiment(false);
             }
             else if ( action.equals( "FileExportParticles" ) )
             { 
-                writeParticles();
+            	writeExperiment(true);
             }
             else if ( action.equals( "FileOpen" ) )
             {
