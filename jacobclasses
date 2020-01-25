@@ -460,5 +460,5 @@ jacob/geometry/Math2d.js
 jacob/integrator/CircleCollisionIntegrator.js
 jacob/scene/modifiers/Translator.js
 jacob/scene/modifiers/Rotator.js
-java/awt/FileDialog.js
 java/awt/event/MouseWheelEvent.js
+swingjs/jquery/j2sMenu.js
