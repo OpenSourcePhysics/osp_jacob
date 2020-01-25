@@ -287,6 +287,7 @@ public class Scene extends Component implements Runnable, PropertyObserver, Save
 			thread.start();
 		}
 		running = true;
+		if( Main.mainPanel!=null) Main.mainPanel.runBtn.setLabel("Pause");
 	}
 
 	public void stop() {
@@ -295,6 +296,7 @@ public class Scene extends Component implements Runnable, PropertyObserver, Save
 		}
 		thread = null;
 		running = false;
+		if( Main.mainPanel!=null) Main.mainPanel.runBtn.setLabel("Run");
 		redraw();
 	}
 

@@ -30,6 +30,8 @@ import java.awt.CheckboxMenuItem;
 import java.awt.event.ActionListener;
 import java.util.Enumeration;
 
+import org.opensourcephysics.js.JSUtil;
+
 import jacob.data.*;
 import jacob.system.*;
 import jacob.property.*;
@@ -150,7 +152,7 @@ public final class UIBuilder
             MenuItem item;
             String label  = data.getStringAttribute( "label" );
             String action = data.getStringAttribute( "action" );
-
+            if(JSUtil.isJS && action.equals("FileOpenScript")) return null;  //Do not run JS in JS simulation
             label = systemMgr.getPropertyMgr().getLString( label );
             item = new MenuItem( label );
             item.setActionCommand( action );
