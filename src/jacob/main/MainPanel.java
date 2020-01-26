@@ -26,7 +26,6 @@ import java.awt.Panel;
 import java.awt.MenuBar;
 import java.awt.BorderLayout;
 import java.awt.Button;
-import java.awt.FileDialog;
 import java.awt.FlowLayout;
 import java.awt.event.WindowEvent;
 import java.awt.event.ActionEvent;
@@ -40,7 +39,6 @@ import org.opensourcephysics.controls.XMLControl;
 import org.opensourcephysics.display.OSPRuntime;
 
 import java.io.InputStream;
-import java.io.OutputStream;
 import java.net.URL;
 import java.io.IOException;
 import java.io.ByteArrayOutputStream;
@@ -61,7 +59,9 @@ public class MainPanel extends Panel
 {
 	static public boolean isJS = /** @j2sNative true || */ false;
 	
-    private Frame frame = null;
+    File currentFCDirectory=null;
+	
+	private Frame frame = null;
     
     private Panel buttonPanel = new Panel();
 
@@ -315,12 +315,20 @@ public class MainPanel extends Panel
 	public void readExperiment(){
     	runBtn.setLabel("Run");
     	scene.stop();
-		AsyncFileChooser fc = new AsyncFileChooser();
+        if ( frame == null ) return;	
+		//AsyncFileChooser fc = new AsyncFileChooser();
+        AsyncFileChooser fc = OSPRuntime.getChooser();  // static Chooser
+		if(fc==null) return;
+	    String oldTitle = fc.getDialogTitle();
+	    fc.setDialogTitle("Read Jacob Experiment");
+	    fc.setCurrentDirectory(currentFCDirectory);
 		fc.showOpenDialog(MainPanel.this, new Runnable() {
 
 			@Override
 			public void run() {
+				fc.setDialogTitle(oldTitle);
 				File file = fc.getSelectedFile();
+				currentFCDirectory=file;
 				if ( file==null ) return;
 				InputStream is = getStreamFromFile(file);
 				readExperimentStream(is);
@@ -363,7 +371,8 @@ public class MainPanel extends Panel
            return;
         }
         String oldTitle = chooser.getDialogTitle();
-        chooser.setDialogTitle("Save XML Data");
+        chooser.setDialogTitle("Save Jacob Experiment");
+        chooser.setCurrentDirectory(currentFCDirectory);
         int result = -1;
         try {
         	result = chooser.showSaveDialog(null);
@@ -373,6 +382,7 @@ public class MainPanel extends Panel
         chooser.setDialogTitle(oldTitle);
         if(result==JFileChooser.APPROVE_OPTION) {
             File file = chooser.getSelectedFile();
+            currentFCDirectory=file;
             // check to see if file already exists
             org.opensourcephysics.display.OSPRuntime.chooserDir = chooser.getCurrentDirectory().toString();
             String fileName = file.getAbsolutePath();
@@ -380,9 +390,9 @@ public class MainPanel extends Panel
             if((fileName==null)||fileName.trim().equals("")) {
                return;
             }
-            int i = fileName.toLowerCase().lastIndexOf(".xml");
+            int i = fileName.toLowerCase().lastIndexOf(".jco");
             if(i!=fileName.length()-4) {
-               fileName += ".xml";
+               fileName += ".jco";
                file = new File(fileName);
             }
             if(/** @j2sNative false && */file.exists()) {
@@ -408,16 +418,23 @@ public class MainPanel extends Panel
     public void readScript(){   
     	runBtn.setLabel("Run");
     	scene.stop();
-		AsyncFileChooser fc = new AsyncFileChooser();
+		//AsyncFileChooser fc = new AsyncFileChooser();
+    	AsyncFileChooser fc = OSPRuntime.getChooser();
+		if(fc==null) return;
+	    String oldTitle = fc.getDialogTitle();
+	    fc.setDialogTitle("Read Jacob JavaScript");
+	    fc.setCurrentDirectory(currentFCDirectory);
 		fc.showOpenDialog(MainPanel.this, new Runnable() {
 
 			@Override
 			public void run() {
+				fc.setDialogTitle(oldTitle);
 				File file = fc.getSelectedFile();
+				currentFCDirectory=file;
 				if ( file==null ) return;
 				String urlStr=file.getAbsolutePath();
 		        if ( urlStr==null ) return;
-		        System.out.println("Debug: Reading: "+urlStr);
+		        //System.out.println("Debug: Reading: "+urlStr);
 		        new JSScriptRun( systemMgr, urlStr, new JInterface( systemMgr, MainPanel.this ) );
 			}   
 			
