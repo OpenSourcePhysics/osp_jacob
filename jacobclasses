@@ -308,6 +308,10 @@ java/net/URL.js
 java/net/URLConnection.js
 java/net/URLStreamHandler.js
 java/net/URLStreamHandlerFactory.js
+java/nio/file/attribute/FileAttribute.js
+java/nio/file/attribute/FileAttributeView.js
+java/nio/file/attribute/FileOwnerAttributeView.js
+java/nio/file/attribute/FileStoreAttributeView.js
 java/util/AbstractCollection.js
 java/util/AbstractList.js
 java/util/AbstractMap.js

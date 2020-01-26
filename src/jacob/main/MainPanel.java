@@ -321,6 +321,7 @@ public class MainPanel extends Panel
 			@Override
 			public void run() {
 				File file = fc.getSelectedFile();
+				if ( file==null ) return;
 				InputStream is = getStreamFromFile(file);
 				readExperimentStream(is);
 			}
@@ -404,20 +405,23 @@ public class MainPanel extends Panel
     }
     
 
-//FIXME
-    public void readScript()
-    {
-        if ( frame == null ) return;
-//FIXME: localize this
-        FileDialog loadDialog = new FileDialog( MainPanel.this.frame, "Load",
-                                                FileDialog.LOAD );
-        loadDialog.show();
-        String dir  = loadDialog.getDirectory();
-        String file = loadDialog.getFile();
- 
-        if ( file == null || dir == null ) return;
-        new JSScriptRun( systemMgr, dir + file, 
-                         new JInterface( systemMgr, this ) );
+    public void readScript(){   
+    	runBtn.setLabel("Run");
+    	scene.stop();
+		AsyncFileChooser fc = new AsyncFileChooser();
+		fc.showOpenDialog(MainPanel.this, new Runnable() {
+
+			@Override
+			public void run() {
+				File file = fc.getSelectedFile();
+				if ( file==null ) return;
+				String urlStr=file.getAbsolutePath();
+		        if ( urlStr==null ) return;
+		        System.out.println("Debug: Reading: "+urlStr);
+		        new JSScriptRun( systemMgr, urlStr, new JInterface( systemMgr, MainPanel.this ) );
+			}   
+			
+		}, null); 	
     }
 
 //------------------------------------------------------------------------------
