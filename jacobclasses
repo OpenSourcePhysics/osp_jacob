@@ -205,6 +205,7 @@ java/awt/SentEvent.js
 java/awt/Shape.js
 java/awt/Stroke.js
 java/awt/TextComponent.js
+java/awt/TextField.js
 java/awt/Toolkit.js
 java/awt/Transparency.js
 java/awt/VKCollection.js
@@ -301,6 +302,8 @@ java/lang/Class.js
 java/lang/Enum.js
 java/lang/Iterable.js
 java/lang/Readable.js
+java/lang/Runtime.js
+java/lang/Shutdown.js
 java/lang/StringBuffer.js
 java/lang/StringBuilder.js
 java/lang/Thread.js
@@ -323,6 +326,7 @@ java/nio/file/attribute/FileOwnerAttributeView.js
 java/nio/file/attribute/FileStoreAttributeView.js
 java/security/cert/TrustAnchor.js
 java/security/cert/X509CertSelector.js
+java/text/CharacterIterator.js
 java/text/DecimalFormat.js
 java/text/DecimalFormatSymbols.js
 java/text/DigitList.js
@@ -412,6 +416,7 @@ javax/swing/InputMap.js
 javax/swing/InternalFrameFocusTraversalPolicy.js
 javax/swing/JApplet.js
 javax/swing/JButton.js
+javax/swing/JCheckBox.js
 javax/swing/JCheckBoxMenuItem.js
 javax/swing/JComponent.js
 javax/swing/JDialog.js
@@ -468,11 +473,14 @@ javax/swing/event/CaretEvent.js
 javax/swing/event/CaretListener.js
 javax/swing/event/ChangeEvent.js
 javax/swing/event/ChangeListener.js
+javax/swing/event/DocumentEvent.js
 javax/swing/event/DocumentListener.js
 javax/swing/event/EventListenerList.js
 javax/swing/event/MenuKeyListener.js
 javax/swing/event/MenuListener.js
 javax/swing/event/SwingPropertyChangeSupport.js
+javax/swing/event/UndoableEditEvent.js
+javax/swing/event/UndoableEditListener.js
 javax/swing/filechooser/FileFilter.js
 javax/swing/plaf/ActionMapUIResource.js
 javax/swing/plaf/BorderUIResource.js
@@ -500,13 +508,19 @@ javax/swing/text/JTextComponent.js
 javax/swing/text/MutableAttributeSet.js
 javax/swing/text/PlainDocument.js
 javax/swing/text/Position.js
+javax/swing/text/Segment.js
+javax/swing/text/SegmentCache.js
 javax/swing/text/SimpleAttributeSet.js
 javax/swing/text/Style.js
 javax/swing/text/StyleConstants.js
 javax/swing/text/StyleContext.js
 javax/swing/text/TextAction.js
+javax/swing/text/Utilities.js
 javax/swing/text/View.js
 javax/swing/tree/TreeNode.js
+javax/swing/undo/AbstractUndoableEdit.js
+javax/swing/undo/CompoundEdit.js
+javax/swing/undo/UndoableEdit.js
 org/opensourcephysics/controls/ConsoleLevel.js
 org/opensourcephysics/controls/Control.js
 org/opensourcephysics/controls/OSPLog.js
@@ -538,6 +552,7 @@ sun/awt/image/DataStealer.js
 sun/awt/image/IntegerComponentRaster.js
 sun/awt/image/IntegerInterleavedRaster.js
 sun/awt/image/SunWritableRaster.js
+sun/font/FontDesignMetrics.js
 sun/java2d/StateTrackable.js
 sun/java2d/StateTrackableDelegate.js
 sun/nio/cs/HistoricallyNamedCharset.js
@@ -587,6 +602,7 @@ swingjs/a2s/MenuItem.js
 swingjs/a2s/Panel.js
 swingjs/a2s/PopupMenu.js
 swingjs/a2s/ScrollPane.js
+swingjs/a2s/TextField.js
 swingjs/a2s/Util.js
 swingjs/api/Interface.js
 swingjs/api/js/DOMNode.js

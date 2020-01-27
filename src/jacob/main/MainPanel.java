@@ -130,7 +130,7 @@ public class MainPanel extends Panel
     
     private void initButtonPanel() {
     	buttonPanel.setLayout( new FlowLayout() );
-        runBtn=new Button("Run");
+        runBtn=new Button("Pause");
     	buttonPanel.add(runBtn);
     	//Button testBtn=new Button("Load");
     	//buttonPanel.add(testBtn);
