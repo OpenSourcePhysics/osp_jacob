@@ -53,7 +53,7 @@ public class DoubleBufferPanel extends Panel
     public void setBuffer( boolean dbuff )
     {
         this.dbuff = dbuff;
-        // if ( dbuff = false ) WC: this this a syntax error?
+        // if ( dbuff = false ) WC: is this a syntax error?
         if ( !dbuff ) 
             offscreen = null;
     }

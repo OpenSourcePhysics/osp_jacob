@@ -62,6 +62,11 @@ public class Main extends Applet
     {
         return new JInterface( systemMgr, mainPanel );
     }
+    
+    public static void setFrameTitle(String exp) {
+    	String titleStr="Jacob "+exp;
+        frame.setTitle(titleStr);
+    }
 
 //------------------------------------------------------------------------------
 //    Application
@@ -72,7 +77,7 @@ public class Main extends Applet
         SystemMgr systemMgr = new SystemMgr( new Properties() );
         mainPanel = new MainPanel( systemMgr );
 
-        frame = new Frame( "JavaScript Jacob  ver " +
+        frame = new Frame( "Jacob  JavaScript ver " +
                                  JACOB_MAJOR_VERSION + "." +
                                  JACOB_MINOR_VERSION + "." +
                                  JACOB_MICRO_VERSION +
